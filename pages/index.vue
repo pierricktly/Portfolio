@@ -38,7 +38,7 @@
             Passionate about development and travel, I have multiple sources of inspiration and I have no shortage of new ideas for new projects or improvements.
           </p>
         </div>
-        <div id="direction" class="hidden xl:block">
+        <div id="direction" class="hidden 2xl:block overflow-hidden">
           <div class="absolute top-[73%] transform translate-x-[20vw] rotate-[26deg]">
             <span class="bg-white absolute lg:py-5 px-20 lg:text-8xl text-primary font-semibold" data-scroll data-scroll-direction="horizontal" data-scroll-speed="20" data-scroll-target="#direction" data-scroll-delay="0.05">CSS</span>
           </div>
@@ -67,10 +67,10 @@
           />
         </div>
       </section>
-      <section id="contact" data-scroll-section class="w-full min-h-screen mx-auto p-5 lg:p-0 flex flex-col justify-center items-center space-y-10">
+      <section id="contact" data-scroll-section class="w-full container min-h-screen mx-auto p-5 lg:p-0 flex flex-col justify-center items-center space-y-10">
         <h2 class="text-5xl font-bold text-secondary">Contact Me</h2>
         <p>You want to work with me? Write me your project</p>
-        <form class="w-full max-w-7xl min-w-max space-y-10" @submit.prevent="sendEmail">
+        <form class="w-full max-w-7xl min-w-max space-y-10 z-40" @submit.prevent="sendEmail">
           <div class="flex flex-wrap">
             <div class="relative w-full appearance-none">
               <input
@@ -158,7 +158,7 @@
         </form>
       </section>
     </div>
-    <div class="absolute bottom-20 left-0 flex items-center justify-center space-x-5">
+    <div class="absolute bottom-20 left-0 flex items-center justify-center space-x-5 z-10">
       <div>
         <div class="border-b-2 border-white bg-red-500 w-20"></div>
       </div>
