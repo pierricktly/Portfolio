@@ -194,6 +194,19 @@
 
 <script>
   export default {
+    head() {
+        return {
+            title: "Zokiasu's Portfolio - Pierrick TAÏLY",
+            meta: [
+                {
+                    hid: 'description',
+                    name: 'description',
+                    content: 'Find all my latest works and a short presentation of myself. Don\'t hesitate to contact me if you want us to work together!.',
+                }
+            ]
+        }
+    },
+    
     data() {
       return {
         works: [
@@ -207,6 +220,10 @@
           },
           {
             name: "Project 3",
+            image: "https://picsum.photos/400/200"
+          },
+          {
+            name: "Project 4",
             image: "https://picsum.photos/400/200"
           },
         ],
