@@ -38,21 +38,21 @@
             Passionate about development and travel, I have multiple sources of inspiration and I have no shortage of new ideas for new projects or improvements.
           </p>
         </div>
-        <div id="direction">
+        <div id="direction" class="hidden xl:block">
           <div class="absolute top-[73%] transform translate-x-[20vw] rotate-[26deg]">
-            <span class="bg-white absolute lg:py-5 px-20 lg:text-8xl text-primary font-semibold" data-scroll data-scroll-direction="horizontal" data-scroll-speed="20" data-scroll-target="#direction" data-scroll-delay="0.05">VUEJS1</span>
+            <span class="bg-white absolute lg:py-5 px-20 lg:text-8xl text-primary font-semibold" data-scroll data-scroll-direction="horizontal" data-scroll-speed="20" data-scroll-target="#direction" data-scroll-delay="0.05">CSS</span>
           </div>
           <div class="absolute top-[15%] transform translate-x-[-30vw]">
-            <span class="bg-white absolute lg:py-5 px-20 lg:text-8xl text-primary font-semibold" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-12" data-scroll-target="#direction" data-scroll-delay="0.05">VUEJS2</span>
+            <span class="bg-white absolute lg:py-5 px-20 lg:text-8xl text-primary font-semibold" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-12" data-scroll-target="#direction" data-scroll-delay="0.05">VUEJS</span>
           </div>
-          <div class="absolute top-[10%] transform translate-x-[30vw] rotate-[90deg]">
-            <span class="bg-white absolute lg:py-5 px-20 lg:text-8xl text-primary font-semibold" data-scroll data-scroll-direction="horizontal" data-scroll-speed="7" data-scroll-target="#direction" data-scroll-delay="0.05">VUEJS3</span>
+          <div class="absolute top-[10%] transform xl:translate-x-[40vw] 2xl:translate-x-[30vw] rotate-[90deg]">
+            <span class="bg-white absolute lg:py-5 px-20 lg:text-8xl text-primary font-semibold" data-scroll data-scroll-direction="horizontal" data-scroll-speed="7" data-scroll-target="#direction" data-scroll-delay="0.05">NUXTJS</span>
           </div>
           <div class="absolute top-[88%] transform -translate-x-[50vw] rotate-[-26deg]">
-            <span class="bg-white absolute lg:py-5 px-20 lg:text-8xl text-primary font-semibold" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-12" data-scroll-target="#direction" data-scroll-delay="0.05">VUEJS4</span>
+            <span class="bg-white absolute lg:py-5 px-20 lg:text-8xl text-primary font-semibold" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-12" data-scroll-target="#direction" data-scroll-delay="0.05">HTML</span>
           </div>
           <div class="absolute top-[75%] transform translate-x-[-10vw]">
-            <span class="bg-white absolute lg:py-5 px-20 lg:text-8xl text-primary font-semibold" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-50" data-scroll-target="#direction" data-scroll-delay="0.05">VUEJS5</span>
+            <span class="bg-white absolute lg:py-5 px-20 lg:text-8xl text-primary font-semibold" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-50" data-scroll-target="#direction" data-scroll-delay="0.05">SASS</span>
           </div>
         </div>
       </section>
