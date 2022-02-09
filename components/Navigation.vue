@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full p-2 mx-auto container lg:flex justify-between items-center text-white hidden">
+  <div class="w-full p-2 mx-auto container hidden md:flex justify-between items-center text-white">
     <div>
       <NuxtLink to="/">
         <svg
@@ -117,7 +117,8 @@
         <NuxtLink to="/contact">Contact</NuxtLink>
       </li>
     </ul>
-    <div>
+    <div></div>
+    <!--<div>
       <svg
         viewBox="0 0 35 35" 
         fill="none" 
@@ -129,7 +130,7 @@
           fill="currentColor"
         />
       </svg>
-    </div>
+    </div>-->
   </div>
 </template>
 

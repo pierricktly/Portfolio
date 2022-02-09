@@ -21,9 +21,9 @@
           data-scroll-speed="2" 
           class="space-x-5 text-xl w-full flex justify-center"
         >
-          <a href="#about" class="border border-secondary px-5 py-2 text-secondary rounded
+          <a href="#about" data-scroll-to class="border border-secondary px-5 py-2 text-secondary rounded
           hover:bg-secondary/10">About</a>
-          <a href="#contact" class="bg-secondary px-5 py-2 rounded
+          <a href="#contact" data-scroll-to class="bg-secondary px-5 py-2 rounded
           hover:bg-secondary/70">Contact</a>
         </div>
       </section>
@@ -160,7 +160,7 @@
     </div>
     <div class="absolute bottom-20 left-0 flex items-center justify-center space-x-5 z-10">
       <div>
-        <div class="border-b-2 border-white bg-red-500 w-20"></div>
+        <div class="border-b-2 border-white bg-red-500 w-10 lg:w-20"></div>
       </div>
       <svg 
         viewBox="0 0 29 29" 

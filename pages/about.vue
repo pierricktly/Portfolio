@@ -1,6 +1,6 @@
 <template>
   <div class="container mx-auto p-5 flex flex-col lg:justify-center items-center h-screen text-white space-y-14">
-    <img alt="Profile picture" src="https://picsum.photos/300/300" class="bg-gray-500 rounded-full aspect-square">
+    <img alt="Profile picture" src="../assets/images/profile_picture.png" class="bg-gray-500 w-48 lg:w-80 rounded-full aspect-square"/>
     <h2 class="text-5xl font-bold text-secondary">About Me</h2>
     <p class="text-center whitespace-pre-line md:text-xl lg:text-2xl">
       I’m a french frontend developer. 
