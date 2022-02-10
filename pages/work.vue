@@ -31,7 +31,11 @@
             name: "Project 3",
             image: "https://picsum.photos/400/200"
           },
-        ]
+          {
+            name: "Project 4",
+            image: "https://picsum.photos/400/200"
+          },
+        ],
       };
     },
   }

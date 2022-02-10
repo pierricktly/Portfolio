@@ -1,5 +1,5 @@
 <template>
-  <NuxtLink :to="`/work/${workName}`" class="rounded-lg relative aspect-video h-60">
+  <NuxtLink :to="`/`" class="rounded-lg relative aspect-video h-60">
     <img 
       :alt="workName" 
       :src="workImage"
