@@ -1,7 +1,7 @@
 <template>
   <div>
     <div data-scroll-container class="overflow-y-scroll flex flex-col text-white lg:text-xl overflow-x-hidden">
-      <section id="home" data-scroll-section class="relative w-full min-h-screen mx-auto p-5 lg:p-0 flex flex-col justify-center items-center space-y-10 lg:space-y-5">
+      <section id="home" data-scroll-section class="relative w-full min-h-screen mx-auto p-5 lg:p-0 flex flex-col md:justify-center items-center space-y-10 lg:space-y-5">
         <div
           data-scroll 
           data-scroll-speed="2" 
@@ -21,7 +21,7 @@
           <a href="#contact" data-scroll-to class="bg-secondary px-5 py-2 rounded
           hover:bg-secondary/70">Contact</a>
         </div>
-        <div class="absolute bottom-2 w-full">
+        <div class="md:absolute bottom-2 w-full">
           <div class="flex justify-center items-center animate-bounce">
             <div class="flex flex-col justify-center items-center space-y-1">
               <svg class="w-8 h-8" viewBox="0 0 24 36" fill="none" xmlns="http://www.w3.org/2000/svg">
