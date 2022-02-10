@@ -35,7 +35,7 @@ export default {
       {
         hid: "og:image",
         property: "og:image",
-        content: "~/profile_picture.png",
+        content: "/profile_picture.png",
       },
       { property: "og:image:width", content: "740" },
       { property: "og:image:height", content: "300" },
