@@ -1,7 +1,7 @@
 <template>
   <div>
     <div data-scroll-container class="overflow-y-scroll flex flex-col text-white lg:text-xl overflow-x-hidden">
-      <section id="home" data-scroll-section class="relative w-full min-h-screen mx-auto p-5 lg:p-0 flex flex-col md:justify-center items-center space-y-10 lg:space-y-5">
+      <section id="home" data-scroll-section class="relative w-full min-h-screen mx-auto p-5 lg:p-0 flex flex-col justify-between md:justify-center items-center space-y-5">
         <div
           data-scroll 
           data-scroll-speed="2" 
@@ -212,16 +212,16 @@
 <script>
   export default {
     head() {
-        return {
-            title: "Zokiasu's Portfolio - Pierrick TAÏLY",
-            meta: [
-                {
-                    hid: 'description',
-                    name: 'description',
-                    content: 'Find all my latest works and a short presentation of myself. Don\'t hesitate to contact me if you want us to work together!.',
-                }
-            ]
-        }
+      return {
+        title: "Pierrick's Portfolio - Zokiasu",
+        meta: [
+          {
+            hid: 'description',
+            name: 'description',
+            content: 'Find all my latest works and a short presentation of myself. Don\'t hesitate to contact me if you want us to work together!.',
+          }
+        ]
+      }
     },
     
     data() {
