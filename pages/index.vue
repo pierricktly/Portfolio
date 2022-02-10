@@ -38,7 +38,7 @@
           <h2 id="fixed-element" 
             class="text-5xl font-bold text-secondary z-10"
           >About Me</h2>
-          <p class="text-center whitespace-pre-line leading-loose text-3xl lg:text-2xl max-w-2xl z-10">
+          <p class="text-center whitespace-pre-line leading-loose text-xl lg:text-2xl max-w-2xl z-10">
             I’m a french frontend developer, based in Paris. 
             Passionate about development and travel, I have multiple sources of inspiration and I have no shortage of new ideas for new projects or improvements.
           </p>
