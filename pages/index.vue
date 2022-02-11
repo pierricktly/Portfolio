@@ -6,11 +6,11 @@
           data-scroll 
           data-scroll-speed="2" 
           class="w-full flex justify-center">
-          <p class="text-center whitespace-pre-line leading-loose text-3xl lg:text-4xl">
+          <h1 class="text-center whitespace-pre-line leading-loose text-3xl lg:text-4xl">
             Hello, I'm
             <span class="font-bold text-5xl lg:text-7xl text-secondary">Pierrick</span>
             a Frontend Developer
-          </p>
+          </h1>
         </div>
         <div class="w-full flex justify-center">
           <img alt="Profile picture" src="../assets/images/profile_picture.png" class="bg-gray-500 w-48 lg:w-80 rounded-full aspect-square"/>
