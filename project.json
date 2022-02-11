@@ -3,18 +3,18 @@
     "name":"Asia Exchange Finder",
     "image": "https://i.ibb.co/vLGYkj6/AEF.png",
     "link": "https://asiaexchangefinder.asiastudeler.com/",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ornare feugiat risus euismod vulputate. Pellentesque ac posuere lectus. Pellentesque consectetur aliquet metus auctor elementum."
+    "description": "It's my first vue application, an community webapp. It is an application to find all the universities offering university exchanges to the country you want."
   },
   "1":{
     "name":"Comeback",
     "image": "https://i.ibb.co/Sw4ZkC8/Comeback.png",
     "link": "https://come-back.netlify.app/",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ornare feugiat risus euismod vulputate. Pellentesque ac posuere lectus. Pellentesque consectetur aliquet metus auctor elementum."
+    "description": "It's my first app with nuxtjs it's a community webapp to track every new album, single, EP releases and report next releases by artist."
   },
   "2":{
     "name":"Portfolio",
     "image": "https://i.ibb.co/SyMwxZq/Portfolio.png",
     "link": "https://zokiasu.com/",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ornare feugiat risus euismod vulputate. Pellentesque ac posuere lectus. Pellentesque consectetur aliquet metus auctor elementum."
+    "description": "This project is my portfolio, which gathers the last projects I was able to realize as well as a short description of myself and the technology I use."
   }
 }
