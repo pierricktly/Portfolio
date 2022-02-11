@@ -20,7 +20,7 @@ export default {
       {
         hid: "og:url",
         property: "og:url",
-        content: "https://pedantic-yonath-7c8910.netlify.app/",
+        content: "https://zokiasu.netlify.app/",
       },
       {
         hid: "og:title",
@@ -35,7 +35,7 @@ export default {
       {
         hid: "og:image",
         property: "og:image",
-        content: "assets/images/profile_picture.png",
+        content: "https://i.ibb.co/MD49pc3/Frame-72.png",
       },
       { property: "og:image:width", content: "740" },
       { property: "og:image:height", content: "300" },
