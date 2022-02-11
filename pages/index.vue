@@ -77,6 +77,7 @@
             :work-image="work.image"
             :work-description="work.description"
             :work-link="work.link"
+            class=" max-h-80"
           />
         </div>
       </section>

@@ -7,14 +7,14 @@
   },
   "1":{
     "name":"Comeback",
-    "image": "https://i.ibb.co/SyMwxZq/Portfolio.png",
-    "link": "https://asiaexchangefinder.asiastudeler.com/",
+    "image": "https://i.ibb.co/Sw4ZkC8/Comeback.png",
+    "link": "https://come-back.netlify.app/",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ornare feugiat risus euismod vulputate. Pellentesque ac posuere lectus. Pellentesque consectetur aliquet metus auctor elementum."
   },
   "2":{
     "name":"Portfolio",
-    "image": "https://i.ibb.co/Sw4ZkC8/Comeback.png",
-    "link": "https://asiaexchangefinder.asiastudeler.com/",
+    "image": "https://i.ibb.co/SyMwxZq/Portfolio.png",
+    "link": "https://zokiasu.com/",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ornare feugiat risus euismod vulputate. Pellentesque ac posuere lectus. Pellentesque consectetur aliquet metus auctor elementum."
   }
 }

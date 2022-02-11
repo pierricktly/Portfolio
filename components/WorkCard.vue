@@ -3,7 +3,7 @@
     <img 
       :alt="workName" 
       :src="workImage"
-      class="bg-gray-500 object-cover max-h-60 rounded-lg aspect-video w-full group-hover:blur-sm transition-all duration-300"
+      class="bg-gray-500 object-cover rounded-lg aspect-video w-full group-hover:blur-sm transition-all duration-300"
     />
     <div class="bg-black/30 absolute top-0 w-full group-hover:h-full transition-all transform ease-in-out duration-500">
       <h2 class="p-2 font-semibold text-xl">{{workName}}</h2>

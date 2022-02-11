@@ -3,7 +3,7 @@
     <!-- formulaire contact -->
     <h2 class="text-5xl font-bold text-secondary">Contact Me</h2>
     <p class="text-xl">You want to work with me? Write me your project</p>
-    <form class="w-full max-w-7xl min-w-max space-y-10" @submit.prevent="sendEmail">
+    <form class="w-full max-w-7xl min-w-max space-y-10 z-40" @submit.prevent="sendEmail">
       <div class="flex flex-wrap">
         <div class="relative w-full appearance-none">
           <input
@@ -12,7 +12,7 @@
             type="text"
             v-model="name"
             placeholder="Votre nom"
-            class="peer placeholder-transparent tracking-wide py-2 px-3 leading-relaxed appearance-none block w-full rounded-lg
+            class="peer placeholder-transparent tracking-wide py-2 px-3 leading-relaxed appearance-none block w-full rounded
             bg-primary border border-white 
             focus:bg-white/30 focus:outline-none"
           />
@@ -37,7 +37,7 @@
             type="email" 
             v-model="email" 
             placeholder="Votre Email"
-            class="peer placeholder-transparent tracking-wide py-2 px-3 leading-relaxed appearance-none block w-full rounded-lg
+            class="peer placeholder-transparent tracking-wide py-2 px-3 leading-relaxed appearance-none block w-full rounded
             bg-primary border border-white 
             focus:bg-white/30 focus:outline-none"
           />
@@ -61,7 +61,7 @@
           name="message" 
           v-model="message" 
           placeholder="Votre Message"
-          class="peer placeholder-transparent tracking-wide py-2 px-3 leading-relaxed appearance-none block w-full h-52 rounded-lg
+          class="peer placeholder-transparent tracking-wide py-2 px-3 leading-relaxed appearance-none block w-full h-52 rounded
           bg-primary border border-white 
           focus:bg-white/30 focus:outline-none" 
           />
@@ -76,15 +76,16 @@
           >Entrez votre message</label>
         </div>
       </div>
-      <div class="w-full flex justify-end items-center space-x-5">
-        <a class="hover:text-secondary" href="mailto:pierrick.tly@gmail.com">Prefer to use your mail service?</a>
+      <div class="w-full flex justify-center lg:justify-end items-center space-x-5">
+        <a class="hover:text-secondary text-base" href="mailto:pierrick.tly@gmail.com">Prefer to use your mail service?</a>
         <div class="appearance-none">
           <input
             type="submit" 
             value="Send"
-            class="cursor-pointer tracking-wide leading-relaxed appearance-none block rounded-lg
-            bg-red-500 
-            px-5 py-2">
+            class="cursor-pointer tracking-wide leading-relaxed appearance-none block rounded
+            bg-secondary
+            hover:bg-secondary/70
+            px-5 py-1">
         </div>
       </div>
     </form>
