@@ -1,5 +1,5 @@
 <template>
-  <a :href="workLink" class="rounded-lg overflow-hidden relative aspect-video group shadow-white drop-shadow">
+  <a :href="workLink" target="_blank" class="rounded-lg overflow-hidden relative aspect-video group shadow-white drop-shadow">
     <img 
       :alt="workName" 
       :src="workImage"
