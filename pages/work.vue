@@ -9,6 +9,7 @@
         :work-image="work.image"
         :work-description="work.description"
         :work-link="work.link"
+        :work-technology="work.technology"
         class="max-h-80"
       />
     </div>
