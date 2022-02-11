@@ -75,6 +75,8 @@
             :key="index"
             :work-name="work.name"
             :work-image="work.image"
+            :work-description="work.description"
+            :work-link="work.link"
           />
         </div>
       </section>
@@ -210,28 +212,15 @@
 </template>
 
 <script>
+  import data from '~/project.json'
+  import{ init } from '@emailjs/browser';
+  import emailjs from '@emailjs/browser';
+  init("user_LjdyAMDHMFXk6Or6Ffd5a");
   export default {
     
     data() {
       return {
-        works: [
-          {
-            name: "Project 1",
-            image: "https://picsum.photos/400/200"
-          },
-          {
-            name: "Project 2",
-            image: "https://picsum.photos/400/200"
-          },
-          {
-            name: "Project 3",
-            image: "https://picsum.photos/400/200"
-          },
-          {
-            name: "Project 4",
-            image: "https://picsum.photos/400/200"
-          },
-        ],
+        works: data,
         name:"",
         email:"",
         message:"",
@@ -255,12 +244,11 @@
                   this.message = ""
                   this.name = ""
                   this.email = ""
-                  this.$toast.error(`Votre message a été envoyé`, {position:"top", duration: 5000, max:1});
               }, (error) => {
                   console.log('FAILED...', error);
               });
           } else {
-              this.$toast.error(`Message box is empty`, {position:"top", duration: 5000, max:1});
+            //OK
           }
       }
     }

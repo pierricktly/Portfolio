@@ -7,35 +7,20 @@
         :key="index"
         :work-name="work.name"
         :work-image="work.image"
-        class=" shadow"
+        :work-description="work.description"
+        :work-link="work.link"
       />
     </div>
   </div>
 </template>
 
 <script>
+  import data from '~/project.json'
   export default {
     name: "Work",
     data() {
       return {
-        works: [
-          {
-            name: "Project 1",
-            image: "https://picsum.photos/400/200"
-          },
-          {
-            name: "Project 2",
-            image: "https://picsum.photos/400/200"
-          },
-          {
-            name: "Project 3",
-            image: "https://picsum.photos/400/200"
-          },
-          {
-            name: "Project 4",
-            image: "https://picsum.photos/400/200"
-          },
-        ],
+        works: data
       };
     },
   }

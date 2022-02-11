@@ -92,6 +92,10 @@
 </template>
 
 <script>
+  import{ init } from '@emailjs/browser';
+  import emailjs from '@emailjs/browser';
+  init("user_LjdyAMDHMFXk6Or6Ffd5a");
+  
   export default {
     name: "About",
     data() {
@@ -103,22 +107,21 @@
     },
 
     methods: {
-        sendEmail: function(e) {
-            if(this.message != "" || this.message != undefined) {
-                emailjs.sendForm('service_98p270n', 'template_0sow3ga', e.target, 'user_LjdyAMDHMFXk6Or6Ffd5a')
-                .then((result) => {
-                    console.log('SUCCESS!', result.status, result.text);
-                    this.message = ""
-                    this.name = ""
-                    this.email = ""
-                    this.$toast.error(`Votre message a été envoyé`, {position:"top", duration: 5000, max:1});
-                }, (error) => {
-                    console.log('FAILED...', error);
-                });
-            } else {
-                this.$toast.error(`Message box is empty`, {position:"top", duration: 5000, max:1});
-            }
-        }
+      sendEmail: function(e) {
+          if(this.message != "" || this.message != undefined) {
+              emailjs.sendForm('service_98p270n', 'template_0sow3ga', e.target, 'user_LjdyAMDHMFXk6Or6Ffd5a')
+              .then((result) => {
+                  console.log('SUCCESS!', result.status, result.text);
+                  this.message = ""
+                  this.name = ""
+                  this.email = ""
+              }, (error) => {
+                  console.log('FAILED...', error);
+              });
+          } else {
+            //OK
+          }
+      }
     }
   }
 </script>
