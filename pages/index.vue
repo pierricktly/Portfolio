@@ -170,10 +170,11 @@
           </div>
         </form>
       </section>
+      <section id="contact" data-scroll-section class="w-full container mx-auto text-base p-5">
+        <p class="text-center">© Zokiasu 2022</p>
+      </section>
     </div>
-    <div class="absolute space-x-5 top-10 right-0 
-    md:flex-row-reverse md:space-x-reverse md:bottom-20 md:left-0 md:top-auto md:right-auto
-    flex items-center justify-center z-10">
+    <div class="absolute space-x-5 top-10 right-0 md:flex-row-reverse md:space-x-reverse md:bottom-20 md:left-0 md:top-auto md:right-auto flex items-center justify-center z-10">
       <a href="https://www.linkedin.com/in/pierrick-taily/" target="_blank">
         <svg 
           viewBox="0 0 29 29" 
