@@ -41,7 +41,7 @@
             Passionate about development and travel, I have multiple sources of inspiration and I have no shortage of new ideas for new projects or improvements.
           </p>
         </div>
-        <div id="direction" class="hidden 2xl:block">
+        <div id="direction" class="hidden 2xl:flex flex-col justify-center items-center absolute top-0 bottom-0 left-0 right-0 h-full w-full">
           <div class="absolute top-[73%] transform translate-x-[20vw] rotate-[26deg]">
             <span class="bg-white absolute lg:py-5 px-20 lg:text-8xl text-primary font-semibold" data-scroll data-scroll-direction="horizontal" data-scroll-speed="20" data-scroll-target="#direction" data-scroll-delay="0.05">CSS</span>
           </div>

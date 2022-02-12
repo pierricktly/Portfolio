@@ -12,7 +12,7 @@
           viewBox="0 0 29 29" 
           fill="none" 
           xmlns="http://www.w3.org/2000/svg"
-          class="w-10 h-10 text-white hover:text-secondary"
+          class="w-10 h-10 text-white hover:text-secondary transition-all duration-500 ease-in-out"
         >
           <path 
             fill-rule="evenodd" 
@@ -27,7 +27,7 @@
           viewBox="0 0 29 29" 
           fill="none" 
           xmlns="http://www.w3.org/2000/svg"
-          class="w-10 h-10 text-white hover:text-secondary"
+          class="w-10 h-10 text-white hover:text-secondary transition-all duration-500 ease-in-out"
         >
           <path 
             fill-rule="evenodd" 
