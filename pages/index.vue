@@ -230,6 +230,7 @@
     },
 
     mounted() {
+      this.$ga.page('/')
       this.scroll = new this.locomotiveScroll({
         el: document.querySelector('[data-scroll-container]'),
         smooth: true
