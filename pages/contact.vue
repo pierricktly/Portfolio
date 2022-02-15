@@ -98,7 +98,12 @@
   init("user_LjdyAMDHMFXk6Or6Ffd5a");
   
   export default {
-    name: "About",
+    name: "Contact",
+
+    created(){
+      this.$ga.page('/contact')
+    },
+
     data() {
       return {
         name:"",

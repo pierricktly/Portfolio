@@ -20,6 +20,11 @@
   import data from '~/project.json'
   export default {
     name: "Work",
+
+    created(){
+      this.$ga.page('/work')
+    },
+
     data() {
       return {
         works: data

@@ -44,5 +44,9 @@
 <script>
   export default {
     name: "About",
+
+    created(){
+      this.$ga.page('/about')
+    }
   }
 </script>
