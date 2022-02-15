@@ -229,8 +229,11 @@
       };
     },
 
-    mounted() {
+    created(){
       this.$ga.page('/')
+    },
+
+    mounted() {
       this.scroll = new this.locomotiveScroll({
         el: document.querySelector('[data-scroll-container]'),
         smooth: true

@@ -90,14 +90,9 @@ export default {
   },
 
   googleAnalytics: {
-    id: "G-XXQ98Z4VNC",
+    id: "UA-220406598-1",
     autoTracking: {
       screenview: true
-    }
-  },
-  publicRuntimeConfig: {
-    googleAnalytics: {
-      id: "G-XXQ98Z4VNC"
     }
   }
 }
