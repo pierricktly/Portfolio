@@ -90,14 +90,14 @@ export default {
   },
 
   googleAnalytics: {
-    id: process.env.GOOGLE_ANALYTICS_ID,
+    id: "G-XXQ98Z4VNC",
     autoTracking: {
       screenview: true
     }
   },
   publicRuntimeConfig: {
     googleAnalytics: {
-      id: process.env.GOOGLE_ANALYTICS_ID
+      id: "G-XXQ98Z4VNC"
     }
   }
 }
