@@ -3,14 +3,14 @@
     "name":"Asia Exchange Finder",
     "image": "https://i.ibb.co/vLGYkj6/AEF.png",
     "link": "https://asiaexchangefinder.asiastudeler.com/",
-    "description": "It's my first vue application, an community webapp. It is an application to find all the universities offering university exchanges to the country you want.",
+    "description": "My first vue application, a community webapp. It's an application to find all the universities offering university exchanges to the Asian countries.",
     "technology": ["VUEJS", "TAILWINDCSS", "FIREBASE"]
   },
   "1":{
     "name":"Comeback",
     "image": "https://i.ibb.co/Sw4ZkC8/Comeback.png",
     "link": "https://come-back.netlify.app/",
-    "description": "It's my first app with nuxtjs it's a community webapp to track every new album, single, EP releases and report next releases by artist.",
+    "description": "It's a web application to track every new album, single, EP releases and report next releases by artist listed.",
     "technology": ["VUEJS", "NUXTJS", "TAILWINDCSS", "HEROKU", "POSTGRESQL", "FIREBASE"]
   },
   "2":{
