@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div data-scroll-container class="overflow-y-scroll flex flex-col text-white lg:text-xl overflow-x-hidden">
+    <div data-scroll-container class="overflow-y-scroll flex flex-col text-white lg:text-xl overflow-x-hidden mx-auto">
       <section id="home" data-scroll-section class="relative w-full min-h-screen mx-auto p-5 lg:p-0 flex flex-col justify-between md:justify-center items-center space-y-5">
         <div
           data-scroll 
@@ -92,8 +92,8 @@
           <div class="absolute top-[75%] transform translate-x-[-10vw]">
             <span class="bg-white absolute lg:py-5 px-20 lg:text-8xl text-primary font-semibold" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-50" data-scroll-target="#direction" data-scroll-delay="0.05">SASS</span>
           </div>
-          <div class="absolute top-[50%] transform translate-x-[50vw] rotate-[90deg]">
-            <span class="bg-white absolute lg:py-5 px-20 lg:text-8xl text-primary font-semibold" data-scroll data-scroll-direction="horizontal" data-scroll-speed="70" data-scroll-target="#direction" data-scroll-delay="0.05">SQL</span>
+          <div class="absolute top-[50%] transform translate-x-[40vw] rotate-[90deg]">
+            <span class="bg-white absolute lg:py-5 px-20 lg:text-8xl text-primary font-semibold" data-scroll data-scroll-direction="horizontal" data-scroll-speed="20" data-scroll-target="#direction" data-scroll-delay="0.05">SQL</span>
           </div>
         </div>
       </section>
