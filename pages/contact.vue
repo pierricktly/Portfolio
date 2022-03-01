@@ -76,16 +76,18 @@
           >Entrez votre message</label>
         </div>
       </div>
-      <div class="w-full flex justify-center lg:justify-end items-center space-x-5">
-        <a class="hover:text-secondary text-base" href="mailto:pierrick.tly@gmail.com">Prefer to use your mail service?</a>
-        <div class="appearance-none">
+      <div class="w-full flex flex-col-reverse md:flex-row gap-3 justify-center items-center md:justify-between md:items-start">
+        <div class="flex justify-center overflow-hidden">
+          <button type="button" :onclick="copyEmail()" class="hover-underline-animation">Use your mail service?</button>
+        </div>
+        <div class="appearance-none w-full md:w-auto">
           <input
             type="submit" 
             value="Send"
-            class="cursor-pointer tracking-wide leading-relaxed appearance-none block rounded
+            class="cursor-pointer w-full md:w-auto tracking-wide leading-relaxed appearance-none block rounded
             bg-secondary
             hover:bg-secondary/70
-            px-5 py-1">
+            px-5 py-1"/>
         </div>
       </div>
     </form>
@@ -127,6 +129,10 @@
           } else {
             //OK
           }
+      },
+
+      copyEmail() {
+        navigator.clipboard.writeText("pierrick.tly@gmail.com");
       }
     }
   }

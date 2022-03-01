@@ -108,13 +108,13 @@
     </div>
     <ul class="flex space-x-20 text-xl">
       <li>
-        <NuxtLink to="/about">About</NuxtLink>
+        <NuxtLink to="/about" class="hover-underline-animation">About</NuxtLink>
       </li>
       <li>
-        <NuxtLink to="/work">Portfolio</NuxtLink>
+        <NuxtLink to="/work" class="hover-underline-animation">Portfolio</NuxtLink>
       </li>
       <li>
-        <NuxtLink to="/contact">Contact</NuxtLink>
+        <NuxtLink to="/contact" class="hover-underline-animation">Contact</NuxtLink>
       </li>
     </ul>
     <div></div>
@@ -133,13 +133,3 @@
     </div>-->
   </div>
 </template>
-
-<script>
-export default {
-
-}
-</script>
-
-<style>
-
-</style>

@@ -123,7 +123,7 @@
                 name="name"
                 type="text"
                 v-model="name"
-                placeholder="Votre nom"
+                placeholder="Enter your name"
                 class="peer placeholder-transparent tracking-wide py-2 px-3 leading-relaxed appearance-none block w-full rounded
                 bg-primary border border-white 
                 focus:bg-white/30 focus:outline-none"
@@ -138,7 +138,7 @@
                   peer-placeholder-shown:left-3
                   peer-focus:-top-7
                   peer-focus:left-0"
-                >Entrez votre nom</label>
+                >Enter your name</label>
             </div>
           </div>
           <div class="flex flex-wrap">
@@ -148,7 +148,7 @@
                 name="email" 
                 type="email" 
                 v-model="email" 
-                placeholder="Votre Email"
+                placeholder="Enter your email address"
                 class="peer placeholder-transparent tracking-wide py-2 px-3 leading-relaxed appearance-none block w-full rounded
                 bg-primary border border-white 
                 focus:bg-white/30 focus:outline-none"
@@ -163,7 +163,7 @@
                   peer-placeholder-shown:left-3
                   peer-focus:-top-7
                   peer-focus:left-0"
-                >Entrez votre adresse mail</label>
+                >Enter your email address</label>
             </div>
           </div>
           <div class="flex flex-wrap">
@@ -172,7 +172,7 @@
               id="message"
               name="message" 
               v-model="message" 
-              placeholder="Votre Message"
+              placeholder="Enter your message"
               class="peer placeholder-transparent tracking-wide py-2 px-3 leading-relaxed appearance-none block w-full h-52 rounded
               bg-primary border border-white 
               focus:bg-white/30 focus:outline-none" 
@@ -185,24 +185,26 @@
                 peer-placeholder-shown:left-3
                 peer-focus:-top-7
                 peer-focus:left-0"
-              >Entrez votre message</label>
+              >Enter your message</label>
             </div>
           </div>
-          <div class="w-full flex justify-center lg:justify-end items-center space-x-5">
-            <a class="hover:text-secondary text-base" href="mailto:pierrick.tly@gmail.com">Prefer to use your mail service?</a>
-            <div class="appearance-none">
+          <div class="w-full flex flex-col-reverse md:flex-row gap-3 justify-center items-center md:justify-between md:items-start">
+            <div class="flex justify-center overflow-hidden">
+              <button type="button" :onclick="copyEmail()" class="hover-underline-animation">Use your mail service?</button>
+            </div>
+            <div class="appearance-none w-full md:w-auto">
               <input
                 type="submit" 
                 value="Send"
-                class="cursor-pointer tracking-wide leading-relaxed appearance-none block rounded
+                class="cursor-pointer w-full md:w-auto tracking-wide leading-relaxed appearance-none block rounded
                 bg-secondary
                 hover:bg-secondary/70
-                px-5 py-1">
+                px-5 py-1"/>
             </div>
           </div>
         </form>
       </section>
-      <section id="contact" data-scroll-section class="w-full container mx-auto text-base p-5">
+      <section id="copyright" data-scroll-section class="w-full container mx-auto text-base p-5">
         <p class="text-center">© Zokiasu 2022</p>
       </section>
     </div>
@@ -287,6 +289,10 @@
           } else {
             //OK
           }
+      },
+
+      copyEmail() {
+        navigator.clipboard.writeText("pierrick.tly@gmail.com");
       }
     }
   }
