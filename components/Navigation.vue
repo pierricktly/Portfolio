@@ -111,7 +111,7 @@
         <NuxtLink to="/about" class="hover-underline-animation">About</NuxtLink>
       </li>
       <li>
-        <NuxtLink to="/work" class="hover-underline-animation">Portfolio</NuxtLink>
+        <NuxtLink to="/work" class="hover-underline-animation">Work</NuxtLink>
       </li>
       <li>
         <NuxtLink to="/contact" class="hover-underline-animation">Contact</NuxtLink>

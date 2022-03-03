@@ -78,7 +78,7 @@
       </div>
       <div class="w-full flex flex-col-reverse md:flex-row gap-3 justify-center items-center md:justify-between md:items-start">
         <div class="flex justify-center overflow-hidden">
-          <button type="button" :onclick="copyEmail()" class="hover-underline-animation">Use your mail service?</button>
+          <button type="button" @click="copyEmail()" class="hover-underline-animation">Use your mail service?</button>
         </div>
         <div class="appearance-none w-full md:w-auto">
           <input
@@ -133,7 +133,11 @@
 
       copyEmail() {
         navigator.clipboard.writeText("pierrick.tly@gmail.com");
-      }
+        this.$toasted.show("Email copied!", {
+          position: "bottom-center", 
+          duration : 5000
+        });
+      },
     }
   }
 </script>
