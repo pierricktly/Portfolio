@@ -4,7 +4,7 @@
     <h2 class="text-5xl font-bold text-secondary">About Me</h2>
     <p class="text-center whitespace-pre-line md:text-xl lg:text-2xl">
       I’m a french frontend developer. 
-      Passionate about development and travel, I have multiple sources of inspiration and I have no shortage of new ideas for new projects or improvements.
+      Passionate about development and travel, I am surrounded by a multitude of sources of inspiration for new ideas, new projects or just simple improvements.
     </p>
     <div class="flex space-x-5">
       <a href="https://www.linkedin.com/in/pierrick-taily/" target="_blank">

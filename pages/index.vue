@@ -39,7 +39,7 @@
           <div class="px-5 lg:px-0">
             <p class="text-center whitespace-pre-line leading-loose text-xl lg:text-2xl max-w-2xl z-10">
               I’m a french frontend developer, based in Paris. 
-              Passionate about development and travel, I have multiple sources of inspiration and I have no shortage of new ideas for new projects or improvements.
+              Passionate about development and travel, I am surrounded by a multitude of sources of inspiration for new ideas, new projects or just simple improvements.
             </p>
           </div>
           <div class="flex space-x-5 md:hidden">
@@ -160,8 +160,8 @@
         </div>
       </section>
       <section id="portfolio" data-scroll-section class="w-full min-h-screen mx-auto p-5 lg:p-0 flex flex-col justify-center items-center space-y-10 z-10">
-        <h2 data-scroll data-scroll-speed="1" class="text-5xl font-bold text-secondary">My Portfolio</h2>
-        <div data-scroll data-scroll-speed="1" class="grid grid-cols-1 md:grid-cols-2 gap-5">
+        <h2 class="text-5xl font-bold text-secondary">My Portfolio</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
           <work-card
             v-for="(work, index) in works"
             :key="index"
@@ -270,11 +270,11 @@
         <p class="text-center">© Zokiasu 2022</p>
       </section>
     </div>
-    <div class="absolute bottom-10 right-10 z-50">
+    <!--<div class="absolute bottom-10 right-10 z-50" :class="scrollpx > 800 ? 'flex' : 'hidden'">
       <a data-scroll-to href="#home">
         <icon-arrow-up class="w-10 h-10 text-white"/>
       </a>
-    </div>
+    </div>-->
     <div class="hidden absolute space-x-5 top-10 right-0 md:flex-row-reverse md:space-x-reverse md:bottom-20 md:left-0 md:top-auto md:right-auto md:flex items-center justify-center z-10">
       <a href="https://www.linkedin.com/in/pierrick-taily/" target="_blank">
         <icon-linkedin class="w-8 h-8 hover:text-secondary transition-all duration-500 ease-in-out"/>
@@ -304,12 +304,9 @@
         name:"",
         email:"",
         message:"",
-        scroll: null
+        scroll: null,
+        scrollpx: 0
       };
-    },
-
-    created(){
-      this.$ga.page('/')
     },
 
     mounted() {
@@ -341,7 +338,7 @@
           position: "bottom-center", 
           duration : 5000
         });
-      },
+      }
     }
   }
 </script>
