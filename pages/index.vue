@@ -1,10 +1,9 @@
 <template>
-  <div data-scroll-container class="text-white">
-    <div class="overflow-y-scroll flex flex-col lg:text-xl overflow-x-hidden mx-auto">
+  <div class="text-white">
+    <div data-scroll-container class="overflow-y-scroll flex flex-col lg:text-xl overflow-x-hidden mx-auto">
       <section id="home" data-scroll-section class="w-full min-h-screen mx-auto p-5 lg:p-0 flex flex-col justify-between md:justify-center items-center space-y-5">
         <div
-          data-scroll 
-          data-scroll-speed="2" 
+          data-scroll ù
           class="w-full flex justify-center">
           <h1 class="text-center whitespace-pre-line leading-loose text-3xl lg:text-4xl">
             Hello, I'm
@@ -15,10 +14,10 @@
         <div class="w-full flex justify-center">
           <img alt="Profile picture" src="../assets/images/profile_picture.png" class="bg-gray-500 w-48 lg:w-80 rounded-full aspect-square"/>
         </div>
-        <div data-scroll data-scroll-speed="2" class="space-x-5 text-xl w-full flex justify-center">
-          <a href="#about" data-scroll-to class="border border-secondary px-5 py-2 text-secondary rounded
+        <div data-scroll class="space-x-5 text-xl w-full flex justify-center">
+          <a data-scroll-to href="#about" class="border border-secondary px-5 py-2 text-secondary rounded
           hover:bg-secondary/10">About</a>
-          <a href="#contact" data-scroll-to class="bg-secondary px-5 py-2 rounded
+          <a data-scroll-to href="#contact" class="bg-secondary px-5 py-2 rounded
           hover:bg-secondary/70">Contact</a>
         </div>
         <div class="md:absolute bottom-2 w-full">
@@ -194,11 +193,11 @@
                 for="name" 
                 class="
                   absolute 
-                  left-0 -top-7
+                  left-0 -top-8
                   transition-all
                   peer-placeholder-shown:top-2
                   peer-placeholder-shown:left-3
-                  peer-focus:-top-7
+                  peer-focus:-top-8
                   peer-focus:left-0"
                 >Enter your name</label>
             </div>
@@ -219,11 +218,11 @@
                 for="email" 
                 class="
                   absolute 
-                  left-0 -top-7
+                  left-0 -top-8
                   transition-all
                   peer-placeholder-shown:top-2
                   peer-placeholder-shown:left-3
-                  peer-focus:-top-7
+                  peer-focus:-top-8
                   peer-focus:left-0"
                 >Enter your email address</label>
             </div>
@@ -231,21 +230,21 @@
           <div class="flex flex-wrap">
             <div class="relative w-full appearance-none">
               <textarea 
-              id="message"
-              name="message" 
-              v-model="message" 
-              placeholder="Enter your message"
-              class="peer placeholder-transparent tracking-wide py-2 px-3 leading-relaxed appearance-none block w-full h-52 rounded
-              bg-primary border border-white 
-              focus:bg-white/30 focus:outline-none" 
+                id="message"
+                name="message" 
+                v-model="message" 
+                placeholder="Enter your message"
+                class="peer placeholder-transparent tracking-wide py-2 px-3 leading-relaxed appearance-none block w-full h-52 rounded
+                bg-primary border border-white 
+                focus:bg-white/30 focus:outline-none" 
               />
               <label for="message" class="
                 absolute 
-                left-0 -top-7
+                left-0 -top-8
                 transition-all
                 peer-placeholder-shown:top-2
                 peer-placeholder-shown:left-3
-                peer-focus:-top-7
+                peer-focus:-top-8
                 peer-focus:left-0"
               >Enter your message</label>
             </div>
@@ -267,7 +266,7 @@
         </form>
       </section>
       <section id="copyright" data-scroll-section class="w-full container mx-auto text-base p-5">
-        <p class="text-center">© Zokiasu 2022</p>
+        <p class="text-center">© ZKS Development 2022 - Portfolio Zokiasu</p>
       </section>
     </div>
     <!--<div class="absolute bottom-10 right-10 z-50" :class="scrollpx > 800 ? 'flex' : 'hidden'">

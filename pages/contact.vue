@@ -11,7 +11,7 @@
             name="name"
             type="text"
             v-model="name"
-            placeholder="Votre nom"
+            placeholder="Enter your name"
             class="peer placeholder-transparent tracking-wide py-2 px-3 leading-relaxed appearance-none block w-full rounded
             bg-primary border border-white 
             focus:bg-white/30 focus:outline-none"
@@ -20,13 +20,13 @@
             for="name" 
             class="
               absolute 
-              left-0 -top-7
+              left-0 -top-8
               transition-all
               peer-placeholder-shown:top-2
               peer-placeholder-shown:left-3
-              peer-focus:-top-7
+              peer-focus:-top-8
               peer-focus:left-0"
-            >Entrez votre nom</label>
+            >Enter your name</label>
         </div>
       </div>
       <div class="flex flex-wrap">
@@ -36,7 +36,7 @@
             name="email" 
             type="email" 
             v-model="email" 
-            placeholder="Votre Email"
+            placeholder="Enter your email address"
             class="peer placeholder-transparent tracking-wide py-2 px-3 leading-relaxed appearance-none block w-full rounded
             bg-primary border border-white 
             focus:bg-white/30 focus:outline-none"
@@ -45,35 +45,35 @@
             for="email" 
             class="
               absolute 
-              left-0 -top-7
+              left-0 -top-8
               transition-all
               peer-placeholder-shown:top-2
               peer-placeholder-shown:left-3
-              peer-focus:-top-7
+              peer-focus:-top-8
               peer-focus:left-0"
-            >Entrez votre adresse mail</label>
+            >Enter your email address</label>
         </div>
       </div>
       <div class="flex flex-wrap">
         <div class="relative w-full appearance-none">
           <textarea 
-          id="message"
-          name="message" 
-          v-model="message" 
-          placeholder="Votre Message"
-          class="peer placeholder-transparent tracking-wide py-2 px-3 leading-relaxed appearance-none block w-full h-52 rounded
-          bg-primary border border-white 
-          focus:bg-white/30 focus:outline-none" 
+            id="message"
+            name="message" 
+            v-model="message" 
+            placeholder="Enter your message"
+            class="peer placeholder-transparent tracking-wide py-2 px-3 leading-relaxed appearance-none block w-full h-52 rounded
+            bg-primary border border-white 
+            focus:bg-white/30 focus:outline-none" 
           />
           <label for="message" class="
             absolute 
-            left-0 -top-7
+            left-0 -top-8
             transition-all
             peer-placeholder-shown:top-2
             peer-placeholder-shown:left-3
-            peer-focus:-top-7
+            peer-focus:-top-8
             peer-focus:left-0"
-          >Entrez votre message</label>
+          >Enter your message</label>
         </div>
       </div>
       <div class="w-full flex flex-col-reverse md:flex-row gap-3 justify-center items-center md:justify-between md:items-start">
