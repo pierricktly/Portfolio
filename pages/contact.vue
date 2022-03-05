@@ -2,7 +2,7 @@
   <div class="container mx-auto p-5 flex flex-col justify-center items-center h-screen text-white space-y-14">
     <!-- formulaire contact -->
     <h2 class="text-5xl font-bold text-secondary">Contact Me</h2>
-    <p class="text-xl">You want to work with me? Write me your project</p>
+    <p class="text-xl">You want to work with me? Tell me about your project and let's work together!</p>
     <form class="w-full max-w-7xl min-w-max space-y-10 z-40" @submit.prevent="sendEmail">
       <div class="flex flex-wrap">
         <div class="relative w-full appearance-none">
