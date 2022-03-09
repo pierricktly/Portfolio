@@ -6,7 +6,7 @@
 			<section
 				id="home"
 				data-scroll-section
-				class="w-full min-h-screen mx-auto p-5 lg:p-0 flex flex-col justify-between md:justify-center items-center gap-10"
+				class="w-full min-h-screen mx-auto p-5 lg:p-0 flex flex-col justify-between md:justify-center items-center gap-14"
 			>
 				<div class="w-full flex justify-center">
 					<h1
@@ -23,7 +23,7 @@
 					<img
 						alt="Profile picture"
 						src="../assets/images/profile_picture.png"
-						class="bg-gray-500 w-48 lg:w-80 rounded-full aspect-square"
+						class="bg-gray-500 w-48 lg:w-80 xl:w-96 rounded-full aspect-square"
 					/>
 				</div>
 				<div data-scroll class="space-x-5 text-xfl w-full flex justify-center">
@@ -40,11 +40,11 @@
 						>Contact</a
 					>
 				</div>
-				<div class="md:absolute bottom-2 md:bottom-20 right-10 w-full md:w-auto">
+				<div class="md:absolute bottom-2 md:bottom-20 right-20 w-full md:w-auto">
 					<div class="flex justify-center items-center">
 						<div class="flex justify-center items-center gap-2">
 							<icon-long-arrow-down class="w-5 h-5" />
-							<p class="text-sm font-semibold">Scroll to see more</p>
+							<p class="font-semibold">Scroll to see more</p>
 						</div>
 					</div>
 				</div>
@@ -61,7 +61,7 @@
 						<img
 							alt="Profile picture"
 							src="../assets/images/profile_picture.png"
-							class="bg-gray-500 w-48 lg:w-60 rounded-full aspect-square"
+							class="bg-gray-500 w-48 lg:w-80 rounded-full aspect-square"
 						/>
 					</div>
 					<div class="px-5 lg:px-0">
@@ -81,11 +81,11 @@
 							<icon-github class="w-8 h-8" />
 						</a>
 					</div>
-					<div class="flex overflow-hidden absolute bottom-10 md:bottom-14 w-full text-2xl md:text-8xl font-semibold bg-white text-primary py-2">
+					<div class="flex overflow-hidden absolute bottom-10 md:bottom-14 w-full text-2xl md:text-7xl font-semibold bg-white text-primary py-2">
 						<span class="infiniteScroll whitespace-nowrap">- HTML - CSS - JAVASCRIPT - VUEJS - NUXTJS - TAILWINDCSS - SASS - NODEJS - FIREBASE - SQL&nbsp;</span>
 						<span class="infiniteScroll whitespace-nowrap">- HTML - CSS - JAVASCRIPT - VUEJS - NUXTJS - TAILWINDCSS - SASS - NODEJS - FIREBASE - SQL&nbsp;</span>
 					</div>
-					<div class="flex overflow-hidden absolute top-10 md:top-14 w-full text-2xl md:text-8xl font-semibold bg-white text-primary py-2">
+					<div class="flex overflow-hidden absolute top-10 md:top-14 w-full text-2xl md:text-7xl font-semibold bg-white text-primary py-2">
 						<span class="infiniteScrollInvert whitespace-nowrap">- HTML - CSS - JAVASCRIPT - VUEJS - NUXTJS - TAILWINDCSS - SASS - NODEJS - FIREBASE - SQL&nbsp;</span>
 						<span class="infiniteScrollInvert whitespace-nowrap">- HTML - CSS - JAVASCRIPT - VUEJS - NUXTJS - TAILWINDCSS - SASS - NODEJS - FIREBASE - SQL&nbsp;</span>
 					</div>
@@ -183,7 +183,7 @@
 								@click="copyEmail()"
 								class="hover-underline-animation"
 							>
-								Prefer to use email ?
+								Prefer to use a mail service ?
 							</button>
 						</div>
 						<div class="appearance-none w-full md:w-auto">
