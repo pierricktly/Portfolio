@@ -40,7 +40,7 @@
 						>Contact</a
 					>
 				</div>
-				<div class="md:absolute bottom-2 md:bottom-20 right-20 w-full md:w-auto">
+				<div class="md:absolute bottom-2 md:bottom-5 w-full">
 					<div class="flex justify-center items-center">
 						<div class="flex justify-center items-center gap-2">
 							<icon-long-arrow-down class="w-5 h-5" />
