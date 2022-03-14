@@ -36,7 +36,7 @@
 					<a
 						data-scroll-to
 						href="#contact"
-						class="bg-secondary px-5 py-2 roundedsw hover:bg-secondary/70"
+						class="bg-secondary px-5 py-2 rounded hover:bg-secondary/70"
 						>Contact</a
 					>
 				</div>
@@ -81,7 +81,7 @@
 							<icon-github class="w-8 h-8" />
 						</a>
 					</div>
-					<div class="flex overflow-hidden absolute bottom-10 md:bottom-14 w-full text-2xl md:text-7xl font-semibold bg-white text-primary py-2">
+					<div class="flex overflow-hidden absolute bottom-10 md:bottom-0 w-full text-2xl md:text-7xl font-semibold bg-white text-primary py-2">
 						<span class="infiniteScroll whitespace-nowrap">- HTML - CSS - JAVASCRIPT - VUEJS - NUXTJS - TAILWINDCSS - SASS - NODEJS - FIREBASE - SQL&nbsp;</span>
 						<span class="infiniteScroll whitespace-nowrap">- HTML - CSS - JAVASCRIPT - VUEJS - NUXTJS - TAILWINDCSS - SASS - NODEJS - FIREBASE - SQL&nbsp;</span>
 					</div>
