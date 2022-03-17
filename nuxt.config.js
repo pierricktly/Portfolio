@@ -7,15 +7,15 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Pierrick\'s Portfolio - Zokiasu',
+    title: 'Zokiasu\'s Portfolio - Frontend Developer',
     htmlAttrs: {
       lang: 'en'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Find all my latest works and a short presentation of myself. Don\'t hesitate to contact me if you want us to work together!.' },
-      { property: "og:site_name", content: "Pierrick's Portfolio - Zokiasu" },
+      { hid: 'description', name: 'description', content: 'Hi! I\'m Pierrick aka Zokiasu.\nFind all my latest works and a short presentation of myself. Don\'t hesitate to contact me if you want us to work together!.' },
+      { property: "og:site_name", content: "Zokiasu\'s Portfolio - Frontend Developer" },
       { hid: "og:type", property: "og:type", content: "website" },
       {
         hid: "og:url",
@@ -25,12 +25,12 @@ export default {
       {
         hid: "og:title",
         property: "og:title",
-        content: "Pierrick's Portfolio - Zokiasu",
+        content: "Zokiasu\'s Portfolio - Frontend Developer",
       },
       {
         hid: "og:description",
         property: "og:description",
-        content: "Find all my latest works and a short presentation of myself. Don\'t hesitate to contact me if you want us to work together!.",
+        content: "Hi! I\'m Pierrick aka Zokiasu.\nFind all my latest works and a short presentation of myself. Don\'t hesitate to contact me if you want us to work together!.",
       },
       {
         hid: "og:image",

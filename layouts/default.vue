@@ -8,7 +8,7 @@
     </main>
     <footer>
       <div id="copyright" data-scroll-section class="w-full container mx-auto text-base p-5 text-white">
-        <p class="text-center">©2022 Zokiasu - Portfolio</p>
+        <p class="text-center">©{{ new Date().getFullYear() }} Zokiasu - Portfolio</p>
       </div>
     </footer>
   </div>

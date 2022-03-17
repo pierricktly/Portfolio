@@ -198,7 +198,7 @@
 			</section>
 		</div>
 		<div
-			class="hidden absolute space-x-5 top-10 right-0 md:flex-row-reverse md:space-x-reverse md:bottom-20 md:left-0 md:top-auto md:right-auto md:flex items-center justify-center z-10"
+			class="hidden absolute space-x-5 top-10 right-0 md:flex-row-reverse md:space-x-reverse md:bottom-24 md:left-0 md:top-auto md:right-auto md:flex items-center justify-center z-10"
 		>
 			<a href="https://www.linkedin.com/in/pierrick-taily/" target="_blank">
 				<icon-linkedin
