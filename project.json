@@ -7,9 +7,9 @@
     "technology": ["VUEJS", "TAILWINDCSS", "FIREBASE"]
   },
   "1":{
-    "name":"Comeback",
+    "name":"Comeback v1",
     "image": "https://i.ibb.co/Sw4ZkC8/Comeback.png",
-    "link": "https://come-back.netlify.app/",
+    "link": "https://come-back-v1.netlify.app/",
     "description": "This web application is designed to track every new music album, single, EP release as well as report new releases by all the listed artists.",
     "technology": ["VUEJS", "NUXTJS", "TAILWINDCSS", "HEROKU", "POSTGRESQL", "FIREBASE"]
   },
