@@ -6,8 +6,7 @@
           viewBox="0 0 58 60" 
           fill="none" 
           xmlns="http://www.w3.org/2000/svg"
-          class="w-12 h-12"
-        >
+          class="w-12 h-12">
           <path 
             d="M8.27722 11.9193C8.32002 10.9349 8.40562 10.2394 8.53403 9.83275C11.1663 10.1966 
             13.8414 10.3785 16.5593 10.3785C19.2772 10.3785 21.2033 10.3143 22.3375 10.1859C22.7013 
@@ -108,9 +107,6 @@
     </div>
     <div>
       <ul class="flex space-x-20 text-xl">
-        <li>
-          <a data-scroll-to href="#home" class="hover-underline-animation">Home</a>
-        </li>
         <li>
           <a data-scroll-to href="#about" class="hover-underline-animation">About</a>
         </li>
