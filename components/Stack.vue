@@ -1,5 +1,5 @@
 <template>
-	<div class="space-y-1">
+	<div class="space-y-1 aspect-square">
 		<component :is="`icon-${iconName}`" class="w-16 h-16 mx-auto"></component>
 		<p class="uppercase font-medium text-center">{{text}}</p>
 	</div>
