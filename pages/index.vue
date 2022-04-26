@@ -37,7 +37,7 @@
 				</div>
 			</div>
 		</section>
-		<section id="home" class="hidden min-h-screen lg:flex">
+		<section id="home" class="hidden min-h-screen lg:flex -mt-20">
 			<div class="container flex my-auto mx-auto">
 				<div class="my-auto space-y-10">
 					<div>
@@ -101,7 +101,7 @@
 					You want to work with me? Tell me about your project and let's work
 					together!
 				</template>
-				<div class="my-52 text-center mx-auto">
+				<div class="my-44 text-center mx-auto">
 					<button
 						type="button"
 						@click="copyEmail()"
