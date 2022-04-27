@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto text-white flex justify-between py-5">
+  <div class="container mx-auto text-white flex justify-between py-5 px-5 lg:px-0">
     <div>
       <a href="/">
         <h1 class="font-bold text-2xl select-none">Zokiasu.</h1>
@@ -8,10 +8,10 @@
     <div>
       <ul class="flex space-x-20 text-xl">
         <li>
-          <a data-scroll-to href="#work" class="hover-underline-animation">Work</a>
+          <nuxt-link to="/work" class="hover-underline-animation">Work</nuxt-link>
         </li>
         <li>
-          <a data-scroll-to href="#contact" class="hover-underline-animation">Contact</a>
+          <nuxt-link to="/contact" class="hover-underline-animation">Contact</nuxt-link>
         </li>
       </ul>
     </div>

@@ -1,6 +1,6 @@
 <template>
-  <div class="container mx-auto p-5 flex flex-col justify-center items-center h-screen text-white space-y-14">
-    <!-- formulaire contact -->
+<section class="container mx-auto">
+  <div class="py-10 flex flex-col justify-center items-center text-white space-y-10">
     <h2 class="text-5xl font-bold text-secondary">Contact Me</h2>
     <p class="text-xl">You want to work with me? Tell me about your project and let's work together!</p>
     <form class="w-full max-w-7xl min-w-max space-y-10 z-40" @submit.prevent="sendEmail">
@@ -92,6 +92,7 @@
       </div>
     </form>
   </div>
+</section>
 </template>
 
 <script>
