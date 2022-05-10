@@ -8,10 +8,10 @@
     <div>
       <ul class="flex space-x-20 text-xl">
         <li>
-          <nuxt-link to="/work" class="hover-underline-animation">Work</nuxt-link>
+          <nuxt-link to="#work" class="hover-underline-animation">Portfolio</nuxt-link>
         </li>
         <li>
-          <nuxt-link to="/contact" class="hover-underline-animation">Contact</nuxt-link>
+          <nuxt-link to="#contact" class="hover-underline-animation">Contact</nuxt-link>
         </li>
       </ul>
     </div>

@@ -1,19 +1,24 @@
 <template>
-	<section class="mx-auto space-y-8 p-8">
-		<h2 class="text-center text-secondary font-bold text-4xl">
+	<section :id="idSection" class="mx-auto space-y-8 p-8">
+		<h2 class="text-center text-secondary font-bold text-2xl lg:text-4xl">
 			<slot name="title"/>
 		</h2>
-		<p class="text-center text-xl">
+		<p v-if="$slots.subtitle" class="text-center text-xl">
 			<slot name="subtitle"/>
 		</p>
-		<div>
-			<slot name="default"/>
-		</div>
+		<slot name="default"/>
 	</section>
 </template>
 
 <script>
 export default {
-	name: 'StackSection'
+	name: 'StackSection',
+
+	props: {
+		idSection: {
+			type: String,
+			default: '',
+		},
+	},
 }
 </script>

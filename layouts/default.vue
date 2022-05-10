@@ -1,6 +1,6 @@
 <template>
   <div class="scroll-smooth">
-    <header class="sticky top-0 z-10 transition-all transform duration-700 ease-out">
+    <header class="sticky top-0 pt-5 z-10 transition-all transform duration-700 ease-out">
       <navigation />
     </header>
     <main>
@@ -29,10 +29,12 @@
     methods: {
       handleScroll() {
         this.scroll = window.scrollY;
-        if (this.scroll > window.innerHeight * 0.01) {
+        if (this.scroll > window.innerHeight * 0.05) {
           this.$el.querySelector('header').classList.add('bg-primary');
+          this.$el.querySelector('header').classList.remove('pt-5');
         } else {
           this.$el.querySelector('header').classList.remove('bg-primary');
+          this.$el.querySelector('header').classList.add('pt-5');
         }
       },
     },
