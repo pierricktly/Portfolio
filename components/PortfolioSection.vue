@@ -13,20 +13,21 @@
 				</li>
 			</ul>
 		</div>
-		<transition-group name="list-complete" tag="div" class="w-full">
-			<nuxt-link
+		<transition-group name="list-complete" tag="div" class="w-full space-y-10">
+			<a
 				v-for="(project, index) in projectListFilter"
 				:key="`project_${project.name}_${index}`"
-				to="#"
+				:href="project.link"
+				target="_blank"
 				class="flex flex-col space-y-3 lg:space-y-0 lg:flex-row lg:items-end rounded-md p-5 hover:bg-[#001D37] transition-all duration-500 ease-in-out cursor-pointer"
 				:class="index%2 == 1 ? 'lg:flex-row-reverse gap-x-8' : 'lg:space-x-8'"
 			>
 				<img
 					:src="project.image"
 					:alt="project.name"
-					class="rounded aspect-video"
+					class="rounded aspect-video h-[19rem] object-cover drop-shadow border border-white/30"
 				/>
-				<div class="space-y-2 mb-3" :class="index%2 == 1 ? 'lg:text-right' : ''">
+				<div class="space-y-3 mb-5" :class="index%2 == 1 ? 'lg:text-right' : ''">
 					<h3 class="text-2xl font-semibold">
 						{{ project.name }}
 					</h3>
@@ -41,8 +42,17 @@
 							<component :is="`icon-${stack}`" class="w-6 h-6" />
 						</li>
 					</ul>
+					<ul class="flex gap-2" :class="index%2 == 1 ? 'lg:justify-end' : ''">
+						<li
+							v-for="theme in project.theme"
+							:key="`${project.name}_${index}_${theme}`"
+							class="uppercase border border-white rounded px-2"
+						>
+							{{ theme }}
+						</li>
+					</ul>
 				</div>
-			</nuxt-link>
+			</a>
 		</transition-group>
 	</div>
 </template>

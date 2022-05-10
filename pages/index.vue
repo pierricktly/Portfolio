@@ -131,54 +131,40 @@
 </template>
 
 <script>
-import IconFirebase from "~/components/Icon/IconFirebase.vue";
-import IconNuxt from "~/components/Icon/IconNuxt.vue";
-import IconTailwind from "~/components/Icon/IconTailwind.vue";
-import IconVue from "~/components/Icon/IconVue.vue";
 export default {
-	components: { IconFirebase, IconTailwind, IconNuxt, IconVue },
 	name: "Home",
-
-	data() {
-		return {};
-	},
 
 	projects() {
 		return [
 			{
-				name: "Project 1",
-				description:
-					"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-				image: "https://picsum.photos/500/300",
-				link: "",
-				stack: ["vue", "nuxt", "tailwind"],
-				theme: ["design"],
-			},
-			{
-				name: "Project 2",
-				description:
-					"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-				image: "https://picsum.photos/500/300",
-				link: "",
-				stack: ["vue", "nuxt", "tailwind"],
+				name:"Asia Exchange Finder",
+				image: "https://i.ibb.co/vLGYkj6/AEF.png",
+				link: "https://asiaexchangefinder.asiastudeler.com/",
+				description: "This is my first vu application, a community webapp. It's an application to find all the universities offering university exchanges in the Asian countries.",
+				stack: ["vue", "tailwind", "firebase"],
 				theme: ["development"],
 			},
 			{
-				name: "Project 3",
-				description:
-					"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-				image: "https://picsum.photos/500/300",
-				link: "",
-				stack: ["vue", "nuxt", "tailwind"],
+    		name:"Comeback v1",
+    		image: "https://i.ibb.co/Sw4ZkC8/Comeback.png",
+    		link: "https://come-back-v1.netlify.app/",
+    		description: "This is a web application designed to track every new music album, single, EP release as well as report new releases by all the listed artists. Backend by CozyCodeur.",
+				stack: ["vue", "nuxt", "tailwind", "heroku", "postgre", "firebase"],
 				theme: ["development"],
 			},
 			{
-				name: "Project 4",
-				description:
-					"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-				image: "https://picsum.photos/500/300",
-				link: "",
+				name:"Portfolio",
+				image: "https://i.ibb.co/SyMwxZq/Portfolio.png",
+				link: "https://zokiasu.com/",
+				description: "This project is my portfolio, which gathers the last projects I was able to realize as well as a short description of myself and the technologies I use.",
 				stack: ["vue", "nuxt", "tailwind"],
+				theme: ["development", "design"],
+			},
+			{
+				name:"Know It",
+				image: "https://i.ibb.co/WGPtYZd/31d337ec-d0d6-41d6-a0df-ea4030746ad5.webp",
+				link: "https://www.know-it.bluepopcorn.fun/",
+				description: "This project is a BLUEPOPCORN PRODUCTION project, it's a web application designed for mobile devices. It's a mini game application with the aim of practicing English.",
 				theme: ["design"],
 			},
 		];
