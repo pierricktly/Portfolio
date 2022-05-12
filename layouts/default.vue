@@ -1,30 +1,44 @@
 <template>
-  <div  data-scroll-container>
-    <header class="absolute w-full top-0 bg-primary z-50">
-      <navigation/>
+  <div class="scroll-smooth">
+    <header class="sticky top-0 md:pt-5 z-10 transition-all transform duration-700 ease-out">
+      <navigation />
     </header>
     <main>
       <Nuxt />
     </main>
     <footer>
-      <div id="copyright" data-scroll-section class="w-full container mx-auto text-base p-5 text-white">
-        <p class="text-center">©{{ new Date().getFullYear() }} Zokiasu - Portfolio</p>
-      </div>
+      <footer-section />
     </footer>
   </div>
 </template>
 
 <script>
   export default {
-    transition: 'page',  
-
-    mounted() {
-      this.scroll = new this.locomotiveScroll({
-        el: document.querySelector('[data-scroll-container]'),
-        smooth: true
-      });
+    transition: 'page',
+    data() {
+      return {
+        scroll: 0,
+      };
     },
-  }
+    mounted() {
+      window.addEventListener('scroll', this.handleScroll);
+    },
+    destroyed() {
+      window.removeEventListener('scroll', this.handleScroll);
+    },
+    methods: {
+      handleScroll() {
+        this.scroll = window.scrollY;
+        if (this.scroll > window.innerHeight * 0.05) {
+          this.$el.querySelector('header').classList.add('bg-primary');
+          this.$el.querySelector('header').classList.remove('md:pt-5');
+        } else {
+          this.$el.querySelector('header').classList.remove('bg-primary');
+          this.$el.querySelector('header').classList.add('md:pt-5');
+        }
+      },
+    },
+  };
 </script>
 
 <style>

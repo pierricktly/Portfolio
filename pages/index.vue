@@ -1,266 +1,176 @@
 <template>
 	<div class="text-white">
-		<div
-			class="overflow-y-scroll flex flex-col lg:text-xl overflow-x-hidden mx-auto"
+		<section
+			id="home"
+			class="w-full min-h-screen mx-auto p-5 flex flex-col space-y-20 items-center lg:hidden"
 		>
-			<section
-				id="home"
-				data-scroll-section
-				class="w-full min-h-screen mx-auto p-5 lg:p-0 flex flex-col justify-between md:justify-center items-center gap-14"
-			>
-				<div class="w-full flex justify-center">
-					<h1
-						class="text-center whitespace-pre-line leading-loose text-3xl lg:text-4xl"
-					>
-						Hello, I'm
-						<span class="font-bold text-5xl lg:text-7xl text-secondary"
-							>Pierrick</span
-						>
-						a Frontend Developer
-					</h1>
-				</div>
-				<div class="w-full flex justify-center">
-					<img
-						alt="Profile picture"
-						src="../assets/images/profile_picture.png"
-						class="bg-gray-500 w-48 lg:w-80 xl:w-96 rounded-full aspect-square"
-					/>
-				</div>
-				<div data-scroll class="space-x-5 text-xfl w-full flex justify-center">
-					<a
-						data-scroll-to
-						href="#about"
-						class="border border-secondary px-5 py-2 text-secondary rounded hover:bg-secondary/10"
-						>About</a
-					>
-					<a
-						data-scroll-to
-						href="#contact"
-						class="bg-secondary px-5 py-2 rounded hover:bg-secondary/70"
-						>Contact</a
-					>
-				</div>
-				<div class="md:absolute bottom-2 md:bottom-5 w-full">
-					<div class="flex justify-center items-center">
-						<div class="flex justify-center items-center gap-2">
-							<icon-long-arrow-down class="w-5 h-5" />
-							<p class="font-semibold">Scroll to see more</p>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section
-				id="about"
-				data-scroll-section
-				class="w-full min-h-screen mx-auto relative flex flex-col justify-center items-center"
-			>
-				<div
-					class="flex flex-col items-center gap-10 md:space-y-0"
+			<div class="mx-auto">
+				<h1
+					class="text-center whitespace-pre-line leading-loose text-2xl lg:text-4xl"
 				>
-					<div>
-						<img
-							alt="Profile picture"
-							src="../assets/images/profile_picture.png"
-							class="bg-gray-500 w-48 lg:w-80 rounded-full aspect-square"
-						/>
-					</div>
-					<div class="px-5 lg:px-0">
-						<p class="text-center whitespace-normal text-xl lg:text-2xl max-w-2xl z-10" >
-							I’m a french frontend developer, based in Paris. 
-							Passionate about development and travel, I am surrounded by a multitude of sources of inspiration for new ideas, new projects or just simple improvements.
+					Hello, je m'appelle
+					<span class="font-bold text-5xl lg:text-7xl text-secondary"
+						>Pierrick</span
+					>
+					Je suis développeur front-end
+				</h1>
+			</div>
+			<div class="mx-auto">
+				<img
+					alt="Profile picture"
+					src="../assets/images/profile_picture.png"
+					class="bg-gray-500 w-48 rounded-full aspect-square"
+				/>
+			</div>
+			<div class="text-xl mx-auto">
+				<a
+					data-scroll-to
+					href="#contact"
+					class="bg-secondary px-5 py-2 rounded hover:bg-secondary/70"
+					>Contact</a
+				>
+			</div>
+			<div class="bottom-2 w-full md:absolute">
+				<div class="mx-auto items-center text-center">
+					<icon-mouse class="w-8 h-8 mx-auto animate-bounce" />
+					<p class="font-semibold">Scroll to see more</p>
+				</div>
+			</div>
+		</section>
+		<section id="home" class="hidden min-h-screen lg:flex -mt-20">
+			<div class="container flex my-auto mx-auto">
+				<div class="my-auto space-y-10">
+					<div class="space-y-10">
+						<p
+							class="text-4xl lg:text-[5rem] lg:whitespace-preline lg:leading-none leading-tight"
+						>
+							Hello, je m'appelle
+							<span class="text-secondary font-semibold">Pierrick</span>
+						</p>
+						<p
+							class="text-4xl lg:whitespace-preline lg:leading-none leading-tight"
+						>
+							Je suis développeur front-end
 						</p>
 					</div>
-					<div class="flex space-x-5 md:hidden">
-						<a
-							href="https://www.linkedin.com/in/pierrick-taily/"
-							target="_blank"
-						>
-							<icon-linkedin class="w-8 h-8" />
-						</a>
-						<a href="https://github.com/Zokiasu" target="_blank">
-							<icon-github class="w-8 h-8" />
-						</a>
-					</div>
-					<div class="flex overflow-hidden absolute bottom-10 md:bottom-0 w-full text-2xl md:text-7xl font-semibold bg-white text-primary py-2">
-						<span class="infiniteScroll whitespace-nowrap">- HTML - CSS - JAVASCRIPT - VUEJS - NUXTJS - TAILWINDCSS - SASS - NODEJS - FIREBASE - SQL&nbsp;</span>
-						<span class="infiniteScroll whitespace-nowrap">- HTML - CSS - JAVASCRIPT - VUEJS - NUXTJS - TAILWINDCSS - SASS - NODEJS - FIREBASE - SQL&nbsp;</span>
-					</div>
-					<div class="flex overflow-hidden absolute top-10 md:top-14 w-full text-2xl md:text-7xl font-semibold bg-white text-primary py-2">
-						<span class="infiniteScrollInvert whitespace-nowrap">- HTML - CSS - JAVASCRIPT - VUEJS - NUXTJS - TAILWINDCSS - SASS - NODEJS - FIREBASE - SQL&nbsp;</span>
-						<span class="infiniteScrollInvert whitespace-nowrap">- HTML - CSS - JAVASCRIPT - VUEJS - NUXTJS - TAILWINDCSS - SASS - NODEJS - FIREBASE - SQL&nbsp;</span>
-					</div>
 				</div>
-			</section>
-			<section
-				id="work"
-				data-scroll-section
-				class="w-full min-h-screen mx-auto p-5 lg:p-0 flex flex-col justify-center items-center space-y-10 z-10"
-			>
-				<h2 class="text-5xl font-bold text-secondary">My work</h2>
-				<div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-					<work-card
-						v-for="(work, index) in works"
-						:key="index"
-						:work-name="work.name"
-						:work-image="work.image"
-						:work-description="work.description"
-						:work-link="work.link"
-						:work-technology="work.technology"
-						class="max-h-80"
+				<div class="absolute hidden lg:block right-0 -translate-y-20 -z-10">
+					<img
+						src="../assets/images/redpanda.png"
+						alt=""
+						class="xl:h-[35rem]"
 					/>
 				</div>
-			</section>
-			<section
-				id="contact"
-				data-scroll-section
-				class="w-full container min-h-screen mx-auto p-5 lg:p-0 flex flex-col justify-center items-center space-y-10 z-10"
-			>
-				<h2 class="text-5xl font-bold text-secondary">Contact Me</h2>
-				<p>
-					You want to work with me? Tell me about your project and let's work
-					together!
-				</p>
-				<form
-					class="w-full max-w-7xl min-w-max space-y-10 z-40"
-					@submit.prevent="sendEmail"
-				>
-					<div class="flex flex-wrap">
-						<div class="relative w-full appearance-none">
-							<input
-								id="name"
-								name="name"
-								type="text"
-								v-model="name"
-								placeholder="Enter your name"
-								class="peer placeholder-transparent tracking-wide py-2 px-3 leading-relaxed appearance-none block w-full rounded bg-primary border border-white focus:bg-white/30 focus:outline-none"
-							/>
-							<label
-								for="name"
-								class="absolute left-0 -top-8 transition-all peer-placeholder-shown:top-2 peer-placeholder-shown:left-3 peer-focus:-top-8 peer-focus:left-0"
-								>Enter your name</label
-							>
-						</div>
-					</div>
-					<div class="flex flex-wrap">
-						<div class="relative w-full appearance-none">
-							<input
-								id="email"
-								name="email"
-								type="email"
-								v-model="email"
-								placeholder="Enter your email address"
-								class="peer placeholder-transparent tracking-wide py-2 px-3 leading-relaxed appearance-none block w-full rounded bg-primary border border-white focus:bg-white/30 focus:outline-none"
-							/>
-							<label
-								for="email"
-								class="absolute left-0 -top-8 transition-all peer-placeholder-shown:top-2 peer-placeholder-shown:left-3 peer-focus:-top-8 peer-focus:left-0"
-								>Enter your email address</label
-							>
-						</div>
-					</div>
-					<div class="flex flex-wrap">
-						<div class="relative w-full appearance-none">
-							<textarea
-								id="message"
-								name="message"
-								v-model="message"
-								placeholder="Enter your message"
-								class="peer placeholder-transparent tracking-wide py-2 px-3 leading-relaxed appearance-none block w-full h-52 rounded bg-primary border border-white focus:bg-white/30 focus:outline-none"
-							/>
-							<label
-								for="message"
-								class="absolute left-0 -top-8 transition-all peer-placeholder-shown:top-2 peer-placeholder-shown:left-3 peer-focus:-top-8 peer-focus:left-0"
-								>Enter your message</label
-							>
-						</div>
-					</div>
-					<div
-						class="w-full flex flex-col-reverse md:flex-row gap-3 justify-center items-center md:justify-between md:items-start"
-					>
-						<div class="flex justify-center overflow-hidden">
-							<button
-								type="button"
-								@click="copyEmail()"
-								class="hover-underline-animation"
-							>
-								Prefer to use a mail service ?
-							</button>
-						</div>
-						<div class="appearance-none w-full md:w-auto">
-							<input
-								type="submit"
-								value="Send"
-								class="cursor-pointer w-full md:w-auto tracking-wide leading-relaxed appearance-none block rounded bg-secondary hover:bg-secondary/70 px-5 py-1"
-							/>
-						</div>
-					</div>
-				</form>
-			</section>
-		</div>
-		<div
-			class="hidden absolute space-x-5 top-10 right-0 md:flex-row-reverse md:space-x-reverse md:bottom-24 md:left-0 md:top-auto md:right-auto md:flex items-center justify-center z-10"
-		>
-			<a href="https://www.linkedin.com/in/pierrick-taily/" target="_blank">
-				<icon-linkedin
-					class="w-8 h-8 hover:text-secondary transition-all duration-500 ease-in-out"
-				/>
-			</a>
-			<a href="https://github.com/Zokiasu" target="_blank">
-				<icon-github
-					class="w-8 h-8 hover:text-secondary transition-all duration-500 ease-in-out"
-				/>
-			</a>
-			<div>
-				<div class="border-b-2 border-white bg-red-500 w-10 lg:w-20"></div>
 			</div>
-		</div>
+			<div class="bottom-2 lg:bottom-5 w-full md:absolute">
+				<div class="mx-auto items-center text-center">
+					<icon-mouse class="w-8 h-8 mx-auto animate-bounce" />
+					<p class="font-semibold">Scroll</p>
+				</div>
+			</div>
+		</section>
+		<page-section idSection="work" class="py-20">
+			<template #title> Mes projets </template>
+			<template>
+				<portfolio-section :projects="$options.projects()" />
+			</template>
+		</page-section>
+		<page-section
+			idSection="stack"
+			class="bg-[#17202C] border-y border-primary/50 shadow-inner space-y-14 py-20"
+		>
+			<template #title>Mes technos</template>
+			<ul class="flex flex-wrap gap-8 justify-evenly mx-auto">
+				<li class="space-y-5">
+					<icon-vue
+						class="bg-gray-400/10 border border-gray-400/10 p-10 rounded-3xl w-40 h-40 mx-auto cursor-pointer transition ease-in-out hover:-translate-y-1 hover:bg-[#001D37]/30 hover:border-white/10 hover:scale-110 duration-500"
+					/>
+					<p class="text-xl font-semibold text-center">Vue</p>
+				</li>
+				<li class="space-y-5">
+					<icon-nuxt
+						class="bg-gray-400/10 border border-gray-400/10 p-10 rounded-3xl w-40 h-40 mx-auto cursor-pointer transition ease-in-out hover:-translate-y-1 hover:bg-[#001D37]/30 hover:border-white/10 hover:scale-110 duration-500"
+					/>
+					<p class="text-xl font-semibold text-center">Nuxt</p>
+				</li>
+				<li class="space-y-5">
+					<icon-tailwind
+						class="bg-gray-400/10 border border-gray-400/10 p-10 rounded-3xl w-40 h-40 mx-auto cursor-pointer transition ease-in-out hover:-translate-y-1 hover:bg-[#001D37]/30 hover:border-white/10 hover:scale-110 duration-500"
+					/>
+					<p class="text-xl font-semibold text-center">Tailwind</p>
+				</li>
+				<li class="space-y-5">
+					<icon-firebase
+						class="bg-gray-400/10 border border-gray-400/10 p-10 rounded-3xl w-40 h-40 mx-auto cursor-pointer transition ease-in-out hover:-translate-y-1 hover:bg-[#001D37]/30 hover:border-white/10 hover:scale-110 duration-500"
+					/>
+					<p class="text-xl font-semibold text-center">Firebase</p>
+				</li>
+			</ul>
+		</page-section>
+		<page-section idSection="contact" class="py-20">
+			<template #title>Besoin d'un développeur ?</template>
+			<div class="space-y-20 font-semibold mt-10">
+				<div class="text-center text-xl space-y-20">
+					<p>Une idée ? Un projet ? Vous souhaitez travaillez avec moi ?</p>
+					<button @click="copyEmail()" class="hover-underline-animation">
+						Envoyez moi un mail
+					</button>
+				</div>
+				<p class="text-center text-xl">OU</p>
+				<div class="mx-auto text-center">
+					<a
+						href="mailto:pierrick.tly@gmail.com"
+						class="border border-secondary bg-secondary/10 py-6 px-4 rounded transition-all ease-in-out duration-500 hover:bg-secondary hover:-translate-y-1 inline-block"
+					>
+						Contactez-moi !
+					</a>
+				</div>
+			</div>
+		</page-section>
 	</div>
 </template>
 
 <script>
-import data from "~/project.json";
-import { init } from "@emailjs/browser";
-import emailjs from "@emailjs/browser";
-init("user_LjdyAMDHMFXk6Or6Ffd5a");
-
 export default {
-	name: "app",
+	name: "Home",
 
-	data() {
-		return {
-			works: data,
-			name: "",
-			email: "",
-			message: "",
-			scroll: null,
-			scrollpx: 0,
-		};
+	projects() {
+		return [
+			{
+				name:"Asia Exchange Finder",
+				image: "https://i.ibb.co/vLGYkj6/AEF.png",
+				link: "https://asiaexchangefinder.asiastudeler.com/",
+				description: "Ceci est ma première application vue, une application web communautaire. C'est une application pour trouver tous les établissements offrant des échanges d'universités dans les pays asiatiques.",
+				stack: ["vue", "tailwind", "firebase"],
+				theme: ["development"],
+			},
+			{
+    		name:"Comeback v1",
+    		image: "https://i.ibb.co/Sw4ZkC8/Comeback.png",
+    		link: "https://come-back-v1.netlify.app/",
+    		description: "Cette application est un site web créé pour suivre les nouveaux albums, singles, EPs et annonces de nouveaux albums par les artistes. Backend par CozyCodeur.",
+				stack: ["vue", "nuxt", "tailwind", "heroku", "postgre", "firebase"],
+				theme: ["development"],
+			},
+			{
+				name:"Portfolio",
+				image: "https://i.ibb.co/SyMwxZq/Portfolio.png",
+				link: "https://zokiasu.com/",
+				description: "Ce projet est mon portfolio, qui regroupe les derniers projets que j'ai pu réaliser ainsi que une courte description de moi-même et les technologies que j'utilise.",
+				stack: ["vue", "nuxt", "tailwind"],
+				theme: ["development", "design"],
+			},
+			{
+				name:"Know It",
+				image: "https://i.ibb.co/WGPtYZd/31d337ec-d0d6-41d6-a0df-ea4030746ad5.webp",
+				link: "https://www.know-it.bluepopcorn.fun/",
+				description: "Ce projet est un projet réaliser pour BLUEPOPCORN PRODUCTION, il s'agit d'une application web dédiée aux appareils mobiles. C'est une application regroupant des mini jeux avec l'objectif de pratiquer l'anglais.",
+				theme: ["design"],
+			},
+		];
 	},
 
 	methods: {
-		sendEmail: function (e) {
-			if (this.message != "" || this.message != undefined) {
-				emailjs
-					.sendForm(
-						"service_98p270n",
-						"template_0sow3ga",
-						e.target,
-						"user_LjdyAMDHMFXk6Or6Ffd5a"
-					)
-					.then(
-						(result) => {
-							console.log("SUCCESS!", result.status, result.text);
-							this.message = "";
-							this.name = "";
-							this.email = "";
-						},
-						(error) => {
-							console.log("FAILED...", error);
-						}
-					);
-			}
-		},
-
 		copyEmail() {
 			navigator.clipboard.writeText("pierrick.tly@gmail.com");
 			this.$toasted.show("Email copied!", {
@@ -271,39 +181,3 @@ export default {
 	},
 };
 </script>
-
-<style scoped>
-.hide-picture {
-	opacity: 0;
-	transition: opacity 1s;
-}
-.scroll-class-opacity {
-	opacity: 1;
-}
-
-.infiniteScroll {
-	animation: scrollInfinit 25s linear infinite;
-}
-
-@keyframes scrollInfinit {
-	0% {
-		transform: translateX(0);
-	}
-	100% {
-		transform: translateX(-100%);
-	}
-}
-
-.infiniteScrollInvert {
-	animation: scrollInfinitInvert 25s linear infinite;
-}
-
-@keyframes scrollInfinitInvert {
-	0% {
-		transform: translateX(-100%);
-	}
-	100% {
-		transform: translateX(0);
-	}
-}
-</style>
