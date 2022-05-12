@@ -8,7 +8,7 @@
 				<h1
 					class="text-center whitespace-pre-line leading-loose text-2xl lg:text-4xl"
 				>
-					Salut, je m'appelle
+					Hello, je m'appelle
 					<span class="font-bold text-5xl lg:text-7xl text-secondary"
 						>Pierrick</span
 					>
@@ -44,7 +44,7 @@
 						<p
 							class="text-4xl lg:text-[5rem] lg:whitespace-preline lg:leading-none leading-tight"
 						>
-							Salut, je m'appelle
+							Hello, je m'appelle
 							<span class="text-secondary font-semibold">Pierrick</span>
 						</p>
 						<p
@@ -140,7 +140,7 @@ export default {
 				name:"Asia Exchange Finder",
 				image: "https://i.ibb.co/vLGYkj6/AEF.png",
 				link: "https://asiaexchangefinder.asiastudeler.com/",
-				description: "This is my first vu application, a community webapp. It's an application to find all the universities offering university exchanges in the Asian countries.",
+				description: "Ceci est ma première application vue, une application web communautaire. C'est une application pour trouver tous les établissements offrant des échanges d'universités dans les pays asiatiques.",
 				stack: ["vue", "tailwind", "firebase"],
 				theme: ["development"],
 			},
@@ -148,7 +148,7 @@ export default {
     		name:"Comeback v1",
     		image: "https://i.ibb.co/Sw4ZkC8/Comeback.png",
     		link: "https://come-back-v1.netlify.app/",
-    		description: "This is a web application designed to track every new music album, single, EP release as well as report new releases by all the listed artists. Backend by CozyCodeur.",
+    		description: "Cette application est un site web créé pour suivre les nouveaux albums, singles, EPs et annonces de nouveaux albums par les artistes. Backend par CozyCodeur.",
 				stack: ["vue", "nuxt", "tailwind", "heroku", "postgre", "firebase"],
 				theme: ["development"],
 			},
@@ -156,7 +156,7 @@ export default {
 				name:"Portfolio",
 				image: "https://i.ibb.co/SyMwxZq/Portfolio.png",
 				link: "https://zokiasu.com/",
-				description: "This project is my portfolio, which gathers the last projects I was able to realize as well as a short description of myself and the technologies I use.",
+				description: "Ce projet est mon portfolio, qui regroupe les derniers projets que j'ai pu réaliser ainsi que une courte description de moi-même et les technologies que j'utilise.",
 				stack: ["vue", "nuxt", "tailwind"],
 				theme: ["development", "design"],
 			},
@@ -164,7 +164,7 @@ export default {
 				name:"Know It",
 				image: "https://i.ibb.co/WGPtYZd/31d337ec-d0d6-41d6-a0df-ea4030746ad5.webp",
 				link: "https://www.know-it.bluepopcorn.fun/",
-				description: "This project is a BLUEPOPCORN PRODUCTION project, it's a web application designed for mobile devices. It's a mini game application with the aim of practicing English.",
+				description: "Ce projet est un projet réaliser pour BLUEPOPCORN PRODUCTION, il s'agit d'une application web dédiée aux appareils mobiles. C'est une application regroupant des mini jeux avec l'objectif de pratiquer l'anglais.",
 				theme: ["design"],
 			},
 		];

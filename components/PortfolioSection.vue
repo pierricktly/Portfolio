@@ -46,7 +46,7 @@
 						<li
 							v-for="theme in project.theme"
 							:key="`${project.name}_${index}_${theme}`"
-							class="uppercase border border-white rounded px-2"
+							class="uppercase"
 						>
 							{{ theme }}
 						</li>
