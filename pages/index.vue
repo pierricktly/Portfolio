@@ -8,7 +8,7 @@
 				<h1
 					class="text-center whitespace-pre-line leading-loose text-2xl lg:text-4xl"
 				>
-					Salut, je m'appelle
+					Hello, je m'appelle
 					<span class="font-bold text-5xl lg:text-7xl text-secondary"
 						>Pierrick</span
 					>
@@ -44,7 +44,7 @@
 						<p
 							class="text-4xl lg:text-[5rem] lg:whitespace-preline lg:leading-none leading-tight"
 						>
-							Salut, je m'appelle
+							Hello, je m'appelle
 							<span class="text-secondary font-semibold">Pierrick</span>
 						</p>
 						<p

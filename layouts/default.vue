@@ -42,6 +42,12 @@
 </script>
 
 <style>
+  @import url('https://fonts.googleapis.com/css2?family=Maven+Pro&family=Roboto+Flex:opsz,wght@8..144,300&display=swap');
+  
+  html {
+    font-family: 'Maven Pro', sans-serif;
+  }
+
   .page-enter-active, .page-leave-active { transition: opacity .5s; }
   .page-enter, .page-leave-active { opacity: 0; }
 </style>
