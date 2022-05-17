@@ -109,7 +109,7 @@
 		</page-section>
 		<page-section idSection="contact" class="py-20">
 			<template #title>Besoin d'un développeur ?</template>
-			<template #subtitle><p>Une idée ? Un projet ? Vous souhaitez travaillez avec moi ?</p></template>
+			<template #subtitle><p>Une idée ? Un projet ? N'hésitez pas contactez-moi !</p></template>
 			<div class="py-40 space-y-10 lg:space-y-0 lg:flex lg:space-x-10 lg:justify-center lg:items-center">
 				<div class="text-center lg:text-xl space-y-20">
 					<button @click="copyEmail()" class="bg-secondary py-3 lg:py-6 px-4 rounded 

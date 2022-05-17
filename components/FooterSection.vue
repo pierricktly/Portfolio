@@ -4,7 +4,7 @@
 			<div class="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-5">
 				<div class="space-y-1 max-w-sm">
 					<h2 class="font-bold text-5xl">Zokiasu.</h2>
-					<p>Je m'appel Pierrick TAÏLY, je suis étudiant en développement web frontend et freelance.</p>
+					<p>Je m'appelle Pierrick TAÏLY, je suis étudiant en développement web frontend et freelance.</p>
 				</div>
 				<div class="space-y-3">
 					<h3 class="font-semibold lg:px-2 text-xl">Navigation</h3>
