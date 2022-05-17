@@ -19,22 +19,21 @@
 				:key="`project_${project.name}_${index}`"
 				:href="project.link"
 				target="_blank"
-				class="flex flex-col space-y-3 lg:space-y-0 lg:flex-row lg:items-end rounded-md p-5 hover:bg-[#001D37] transition-all duration-500 ease-in-out cursor-pointer"
-				:class="index%2 == 1 ? 'lg:flex-row-reverse gap-x-8' : 'lg:space-x-8'"
-			>
+				class="flex flex-col space-y-3 rounded-md p-8 bg-[#17202C] hover:bg-[#222e3f] transition-all ease-in-out duration-500 lg:space-y-0 lg:flex-row lg:items-end lg:space-x-8"
+				>
 				<img
 					:src="project.image"
 					:alt="project.name"
-					class="rounded aspect-video h-[19rem] object-cover drop-shadow border border-white/30"
+					class="rounded aspect-video h-[17rem] object-cover drop-shadow border border-white/30"
 				/>
-				<div class="space-y-3 mb-5" :class="index%2 == 1 ? 'lg:text-right' : ''">
+				<div class="space-y-3 mb-5" >
 					<h3 class="text-2xl font-semibold">
 						{{ project.name }}
 					</h3>
 					<p class="lg:text-lg xl:max-w-4xl">
 						{{ project.description }}
 					</p>
-					<ul class="flex lg:space-x-3" :class="index%2 == 1 ? 'lg:justify-end' : ''">
+					<ul class="flex lg:space-x-3" >
 						<li
 							v-for="stack in project.stack"
 							:key="`${project.name}_${index}_${stack}`"
@@ -42,7 +41,7 @@
 							<component :is="`icon-${stack}`" class="w-6 h-6" />
 						</li>
 					</ul>
-					<ul class="flex gap-2" :class="index%2 == 1 ? 'lg:justify-end' : ''">
+					<ul class="flex gap-2" >
 						<li
 							v-for="theme in project.theme"
 							:key="`${project.name}_${index}_${theme}`"
