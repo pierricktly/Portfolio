@@ -14,7 +14,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Hi! I\'m Pierrick aka Zokiasu.\nFind all my latest works and a short presentation of myself. Don\'t hesitate to contact me if you want us to work together!.' },
+      { hid: 'description', name: 'description', content: 'Salut! Je m\'appel Pierrick aka Zokiasu.\nRetrouver tout mes projets dernier sur mon portfolio. N\'hésitez pas à me contacter si vous souhaitez que nous travaillons ensemble !.' },
       { property: "og:site_name", content: "Zokiasu | Pierrick | Portfolio | Front-end Developer" },
       { hid: "og:type", property: "og:type", content: "website" },
       {
@@ -30,7 +30,7 @@ export default {
       {
         hid: "og:description",
         property: "og:description",
-        content: "Hi! I\'m Pierrick aka Zokiasu.\nFind all my latest works and a short presentation of myself. Don\'t hesitate to contact me if you want us to work together!.",
+        content: "Salut! Je m\'appel Pierrick aka Zokiasu.\nRetrouver tout mes projets dernier sur mon portfolio. N\'hésitez pas à me contacter si vous souhaitez que nous travaillons ensemble !.",
       },
       {
         hid: "og:image",
