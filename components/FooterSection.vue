@@ -2,9 +2,9 @@
 	<div class="bg-[#17202C] text-white">
 		<div class="container mx-auto px-5 py-8 space-y-10 lg:space-y-0">
 			<div class="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-5">
-				<div class="space-y-1">
+				<div class="space-y-1 max-w-sm">
 					<h2 class="font-bold text-5xl">Zokiasu.</h2>
-					<p>Développeur Web Frontend - Freelance</p>
+					<p>Je m'appel Pierrick TAÏLY, je suis étudiant en développement web frontend et freelance.</p>
 				</div>
 				<div class="space-y-3">
 					<h3 class="font-semibold lg:px-2 text-xl">Navigation</h3>
@@ -31,19 +31,19 @@
 							target="_blank"
 							class="rounded hover:bg-primary lg:px-2 py-1 transition-all ease-in-out duration-300">
 							Linkedin
-							</a>
+						</a>
+						<a
+							href="https://www.malt.fr/profile/zokiasu"
+							target="_blank"
+							class="rounded hover:bg-primary lg:px-2 py-1 transition-all ease-in-out duration-300">
+							Malt
+						</a>
 						<a
 							href="https://github.com/Zokiasu"
 							target="_blank"
 							class="rounded hover:bg-primary lg:px-2 py-1 transition-all ease-in-out duration-300">
 							Github
-							</a>
-						<a
-							href="https://twitter.com/zokiasu"
-							target="_blank"
-							class="rounded hover:bg-primary lg:px-2 py-1 transition-all ease-in-out duration-300">
-							Twitter
-							</a>
+						</a>
 					</div>
 				</div>
 			</div>
