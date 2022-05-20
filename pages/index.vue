@@ -110,21 +110,19 @@
 		<page-section idSection="contact" class="py-20">
 			<template #title>Besoin d'un développeur ?</template>
 			<template #subtitle><p>Une idée ? Un projet ? N'hésitez pas contactez-moi !</p></template>
-			<div class="py-40 space-y-10 lg:space-y-0 lg:flex lg:space-x-10 lg:justify-center lg:items-center">
+			<div class="py-14 space-y-10 text-center">
+				<a href="mailto:pierrick.tly@gmail.com">
+					<h2 class="text-5xl md:text-7xl lg:text-9xl hover-underline-animation">Contactez-moi</h2>
+				</a>
+				<div class="flex justify-center items-center space-x-5 mx-auto">
+					<span class="border-b border-white w-10 lg:w-20"></span>
+					<p>OU</p>
+					<span class="border-b border-white w-10 lg:w-20"></span>
+				</div>
 				<div class="text-center lg:text-xl space-y-20">
-					<button @click="copyEmail()" class="bg-secondary py-3 lg:py-6 px-4 rounded 
-					transition-all ease-in-out duration-500 hover:bg-secondary/80 hover:-translate-y-1 inline-block">
+					<button @click="copyEmail()" class="bg-secondary py-3 px-4 rounded transition-all ease-in-out duration-500 hover:bg-secondary/80 hover:-translate-y-1 inline-block">
 						Copier mon mail
 					</button>
-				</div>
-				<p class="text-center text-xl">OU</p>
-				<div class="mx-auto text-center">
-					<a
-						href="mailto:pierrick.tly@gmail.com"
-						class="border border-secondary bg-secondary/10 py-3 lg:py-6 px-4 rounded transition-all ease-in-out duration-500 hover:bg-secondary hover:-translate-y-1 inline-block"
-					>
-						Contactez-moi !
-					</a>
 				</div>
 			</div>
 		</page-section>
