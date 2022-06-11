@@ -1,79 +1,67 @@
 <template>
 	<div class="text-white">
-		<section
-			id="home"
-			class="w-full min-h-screen mx-auto p-5 flex flex-col space-y-20 items-center lg:hidden"
-		>
+		<section class="min-h-screen flex flex-col py-10 space-y-24 items-center">
 			<div class="mx-auto">
-				<h1
-					class="text-center whitespace-pre-line leading-loose text-2xl lg:text-4xl"
-				>
-					Hello, je m'appelle
-					<span class="font-bold text-5xl lg:text-7xl text-secondary"
-						>Pierrick</span
-					>
-					Je suis développeur front-end
-				</h1>
+				<p class="text-center leading-loose text-xl lg:text-2xl">
+					Hello, je m'appelle Pierrick
+				</p>
+				<p class="text-center leading-loose text-2xl lg:text-4xl">
+					Je suis <span class="font-semibold">développeur front-end</span>
+				</p>
 			</div>
-			<div class="mx-auto">
-				<img
-					alt="Profile picture"
-					src="../assets/images/profile_picture.png"
-					class="bg-gray-500 w-48 rounded-full aspect-square"
-				/>
-			</div>
-			<div class="text-xl mx-auto">
-				<a
-					data-scroll-to
-					href="#contact"
-					class="bg-secondary px-5 py-2 rounded hover:bg-secondary/70"
-					>Contact</a
-				>
-			</div>
+			<img
+				alt="Profile picture"
+				src="../assets/images/profile_picture.png"
+				class="bg-secondary/20 shadow-inner drop-shadow w-80 h-08 rounded-full aspect-square"
+			/>
+			<ul class="mx-auto flex items-center justify-center space-x-8">
+				<li>
+					<a href="">
+						<icon-linkedin class="w-10 h-10 transition-all ease-in-out duration-300 hover:text-secondary"/>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<icon-github class="w-10 h-10 transition-all ease-in-out duration-300 hover:text-secondary"/>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<icon-malt class="w-10 h-10 transition-all ease-in-out duration-300 hover:text-secondary"/>
+					</a>
+				</li>
+			</ul>
 			<div class="bottom-2 w-full md:absolute">
 				<div class="mx-auto items-center text-center">
 					<icon-mouse class="w-8 h-8 mx-auto animate-bounce" />
-					<p class="font-semibold">Scroll to see more</p>
+					<p>Scroll to see more</p>
 				</div>
 			</div>
 		</section>
-		<section id="home" class="hidden min-h-screen lg:flex -mt-20">
-			<div class="container flex my-auto mx-auto">
-				<div class="my-auto space-y-10">
-					<div class="space-y-10">
-						<p
-							class="text-4xl lg:text-[5rem] lg:whitespace-preline lg:leading-none leading-tight"
-						>
-							Hello, je m'appelle
-							<span class="text-secondary font-semibold">Pierrick</span>
-						</p>
-						<p
-							class="text-4xl lg:whitespace-preline lg:leading-none leading-tight"
-						>
-							Je suis développeur front-end
-						</p>
-					</div>
-				</div>
-				<div class="absolute hidden lg:block right-0 -translate-y-20 -z-10">
-					<img
-						src="../assets/images/redpanda.png"
-						alt=""
-						class="xl:h-[35rem]"
-					/>
-				</div>
-			</div>
-			<div class="bottom-2 lg:bottom-5 w-full md:absolute">
-				<div class="mx-auto items-center text-center">
-					<icon-mouse class="w-8 h-8 mx-auto animate-bounce" />
-					<p class="font-semibold">Scroll</p>
-				</div>
-			</div>
-		</section>
+		<page-section idSection="service" class="bg-[#17202C] py-14 lg:py-24">
+			<template #title>Mes services</template>
+			<ul class="flex flex-wrap gap-10 justify-evenly py-10 lg:py-20">
+				<li class="space-y-2 lg:-translate-y-10">
+					<icon-webdesign class="w-80 h-80 p-10 rounded-xl bg-[#212F40]"/>
+					<p class="text-center text-xl font-semibold uppercase">webdesign</p>
+				</li>
+				<li class="space-y-2 lg:translate-y-10">
+					<icon-dev class="w-80 h-80 p-10 rounded-xl bg-[#212F40]"/>
+					<p class="text-center text-xl font-semibold uppercase">Developpement / <br>Integration</p>
+				</li>
+				<li class="space-y-2 lg:-translate-y-10">
+					<icon-landing class="w-80 h-80 p-10 rounded-xl bg-[#212F40]"/>
+					<p class="text-center text-xl font-semibold uppercase">Landing</p>
+				</li>
+				<li class="space-y-2 lg:translate-y-10">
+					<icon-maintenance class="w-80 h-80 p-10 rounded-xl bg-[#212F40]"/>
+					<p class="text-center text-xl font-semibold uppercase">Maintenance</p>
+				</li>
+			</ul>
+		</page-section>
 		<page-section idSection="work" class="py-20">
-			<template #title> Mes projets </template>
-			<template>
-				<portfolio-section :projects="$options.projects()" />
-			</template>
+			<template #title>Mes projets</template>
+			<portfolio-section :projects="$options.projects()" />
 		</page-section>
 		<page-section
 			idSection="stack"
@@ -110,27 +98,20 @@
 		<page-section idSection="contact" class="py-20">
 			<template #title>Besoin d'un développeur ?</template>
 			<template #subtitle><p>Une idée ? Un projet ? N'hésitez pas contactez-moi !</p></template>
-			<div class="py-14 space-y-10 text-center">
-				<a href="mailto:pierrick.tly@gmail.com">
-					<h2 class="text-5xl md:text-7xl lg:text-9xl hover-underline-animation">Contactez-moi</h2>
-				</a>
-				<div class="flex justify-center items-center space-x-5 mx-auto">
-					<span class="border-b border-white w-10 lg:w-20"></span>
-					<p>OU</p>
-					<span class="border-b border-white w-10 lg:w-20"></span>
-				</div>
-				<div class="text-center lg:text-xl space-y-20">
-					<button @click="copyEmail()" class="bg-secondary py-3 px-4 rounded transition-all ease-in-out duration-500 hover:bg-secondary/80 hover:-translate-y-1 inline-block">
-						Copier mon mail
-					</button>
-				</div>
+			<div class="py-36 space-y-10 text-center">
+				<button @click="copyEmail()">
+					<h3 class="text-5xl md:text-7xl lg:text-9xl hover-underline-animation">Copier mon mail</h3>
+				</button>
 			</div>
 		</page-section>
 	</div>
 </template>
 
 <script>
+import IconWebdesign from '~/components/Icon/IconWebdesign.vue';
+import PageSection from '~/components/PageSection.vue';
 export default {
+	components: { PageSection, IconWebdesign },
 	name: "Home",
 
 	projects() {

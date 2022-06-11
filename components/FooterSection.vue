@@ -1,53 +1,24 @@
 <template>
-	<div class="bg-[#17202C] text-white">
-		<div class="container mx-auto px-5 py-8 space-y-10 lg:space-y-0">
-			<div class="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-5">
-				<div class="space-y-1 max-w-sm">
-					<h2 class="font-bold text-5xl">Zokiasu.</h2>
-					<p>Je m'appelle Pierrick TAÏLY, je suis étudiant en développement web frontend et freelance.</p>
-				</div>
-				<div class="space-y-3">
-					<h3 class="font-semibold lg:px-2 text-xl">Navigation</h3>
-					<div class="space-y-2 flex flex-col">
-						<nuxt-link
-							to="/"
-							class="rounded hover:bg-primary lg:px-2 py-1 transition-all ease-in-out duration-300"
-							>Home</nuxt-link>
-						<nuxt-link
-							to="#work"
-							class="rounded hover:bg-primary lg:px-2 py-1 transition-all ease-in-out duration-300"
-							>Portfolio</nuxt-link>
-						<nuxt-link
-							to="#contact"
-							class="rounded hover:bg-primary lg:px-2 py-1 transition-all ease-in-out duration-300"
-							>Contact</nuxt-link>
-					</div>
-				</div>
-				<div class="space-y-3">
-					<h3 class="font-semibold lg:px-2 text-xl">Social</h3>
-					<div class="space-y-2 flex flex-col">
-						<a
-							href="https://www.linkedin.com/in/pierrick-taily/"
-							target="_blank"
-							class="rounded hover:bg-primary lg:px-2 py-1 transition-all ease-in-out duration-300">
-							Linkedin
-						</a>
-						<a
-							href="https://www.malt.fr/profile/zokiasu"
-							target="_blank"
-							class="rounded hover:bg-primary lg:px-2 py-1 transition-all ease-in-out duration-300">
-							Malt
-						</a>
-						<a
-							href="https://github.com/Zokiasu"
-							target="_blank"
-							class="rounded hover:bg-primary lg:px-2 py-1 transition-all ease-in-out duration-300">
-							Github
-						</a>
-					</div>
-				</div>
-			</div>
-			<p>© {{ new Date().getFullYear() }}, ZKS Development</p>
+	<div class="text-white py-8">
+		<div class="container mx-auto text-center space-y-8">
+			<ul class="mx-auto flex items-center justify-center space-x-8">
+				<li>
+					<a href="">
+						<icon-linkedin class="w-8 h-8 transition-all ease-in-out duration-300 hover:text-secondary"/>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<icon-github class="w-8 h-8 transition-all ease-in-out duration-300 hover:text-secondary"/>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<icon-malt class="w-8 h-8 transition-all ease-in-out duration-300 hover:text-secondary"/>
+					</a>
+				</li>
+			</ul>
+			<p class="text-xl">© {{ new Date().getFullYear() }} - Zokiasu - Développeur Web</p>
 		</div>
 	</div>
 </template>
