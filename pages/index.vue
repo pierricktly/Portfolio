@@ -1,32 +1,29 @@
 <template>
 	<div class="text-white">
-		<section class="min-h-screen flex flex-col py-10 space-y-24 items-center">
-			<div class="mx-auto">
-				<p class="text-center leading-loose text-xl lg:text-2xl">
-					Hello, je m'appelle Pierrick
-				</p>
-				<p class="text-center leading-loose text-2xl lg:text-4xl">
-					Je suis <span class="font-semibold">développeur front-end</span>
-				</p>
-			</div>
+		<section class="min-h-screen flex flex-col space-y-20 items-center lg:hidden">
+			<h2 class="text-center whitespace-pre-line -mt-10 leading-loose text-2xl lg:text-4xl">
+				Hello, je m'appelle
+				<span class="font-bold text-5xl lg:text-7xl text-secondary" >Pierrick</span>
+				Je suis développeur front-end
+			</h2>
 			<img
 				alt="Profile picture"
 				src="../assets/images/profile_picture.png"
-				class="bg-secondary/20 shadow-inner drop-shadow w-80 h-08 rounded-full aspect-square"
+				class="bg-secondary/20 shadow-inner drop-shadow w-60 h-60 lg:w-80 lg:h-08 rounded-full aspect-square"
 			/>
 			<ul class="mx-auto flex items-center justify-center space-x-8">
 				<li>
-					<a href="">
+					<a href="https://www.linkedin.com/in/pierrick-taily/" target="_blank">
 						<icon-linkedin class="w-10 h-10 transition-all ease-in-out duration-300 hover:text-secondary"/>
 					</a>
 				</li>
 				<li>
-					<a href="">
+					<a href="https://github.com/Zokiasu" target="_blank">
 						<icon-github class="w-10 h-10 transition-all ease-in-out duration-300 hover:text-secondary"/>
 					</a>
 				</li>
 				<li>
-					<a href="">
+					<a href="https://www.malt.fr/profile/zokiasu" target="_blank">
 						<icon-malt class="w-10 h-10 transition-all ease-in-out duration-300 hover:text-secondary"/>
 					</a>
 				</li>
@@ -34,10 +31,59 @@
 			<div class="bottom-2 w-full md:absolute">
 				<div class="mx-auto items-center text-center">
 					<icon-mouse class="w-8 h-8 mx-auto animate-bounce" />
-					<p>Scroll to see more</p>
+					<p class="font-semibold">Scroll to see more</p>
 				</div>
 			</div>
 		</section>
+
+		<section id="home" class="hidden min-h-screen lg:flex -mt-20">
+			<div class="container flex my-auto mx-auto">
+				<div class="my-auto space-y-10">
+					<div class="space-y-10">
+						<p
+							class="text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-[5rem] lg:whitespace-preline lg:leading-none leading-tight"
+						>
+							Hello, je m'appelle
+							<span class="text-secondary font-semibold">Pierrick</span>
+						</p>
+						<p class="text-xl md:text-2xl lg:text-3xl xl:text-4xl lg:whitespace-preline lg:leading-none leading-tight">
+							Je suis développeur front-end
+						</p>
+					</div>
+					<ul class="mx-auto flex items-center space-x-8">
+						<li>
+							<a href="">
+								<icon-linkedin class="w-10 h-10 transition-all ease-in-out duration-300 hover:text-secondary"/>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<icon-github class="w-10 h-10 transition-all ease-in-out duration-300 hover:text-secondary"/>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<icon-malt class="w-10 h-10 transition-all ease-in-out duration-300 hover:text-secondary"/>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="absolute hidden lg:block right-0 -translate-y-20 -z-10">
+					<img
+						src="../assets/images/redpanda.png"
+						alt=""
+						class="xl:h-[35rem]"
+					/>
+				</div>
+			</div>
+			<div class="bottom-2 lg:bottom-5 w-full md:absolute">
+				<div class="mx-auto items-center text-center">
+					<icon-mouse class="w-8 h-8 mx-auto animate-bounce" />
+					<p class="font-semibold">Scroll</p>
+				</div>
+			</div>
+		</section>
+
 		<page-section idSection="service" class="bg-[#17202C] py-14 lg:py-24">
 			<template #title>Mes services</template>
 			<ul class="flex flex-wrap gap-10 justify-evenly py-10 lg:py-20">
@@ -58,11 +104,15 @@
 					<p class="text-center text-xl font-semibold uppercase">Maintenance</p>
 				</li>
 			</ul>
+			
+			<p class="text-center font-medium text-md">Pour plus d'information concernant mes prix consulter mon profil <a href="https://www.malt.fr/profile/zokiasu" target="_blank" class="hover-underline-animation">malt</a> ou me <nuxt-link to="#contact" class="hover-underline-animation">contacter</nuxt-link> directement</p>
 		</page-section>
+
 		<page-section idSection="work" class="py-20">
 			<template #title>Mes projets</template>
 			<portfolio-section :projects="$options.projects()" />
 		</page-section>
+
 		<page-section
 			idSection="stack"
 			class="bg-[#17202C] border-y border-primary/50 shadow-inner space-y-14 py-20"
@@ -95,6 +145,7 @@
 				</li>
 			</ul>
 		</page-section>
+
 		<page-section idSection="contact" class="py-20">
 			<template #title>Besoin d'un développeur ?</template>
 			<template #subtitle><p>Une idée ? Un projet ? N'hésitez pas contactez-moi !</p></template>
