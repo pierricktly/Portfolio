@@ -1,7 +1,7 @@
 <template>
 	<div class="text-white">
-		<section class="min-h-screen flex flex-col space-y-20 items-center lg:hidden">
-			<h2 class="text-center whitespace-pre-line -mt-10 leading-loose text-xl md:text-2xl lg:text-4xl">
+		<section class="relative min-h-screen flex flex-col space-y-20 items-center lg:hidden">
+			<h2 class="text-center whitespace-pre-line leading-loose text-xl md:text-2xl lg:text-4xl">
 				Hello, je m'appelle
 				<span class="font-bold text-2xl md:text-5xl lg:text-7xl text-secondary" >Pierrick</span>
 				Je suis développeur front-end
@@ -28,7 +28,7 @@
 					</a>
 				</li>
 			</ul>
-			<div class="bottom-2 w-full md:absolute">
+			<div class="bottom-20 md:bottom-2 w-full absolute">
 				<div class="mx-auto items-center text-center">
 					<icon-mouse class="w-8 h-8 mx-auto animate-bounce" />
 					<p class="font-semibold">Scroll to see more</p>
