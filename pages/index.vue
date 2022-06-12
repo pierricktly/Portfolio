@@ -149,7 +149,7 @@
 		<page-section idSection="contact" class="py-20">
 			<template #title>Besoin d'un développeur ?</template>
 			<template #subtitle><p>Une idée ? Un projet ? N'hésitez pas contactez-moi !</p></template>
-			<div class="py-36 space-y-10 text-center">
+			<div class="py-28 md:py-36 space-y-10 text-center">
 				<button @click="copyEmail()">
 					<h3 class="text-5xl md:text-7xl lg:text-9xl hover-underline-animation">Copier mon mail</h3>
 				</button>
