@@ -9,7 +9,7 @@
 			<img
 				alt="Profile picture"
 				src="../assets/images/profile_picture.png"
-				class="bg-secondary/20 shadow-inner drop-shadow w-40 h-40 md:w-60 md:h-60 lg:w-80 lg:h-08 rounded-full aspect-square"
+				class="bg-secondary/20 shadow-inner drop-shadow w-60 h-60 lg:w-80 lg:h-08 rounded-full aspect-square"
 			/>
 			<ul class="mx-auto flex items-center justify-center space-x-8">
 				<li>
