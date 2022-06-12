@@ -1,15 +1,15 @@
 <template>
 	<div class="text-white">
 		<section class="min-h-screen flex flex-col space-y-20 items-center lg:hidden">
-			<h2 class="text-center whitespace-pre-line -mt-10 leading-loose text-2xl lg:text-4xl">
+			<h2 class="text-center whitespace-pre-line -mt-10 leading-loose text-xl md:text-2xl lg:text-4xl">
 				Hello, je m'appelle
-				<span class="font-bold text-5xl lg:text-7xl text-secondary" >Pierrick</span>
+				<span class="font-bold text-2xl md:text-5xl lg:text-7xl text-secondary" >Pierrick</span>
 				Je suis développeur front-end
 			</h2>
 			<img
 				alt="Profile picture"
 				src="../assets/images/profile_picture.png"
-				class="bg-secondary/20 shadow-inner drop-shadow w-60 h-60 lg:w-80 lg:h-08 rounded-full aspect-square"
+				class="bg-secondary/20 shadow-inner drop-shadow w-40 h-40 md:w-60 md:h-60 lg:w-80 lg:h-08 rounded-full aspect-square"
 			/>
 			<ul class="mx-auto flex items-center justify-center space-x-8">
 				<li>
