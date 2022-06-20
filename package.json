@@ -14,10 +14,13 @@
     "@nuxtjs/pwa": "^3.3.5",
     "@nuxtjs/tailwindcss": "^5.0.0-4",
     "@nuxtjs/toast": "^3.3.1",
+    "add": "^2.0.6",
     "animate.css": "^4.1.1",
     "core-js": "^3.9.1",
     "locomotive-scroll": "^4.1.4",
-    "nuxt": "^2.15.3"
+    "npm": "^8.12.2",
+    "nuxt": "^2.15.3",
+    "vue-gtag": "^1.16.1"
   },
   "devDependencies": {
     "@nuxtjs/google-analytics": "^2.4.0",

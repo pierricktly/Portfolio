@@ -1,6 +1,6 @@
 <template>
 	<div class="text-white">
-		<section class="relative min-h-screen flex flex-col space-y-20 items-center lg:hidden">
+		<section class="relative min-h-screen flex flex-col items-center space-y-20 lg:hidden">
 			<h2 class="text-center whitespace-pre-line leading-loose text-xl md:text-2xl lg:text-4xl">
 				Hello, je m'appelle
 				<span class="font-bold text-2xl md:text-5xl lg:text-7xl text-secondary" >Pierrick</span>
@@ -9,7 +9,7 @@
 			<img
 				alt="Profile picture"
 				src="../assets/images/profile_picture.png"
-				class="bg-secondary/20 shadow-inner drop-shadow w-60 h-60 lg:w-80 lg:h-08 rounded-full aspect-square"
+				class="bg-secondary/20 shadow-inner mx-auto drop-shadow w-60 h-60 lg:w-80 lg:h-08 rounded-full aspect-square"
 			/>
 			<ul class="mx-auto flex items-center justify-center space-x-8">
 				<li>
@@ -28,10 +28,10 @@
 					</a>
 				</li>
 			</ul>
-			<div class="bottom-20 md:bottom-2 w-full absolute">
+			<div class="absolute w-full bottom-20 md:bottom-28">
 				<div class="mx-auto items-center text-center">
 					<icon-mouse class="w-8 h-8 mx-auto animate-bounce" />
-					<p class="font-semibold">Scroll to see more</p>
+					<p>Scroll to see more</p>
 				</div>
 			</div>
 		</section>
@@ -79,7 +79,7 @@
 			<div class="bottom-2 lg:bottom-5 w-full md:absolute">
 				<div class="mx-auto items-center text-center">
 					<icon-mouse class="w-8 h-8 mx-auto animate-bounce" />
-					<p class="font-semibold">Scroll</p>
+					<p>Scroll to see more</p>
 				</div>
 			</div>
 		</section>
