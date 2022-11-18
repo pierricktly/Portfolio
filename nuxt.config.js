@@ -7,7 +7,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Zokiasu | Pierrick | Portfolio | Front-end Developer',
+    title: 'Pierrick Taïly | Zokiasu | Front-end Developer',
     htmlAttrs: {
       lang: 'en'
     },
@@ -25,7 +25,7 @@ export default {
       {
         hid: "og:title",
         property: "og:title",
-        content: "Zokiasu | Pierrick | Portfolio | Front-end Developer",
+        content: "Pierrick Taïly | Zokiasu | Front-end Developer",
       },
       {
         hid: "og:description",
