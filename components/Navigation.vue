@@ -1,6 +1,6 @@
 <template>
   <div class="text-white">
-    <div class="container mx-auto flex justify-between py-5 px-5 lg:px-0">
+    <div class="container mx-auto flex justify-between py-5 px-5 xl:px-0">
       <div>
         <a href="/">
           <h1 class="font-bold text-2xl select-none">Zokiasu.</h1>

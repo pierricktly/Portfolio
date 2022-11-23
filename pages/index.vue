@@ -37,7 +37,7 @@
 		</section>
 
 		<section id="home" class="hidden min-h-screen lg:flex -mt-20">
-			<div class="container flex my-auto mx-auto">
+			<div class="container mx-auto flex my-auto">
 				<div class="my-auto space-y-10">
 					<div class="space-y-10">
 						<p
@@ -72,7 +72,7 @@
 					<img
 						src="../assets/images/redpanda.png"
 						alt=""
-						class="xl:h-[35rem]"
+						class="h-[20rem] xl:h-[35rem]"
 					/>
 				</div>
 			</div>
@@ -84,28 +84,38 @@
 			</div>
 		</section>
 
-		<page-section idSection="service" class="bg-[#17202C] py-14 lg:py-24">
+		<page-section idSection="service" class="bg-[#17202C] py-14 2xl:py-20">
 			<template #title>Mes services</template>
-			<ul class="flex flex-wrap gap-10 justify-evenly py-10 lg:py-20">
-				<li class="space-y-2 lg:-translate-y-10">
-					<icon-webdesign class="w-80 h-80 p-10 rounded-xl bg-[#212F40]"/>
-					<p class="text-center text-xl font-semibold uppercase">webdesign</p>
+			<ul class="grid grid-cols-2 2xl:flex gap-5 2xl:gap-10 justify-evenly py-10 2xl:py-20">
+				<li class="2xl:max-w-md space-y-5 p-5 2xl:-translate-y-10 rounded-xl bg-[#212F40]">
+					<p class="text-center text-xl font-semibold uppercase">Accompagnement</p>
+					<icon-webdesign class="mx-auto w-72 h-72 py-5"/>
+					<p class="text-center">
+						Je vous accompagne dans la conception votre site web ou de votre application web de la maquette à l'intégration. Je vous aide à définir votre cible, vos besoins et vos objectifs. Je vous conseille sur les technologies à utiliser et je vous accompagne dans la réalisation de votre projet. Je vous propose des solutions adaptées à votre budget.
+					</p>
 				</li>
-				<li class="space-y-2 lg:translate-y-10">
-					<icon-dev class="w-80 h-80 p-10 rounded-xl bg-[#212F40]"/>
-					<p class="text-center text-xl font-semibold uppercase">Developpement / <br>Integration</p>
+				<li class="2xl:max-w-md space-y-5 p-5 2xl:translate-y-10 rounded-xl bg-[#212F40]">
+					<p class="text-center text-xl font-semibold uppercase">Developpement / Integration</p>
+					<icon-dev class="mx-auto w-72 h-72 py-5"/>
+					<p class="text-center">
+						Je développe et intègre les maquettes de vos sites web et vos applications web en fonction de vos besoins, de votre budget et de vos objectifs.
+					</p>
 				</li>
-				<li class="space-y-2 lg:-translate-y-10">
-					<icon-landing class="w-80 h-80 p-10 rounded-xl bg-[#212F40]"/>
+				<li class="2xl:max-w-md space-y-5 p-5 2xl:-translate-y-10 rounded-xl bg-[#212F40]">
 					<p class="text-center text-xl font-semibold uppercase">Landing</p>
+					<icon-landing class="mx-auto w-72 h-72 py-5"/>
+					<p class="text-center">
+						Je vous propose de créer et d'intégrer vos landing pages pour vos campagnes de marketing digital ou pour améliorer votre présence numérique.
+					</p>
 				</li>
-				<li class="space-y-2 lg:translate-y-10">
-					<icon-maintenance class="w-80 h-80 p-10 rounded-xl bg-[#212F40]"/>
+				<li class="2xl:max-w-md space-y-5 p-5 2xl:translate-y-10 rounded-xl bg-[#212F40]">
 					<p class="text-center text-xl font-semibold uppercase">Maintenance</p>
+					<icon-maintenance class="mx-auto w-72 h-72 py-5"/>
+					<p class="text-center">
+						J'interviens sur vos projets web pour les maintenir et les faire évoluer. je vous aide à corriger les bugs et à améliorer les performances de vos sites web et applications web.
+					</p>
 				</li>
 			</ul>
-			
-			<p class="text-center font-medium text-md">Pour plus d'information concernant mes prix consulter mon profil <a href="https://www.malt.fr/profile/zokiasu" target="_blank" class="hover-underline-animation">malt</a> ou me <nuxt-link to="#contact" class="hover-underline-animation">contacter</nuxt-link> directement</p>
 		</page-section>
 
 		<page-section idSection="work" class="py-20">
@@ -149,21 +159,123 @@
 		<page-section idSection="contact" class="py-20">
 			<template #title>Besoin d'un développeur ?</template>
 			<template #subtitle><p>Une idée ? Un projet ? N'hésitez pas contactez-moi !</p></template>
-			<div class="py-28 md:py-36 space-y-10 text-center">
+			<form class="w-full mx-auto max-w-7xl min-w-max space-y-10 z-40" @submit.prevent="sendEmail">
+				<div class="flex flex-wrap">
+					<div class="relative w-full appearance-none">
+						<input
+							id="name"
+							name="name"
+							type="text"
+							v-model="name"
+							placeholder="Enter your name"
+							class="peer placeholder-transparent tracking-wide py-2 px-3 leading-relaxed appearance-none block w-full rounded
+							bg-primary border border-white 
+							focus:bg-white/30 focus:outline-none"
+						/>
+						<label 
+							for="name" 
+							class="
+								absolute 
+								left-0 -top-8
+								transition-all
+								peer-placeholder-shown:top-2
+								peer-placeholder-shown:left-3
+								peer-focus:-top-8
+								peer-focus:left-0"
+							>Enter your name</label>
+					</div>
+				</div>
+				<div class="flex flex-wrap">
+					<div class="relative w-full appearance-none">
+						<input 
+							id="email" 
+							name="email" 
+							type="email" 
+							v-model="email" 
+							placeholder="Enter your email address"
+							class="peer placeholder-transparent tracking-wide py-2 px-3 leading-relaxed appearance-none block w-full rounded
+							bg-primary border border-white 
+							focus:bg-white/30 focus:outline-none"
+						/>
+						<label 
+							for="email" 
+							class="
+								absolute 
+								left-0 -top-8
+								transition-all
+								peer-placeholder-shown:top-2
+								peer-placeholder-shown:left-3
+								peer-focus:-top-8
+								peer-focus:left-0"
+							>Enter your email address</label>
+					</div>
+				</div>
+				<div class="flex flex-wrap">
+					<div class="relative w-full appearance-none">
+						<textarea 
+							id="message"
+							name="message" 
+							v-model="message" 
+							placeholder="Enter your message"
+							class="peer placeholder-transparent tracking-wide py-2 px-3 leading-relaxed appearance-none block w-full h-52 rounded
+							bg-primary border border-white 
+							focus:bg-white/30 focus:outline-none" 
+						/>
+						<label for="message" class="
+							absolute 
+							left-0 -top-8
+							transition-all
+							peer-placeholder-shown:top-2
+							peer-placeholder-shown:left-3
+							peer-focus:-top-8
+							peer-focus:left-0"
+						>Enter your message</label>
+					</div>
+				</div>
+				<div class="w-full flex flex-col-reverse md:flex-row gap-3 justify-center items-center md:justify-between md:items-start">
+					<div class="flex justify-center overflow-hidden">
+						<button type="button" @click="copyEmail()" class="hover-underline-animation">Click here to copy my mail address</button>
+					</div>
+					<div class="appearance-none w-full md:w-auto">
+						<input
+							type="submit" 
+							value="Send"
+							class="cursor-pointer w-full md:w-auto tracking-wide leading-relaxed appearance-none block rounded
+							bg-secondary
+							hover:bg-secondary/70
+							px-5 py-1"/>
+					</div>
+				</div>
+			</form>
+			<!-- <div class="py-28 md:py-36 space-y-10 text-center">
 				<button @click="copyEmail()">
 					<h3 class="text-5xl md:text-7xl lg:text-9xl hover-underline-animation">Copier mon mail</h3>
 				</button>
-			</div>
+			</div> -->
 		</page-section>
 	</div>
 </template>
 
 <script>
+import 'animate.css';
 import IconWebdesign from '~/components/Icon/IconWebdesign.vue';
 import PageSection from '~/components/PageSection.vue';
+import{ init } from '@emailjs/browser';
+import emailjs from '@emailjs/browser';
+init("user_LjdyAMDHMFXk6Or6Ffd5a");
+
 export default {
-	components: { PageSection, IconWebdesign },
 	name: "Home",
+
+	components: { PageSection, IconWebdesign },
+
+	data() {
+		return {
+			name:"",
+			email:"",
+			message:"",
+		};
+	},
 
 	projects() {
 		return [
@@ -202,6 +314,21 @@ export default {
 	},
 
 	methods: {
+		sendEmail: function(e) {
+				if(this.message != "" || this.message != undefined) {
+						emailjs.sendForm('service_98p270n', 'template_0sow3ga', e.target, 'user_LjdyAMDHMFXk6Or6Ffd5a')
+						.then((result) => {
+								console.log('SUCCESS!', result.status, result.text);
+								this.message = ""
+								this.name = ""
+								this.email = ""
+						}, (error) => {
+								console.log('FAILED...', error);
+						});
+				} else {
+					//OK
+				}
+		},
 		copyEmail() {
 			navigator.clipboard.writeText("pierrick.tly@gmail.com");
 			this.$toasted.show("Email copied!", {
