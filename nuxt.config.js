@@ -7,15 +7,15 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Pierrick Taïly | Zokiasu | Front-end Developer',
+    title: 'Taïly Pierrick | Zokiasu | Développeur Front-end',
     htmlAttrs: {
       lang: 'fr'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Salut! Je m\'appel Pierrick aka Zokiasu.\nRetrouver tout mes projets dernier sur mon portfolio. N\'hésitez pas à me contacter si vous souhaitez que nous travaillons ensemble !.' },
-      { property: "og:site_name", content: "Zokiasu | Pierrick | Portfolio | Front-end Developer" },
+      { hid: 'description', name: 'description', content: 'Bonjour, je m\'appelle Pierrick Taïly ou encore Zokiasu. Je suis développeur frontend freelance, spécialisé dans la création de site web. \nJ\'aide mes clients à créer leurs sites internet ou leurs applications web afin de développer leur entreprise ou leur projet sur le web.' },
+      { property: "og:site_name", content: "Taïly Pierrick | Zokiasu | Développeur Front-end" },
       { hid: "og:type", property: "og:type", content: "website" },
       {
         hid: "og:url",
@@ -25,12 +25,12 @@ export default {
       {
         hid: "og:title",
         property: "og:title",
-        content: "Pierrick Taïly | Zokiasu | Front-end Developer",
+        content: "Taïly Pierrick | Zokiasu | Développeur Front-end",
       },
       {
         hid: "og:description",
         property: "og:description",
-        content: "Salut! Je m\'appel Pierrick aka Zokiasu.\nRetrouver tout mes projets dernier sur mon portfolio. N\'hésitez pas à me contacter si vous souhaitez que nous travaillons ensemble !.",
+        content: "Bonjour, je m\'appelle Pierrick Taïly ou encore Zokiasu. Je suis développeur frontend freelance, spécialisé dans la création de site web. \nJ\'aide mes clients à créer leurs sites internet ou leurs applications web afin de développer leur entreprise ou leur projet sur le web.",
       },
       {
         hid: "og:image",
