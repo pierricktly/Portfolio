@@ -86,32 +86,32 @@
 
 		<page-section idSection="service" class="bg-[#17202C] py-14 2xl:py-20">
 			<template #title>Mes services</template>
-			<ul class="grid grid-cols-2 2xl:flex gap-5 2xl:gap-10 justify-evenly py-10 2xl:py-20">
+			<ul class="grid grid-cols-1 md:grid-cols-2 2xl:flex gap-5 2xl:gap-10 justify-evenly py-10 2xl:py-20">
 				<li class="2xl:max-w-md space-y-5 p-5 2xl:-translate-y-10 rounded-xl bg-[#212F40]">
-					<p class="text-center text-xl font-semibold uppercase">Accompagnement</p>
-					<icon-webdesign class="mx-auto w-72 h-72 py-5"/>
-					<p class="text-center">
+					<p class="text-center text-sm lg:text-xl font-semibold uppercase">Accompagnement</p>
+					<icon-webdesign class="mx-auto w-32 h-32 lg:w-72 lg:h-72 py-5"/>
+					<p class="text-center text-sm">
 						Je vous accompagne dans la conception votre site web ou de votre application web de la maquette à l'intégration. Je vous aide à définir votre cible, vos besoins et vos objectifs. Je vous conseille sur les technologies à utiliser et je vous accompagne dans la réalisation de votre projet. Je vous propose des solutions adaptées à votre budget.
 					</p>
 				</li>
 				<li class="2xl:max-w-md space-y-5 p-5 2xl:translate-y-10 rounded-xl bg-[#212F40]">
-					<p class="text-center text-xl font-semibold uppercase">Developpement / Integration</p>
-					<icon-dev class="mx-auto w-72 h-72 py-5"/>
-					<p class="text-center">
+					<p class="text-center text-sm lg:text-xl font-semibold uppercase">Developpement / Integration</p>
+					<icon-dev class="mx-auto w-32 h-32 lg:w-72 lg:h-72 py-5"/>
+					<p class="text-center text-sm">
 						Je développe et intègre les maquettes de vos sites web et vos applications web en fonction de vos besoins, de votre budget et de vos objectifs.
 					</p>
 				</li>
 				<li class="2xl:max-w-md space-y-5 p-5 2xl:-translate-y-10 rounded-xl bg-[#212F40]">
-					<p class="text-center text-xl font-semibold uppercase">Landing</p>
-					<icon-landing class="mx-auto w-72 h-72 py-5"/>
-					<p class="text-center">
+					<p class="text-center text-sm lg:text-xl font-semibold uppercase">Landing</p>
+					<icon-landing class="mx-auto w-32 h-32 lg:w-72 lg:h-72 py-5"/>
+					<p class="text-center text-sm">
 						Je vous propose de créer et d'intégrer vos landing pages pour vos campagnes de marketing digital ou pour améliorer votre présence numérique.
 					</p>
 				</li>
 				<li class="2xl:max-w-md space-y-5 p-5 2xl:translate-y-10 rounded-xl bg-[#212F40]">
-					<p class="text-center text-xl font-semibold uppercase">Maintenance</p>
-					<icon-maintenance class="mx-auto w-72 h-72 py-5"/>
-					<p class="text-center">
+					<p class="text-center text-sm lg:text-xl font-semibold uppercase">Maintenance</p>
+					<icon-maintenance class="mx-auto w-32 h-32 lg:w-72 lg:h-72 py-5"/>
+					<p class="text-center text-sm">
 						J'interviens sur vos projets web pour les maintenir et les faire évoluer. je vous aide à corriger les bugs et à améliorer les performances de vos sites web et applications web.
 					</p>
 				</li>
