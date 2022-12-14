@@ -5,6 +5,11 @@
 html {
   /*background-color: #070048;*/
   background-color: #0e141b;
+  color: #fff;
+}
+
+.freestyle-script {
+  font-family: 'freestyle script', cursive;
 }
 
 ::-webkit-scrollbar {
