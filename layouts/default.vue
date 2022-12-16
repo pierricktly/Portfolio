@@ -6,9 +6,6 @@
     <main>
       <Nuxt />
     </main>
-    <!-- <footer>
-      <footer-section />
-    </footer> -->
   </div>
 </template>
 
