@@ -2,17 +2,15 @@
   <nuxt-link
     :to="'/project/'+projectId"
     class="block h-48 rounded-lg relative bg-cover overflow-hidden bg-gray-300 transition-all ease-in-out duration-500 hover:shadow-lg hover:shadow-gray-50/20"
-    :style="{
-      'background-image': 'url('+bgImageLink+')'
-    }"
   >
+    <img v-fade-image :src="bgImageLink" :alt="'project image of ' + title" class="w-full h-full">
     <div class="bg-black/60 w-full absolute bottom-0 z-10 px-3 py-4 pt-2 space-y-2">
       <h3>{{ title }}</h3>
       <div class="text-xs space-x-1">
         <span 
           v-for="tag in tags" 
           :key="tag.name"
-          class="bg-green-500 px-2 py-1 rounded-lg"
+          class="px-2 py-1 rounded-lg"
           :class="'bg-'+tag.color"
         >
           {{ tag.name }}
@@ -23,8 +21,10 @@
 </template>
 
 <script>
+
   export default {
     name: 'ProjectCard',
+
     props: {
       bgImageLink: {
         type: String,

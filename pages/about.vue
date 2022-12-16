@@ -2,6 +2,7 @@
   <page-template titlePage="A Propos">
     <div class="flex flex-col max-w-5xl mx-auto space-y-5 mb-24 md:mb-0 md:flex-row md:items-center md:mt-20 lg:space-y-0 lg:space-x-10 lg:mt-52">
       <img
+        v-fade-image
         alt="Profile picture"
         src="@/assets/images/profile_picture.png"
         class="bg-primary/20 shadow-inner mx-auto drop-shadow w-60 h-60 rounded-full aspect-square mt-10 md:mt-0

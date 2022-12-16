@@ -62,37 +62,3 @@
     </div>
   </div>
 </template>
-
-<script>
-import NuxtLinkNav from './NuxtLinkNav.vue';
-export default {
-  components: { NuxtLinkNav },
-  data() {
-    return {
-      navMenu: false,
-    };
-  },
-}
-</script>
-
-<style scoped>
-  .fill-text {
-    /* Add a linear gradient as the text color, going from transparent to the desired color */
-    color: linear-gradient(to right, white, #0000FF);
-
-    /* Add an animation to gradually change the color of the text */
-    animation: fill-text-animation 1s ease-in-out;
-  }
-
-  /* Create the animation keyframes */
-  @keyframes fill-text-animation {
-    /* At the start of the animation, the text is transparent */
-    0% {
-      color: linear-gradient(to right, white, white);
-    }
-    /* At the end of the animation, the text is fully colored */
-    100% {
-      color: linear-gradient(to right, #0000FF, #0000FF);
-    }
-  }
-</style>
