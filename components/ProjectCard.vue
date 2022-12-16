@@ -3,7 +3,14 @@
     :to="'/project/'+projectId"
     class="block h-48 rounded-lg relative bg-cover overflow-hidden bg-gray-300 transition-all ease-in-out duration-500 hover:shadow-lg hover:shadow-gray-50/20"
   >
-    <img v-fade-image :src="bgImageLink" :alt="'project image of ' + title" class="w-full h-full">
+    <img 
+      v-fade-image 
+      v-once 
+      v-if="imageLoaded" 
+      :src="bgImageLink" 
+      :alt="'project image of ' + title" 
+      class="w-full h-full"
+    />
     <div class="bg-black/60 w-full absolute bottom-0 z-10 px-3 py-4 pt-2 space-y-2">
       <h3>{{ title }}</h3>
       <div class="text-xs space-x-1">
@@ -11,7 +18,7 @@
           v-for="tag in tags" 
           :key="tag.name"
           class="px-2 py-1 rounded-lg"
-          :class="'bg-'+tag.color"
+          :class="tag.color"
         >
           {{ tag.name }}
         </span>
@@ -39,19 +46,19 @@
         default: () => [
           {
             name: 'VueJS',
-            color: 'green-500'
+            color: 'bg-green-500'
           }, 
           {
             name: 'NuxtJS',
-            color: 'green-700'
+            color: 'bg-green-700'
           },
           {
             name: 'Firebase',
-            color: 'orange-400'
+            color: 'bg-orange-400'
           },
           {
             name: 'Tailwind',
-            color: 'cyan-500'
+            color: 'bg-cyan-500'
           },
         ]
       },
@@ -62,7 +69,7 @@
     },
     data() {
       return {
-        // Data
+        imageLoaded: false
       }
     },
     methods: {
@@ -75,7 +82,7 @@
       // Watch
     },
     mounted() {
-      // Mounted
+      this.imageLoaded = true
     }
   }
 </script>
