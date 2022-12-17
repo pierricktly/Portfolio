@@ -33,12 +33,6 @@
           path="/"
           left
         />
-        <!-- <nuxt-link-nav
-          icon="icon-house"
-          text="Services"
-          label="services"
-          path="/services"
-        /> -->
         <nuxt-link-nav
           icon="icon-profile"
           text="A Propos"

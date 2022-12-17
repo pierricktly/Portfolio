@@ -1,5 +1,5 @@
 <template>
-  <div class="px-5 py-8 container mx-auto md:mt-20 lg:mt-10">
+  <div class="px-5 py-8 container mx-auto md:mt-20 2xl:mt-10">
     <div class="flex flex-col lg:flex-row lg:justify-center space-y-5 lg:space-y-0 lg:space-x-10">
       <div class="flex space-x-2 md:space-x-8 snap-x snap-mandatory overflow-x-auto lg:flex-col lg:space-x-0 lg:space-y-5">
         <img
