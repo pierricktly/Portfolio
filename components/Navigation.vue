@@ -1,71 +1,58 @@
 <template>
-  <div class="text-white">
-    <div class="container mx-auto flex justify-between py-5 px-5 xl:px-0">
-      <div>
-        <a href="/">
-          <h1 class="font-bold text-2xl select-none">Zokiasu.</h1>
-        </a>
-      </div>
-      <div>
-        <button @click="navMenu = !navMenu" type="button" class="lg:hidden">
-          <icon-burger class="w-5 h-5"/>
-        </button>
-        <ul class="hidden lg:flex space-x-20 text-xl">
-          <li>
-            <nuxt-link to="#service" class="hover-underline-animation">Services</nuxt-link>
-          </li>
-          <li>
-            <nuxt-link to="#work" class="hover-underline-animation">Portfolio</nuxt-link>
-          </li>
-          <li>
-            <nuxt-link to="#contact" class="hover-underline-animation">Contact</nuxt-link>
-          </li>
-        </ul>
-      </div>
+  <div>
+    <div class="fixed top-0 w-full justify-between p-10 hidden bg-gradient-to-b from-secondary to-transparent md:flex z-50">
+      <nuxt-link to="/">
+        <p class="text-2xl font-bold uppercase bookman hover:fill-text">Zokiasu</p>
+      </nuxt-link>
+      <ul class="flex space-x-5">
+				<li>
+					<a href="https://www.linkedin.com/in/pierrick-taily/" target="_blank">
+						<icon-linkedin class="w-6 h-6 transition-all ease-in-out duration-300 hover:text-primary"/>
+					</a>
+				</li>
+				<li>
+					<a href="https://github.com/Zokiasu" target="_blank">
+						<icon-github class="w-6 h-6 transition-all ease-in-out duration-300 hover:text-primary"/>
+					</a>
+				</li>
+				<li>
+					<a href="https://www.malt.fr/profile/zokiasu" target="_blank">
+						<icon-malt class="w-6 h-6 transition-all ease-in-out duration-300 hover:text-primary"/>
+					</a>
+				</li>
+			</ul>
     </div>
-
-    <!-- Mobile menu, show/hide based on menu state. -->
-    <div
-      v-if="navMenu"
-      class="animate__animated animate__fadeInDown animate__faster top-16 md:top-20 origin-top absolute bg-primary w-full lg:hidden"
-      id="mobile-menu"
-    >
-      <div class="px-2 pt-2 pb-3 space-y-1" @click="navMenu = false">
-        <nuxt-link
-          :to="`/`"
-          class="block px-3 py-2 rounded-md font-medium hover:bg-white/10"
-        >
-          Home
-        </nuxt-link>
-        <nuxt-link
-          to="#service"
-          class="block px-3 py-2 rounded-md font-medium hover:bg-white/10"
-        >
-          Services
-        </nuxt-link>
-        <nuxt-link
-          to="#work"
-          class="block px-3 py-2 rounded-md font-medium hover:bg-white/10"
-        >
-          Portfolio
-        </nuxt-link>
-        <nuxt-link 
-          to="#contact"
-          class="block px-3 py-2 rounded-md font-medium hover:bg-white/10"
-        >
-          Contact
-        </nuxt-link>
+    <div class="fixed font-bold pb-10 bottom-0 left-0 right-0 bg-gradient-to-t from-secondary to-transparent z-50">
+      <div 
+        class="flex items-center justify-center space-x-0.5"
+      >
+        <nuxt-link-nav
+          icon="icon-house"
+          text="Accueil"
+          label="acceuil"
+          path="/"
+          left
+        />
+        <nuxt-link-nav
+          icon="icon-profile"
+          text="A Propos"
+          label="a propos"
+          path="/about"
+        />
+        <nuxt-link-nav
+          icon="icon-project"
+          text="Projet"
+          label="projet"
+          path="/project"
+        />
+        <nuxt-link-nav
+          icon="icon-contact"
+          text="Contact"
+          label="contact"
+          path="/contact"
+          right
+        />
       </div>
     </div>
   </div>
 </template>
-
-<script>
-export default {
-  data() {
-    return {
-      navMenu: false,
-    };
-  },
-}
-</script>

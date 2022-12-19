@@ -7,15 +7,19 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Taïly Pierrick | Zokiasu | Développeur Front-end',
+    title: 'Zokiasu | Taïly Pierrick Portfolio',
     htmlAttrs: {
       lang: 'fr'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Bonjour, je m\'appelle Pierrick Taïly ou encore Zokiasu. Je suis développeur frontend freelance, spécialisé dans la création de site web. \nJ\'aide mes clients à créer leurs sites internet ou leurs applications web afin de développer leur entreprise ou leur projet sur le web.' },
-      { property: "og:site_name", content: "Taïly Pierrick | Zokiasu | Développeur Front-end" },
+      { 
+        hid: 'description', 
+        name: 'description', 
+        content: 'Bonjour, je m\'appelle Pierrick Taïly. Je suis développeur frontend freelance, spécialisé dans la création de site web. \nJ\'aide mes clients à créer leurs sites internet ou leurs applications web afin de développer leur entreprise ou leur projet sur le web.' 
+      },
+      { property: "og:site_name", content: "Zokiasu | Taïly Pierrick Portfolio" },
       { hid: "og:type", property: "og:type", content: "website" },
       {
         hid: "og:url",
@@ -25,12 +29,12 @@ export default {
       {
         hid: "og:title",
         property: "og:title",
-        content: "Taïly Pierrick | Zokiasu | Développeur Front-end",
+        content: "Zokiasu | Taïly Pierrick Portfolio",
       },
       {
         hid: "og:description",
         property: "og:description",
-        content: "Bonjour, je m\'appelle Pierrick Taïly ou encore Zokiasu. Je suis développeur frontend freelance, spécialisé dans la création de site web. \nJ\'aide mes clients à créer leurs sites internet ou leurs applications web afin de développer leur entreprise ou leur projet sur le web.",
+        content: "Bonjour, je m\'appelle Pierrick Taïly. Je suis développeur frontend freelance, spécialisé dans la création de site web. \nJ\'aide mes clients à créer leurs sites internet ou leurs applications web afin de développer leur entreprise ou leur projet sur le web.",
       },
       {
         hid: "og:image",
@@ -41,7 +45,7 @@ export default {
       { property: "og:image:height", content: "300" },
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'favicon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
 
@@ -51,12 +55,8 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    '~/plugins/animate.js',
-    '~/plugins/gtag.js',
-    {
-      src: "~/plugins/locomotiveScroll.js",
-      mode: "client"
-    },
+    '@/plugins/gtag.js',
+    '@/plugins/fade-image.client.js',
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -73,40 +73,9 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
-    // https://go.nuxtjs.dev/pwa
-    '@nuxtjs/pwa',
     '@nuxtjs/toast',
   ],
-  
-    router: {
-      scrollBehavior: async (to, from, savedPosition) => {
-        if (savedPosition) {
-          return savedPosition
-        }
 
-        const findEl = async (hash, x) => {
-          return document.querySelector(hash) ||
-            new Promise((resolve, reject) => {
-              if (x > 50) {
-                return resolve()
-              }
-              setTimeout(() => { resolve(findEl(hash, ++x || 1)) }, 100)
-            })
-        }
-
-        if (to.hash) {
-          let el = await findEl(to.hash)
-          if ('scrollBehavior' in document.documentElement.style) {
-            return window.scrollTo({ top: el.offsetTop, behavior: 'smooth' })
-          } else {
-            return window.scrollTo(0, el.offsetTop)
-          }
-        }
-
-        return { x: 0, y: 0 }
-      }
-    },
-  
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
 
@@ -123,13 +92,6 @@ export default {
     ]
   },
 
-  // PWA module configuration: https://go.nuxtjs.dev/pwa
-  // pwa: {
-  //   manifest: {
-  //     lang: 'en'
-  //   }
-  // },
-
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     loaders: {
@@ -138,6 +100,12 @@ export default {
       },
       scss: {
         implementation: require('sass'),
+      },
+      extend(config, ctx) {
+        // Ajouter UglifyJS au pipeline de build de Nuxt.js
+        if (ctx.isProd) {
+          config.optimization.minimizer.push(new UglifyJSPlugin())
+        }
       },
     },
   },
@@ -148,4 +116,5 @@ export default {
       screenview: true
     }
   },
+  
 }
