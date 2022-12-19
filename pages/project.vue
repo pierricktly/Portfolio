@@ -1,0 +1,119 @@
+<template>
+  <page-template titlePage="Projet">
+    <div class="mb-28 space-y-20 lg:space-y-0">
+      <section-project
+        v-for="(project, index) in $options.projects()"
+        :key="project.name"
+        :name="project.name"
+        :description="project.description"
+        :image="project.image"
+        :tags="project.tags"
+        :github-link="project.githubLink"
+        :online-link="project.onlineLink"
+        :right="index % 2 === 0"
+      />
+    </div>
+  </page-template>
+</template>
+
+<script>
+export default {
+  name: 'Project',
+
+  projects() {
+    return [
+      {
+        name:"Asia Exchange Finder",
+        description: "Asia Exchange Finder est une application web communautaire. C'est une application pour trouver tous les établissements offrant des échanges d'universités dans les pays asiatiques.",
+        image: "https://i.ibb.co/vLGYkj6/AEF.png",
+        githubLink: "https://github.com/Zokiasu/asia-exchange-finder",
+        onlineLink: "https://asiaexchangefinder.asiastudeler.com/",
+        tags: [
+          {
+            name: 'VueJS',
+            color: 'bg-green-500'
+          },
+          {
+            name: 'Firebase',
+            color: 'bg-orange-400'
+          },
+          {
+            name: 'Tailwind',
+            color: 'bg-cyan-500'
+          },
+        ],
+      },
+      {
+        name:"Comeback",
+        description: "Ce projet est une web app dédié à suivre les nouveaux albums, singles, EPs et annonces de nouveaux albums par les artistes. Backend par CozyCodeur.",
+        image: "https://i.ibb.co/Sw4ZkC8/Comeback.png",
+        githubLink: "https://github.com/Zokiasu/Comeback",
+        onlineLink: "https://come-back-v1.netlify.app/",
+        tags: [
+          {
+            name: 'VueJS',
+            color: 'bg-green-500'
+          }, 
+          {
+            name: 'NuxtJS',
+            color: 'bg-green-700'
+          },
+          {
+            name: 'Firebase',
+            color: 'bg-orange-400'
+          },
+          {
+            name: 'Tailwind',
+            color: 'bg-cyan-500'
+          },
+        ],
+      },
+      {
+        name:"Portfolio",
+        description: "Mon portfolio regroupe les derniers projets que j'ai pu réaliser et les technologies que j'utilise.",
+        image: "https://i.ibb.co/SyMwxZq/Portfolio.png",
+        githubLink: "https://github.com/Zokiasu/Portfolio",
+        onlineLink: "https://zokiasu.com/",
+        tags: [
+          {
+            name: 'VueJS',
+            color: 'bg-green-500'
+          }, 
+          {
+            name: 'NuxtJS',
+            color: 'bg-green-700'
+          },
+          {
+            name: 'Tailwind',
+            color: 'bg-cyan-500'
+          },
+          {
+            name: 'Figma',
+            color: 'bg-red-600'
+          },
+        ],
+      },
+      {
+        name:"Know It",
+        description: "Projet réalisé en freelance pour BLUEPOPCORN PRODUCTION, il s'agit d'une application web dédiée aux appareils mobiles. C'est une application regroupant des mini-jeux avec pour objectif de pratiquer l'anglais.",
+        image: "https://i.ibb.co/WGPtYZd/31d337ec-d0d6-41d6-a0df-ea4030746ad5.webp",
+        onlineLink: "https://www.know-it.bluepopcorn.fun/",
+        tags: [
+          {
+            name: 'ReactJS',
+            color: 'bg-cyan-400'
+          }, 
+          {
+            name: 'ChakraUI',
+            color: 'bg-teal-400'
+          },
+          {
+            name: 'Figma',
+            color: 'bg-red-600'
+          },
+        ],
+      },
+    ];
+  },
+}
+</script>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="fixed top-0 w-full justify-between p-10 hidden md:flex z-50">
+    <div class="fixed top-0 w-full justify-between p-10 hidden bg-gradient-to-b from-secondary to-transparent md:flex z-50">
       <nuxt-link to="/">
         <p class="text-2xl font-bold uppercase bookman hover:fill-text">Zokiasu</p>
       </nuxt-link>

@@ -9,13 +9,13 @@
             name="name"
             type="text"
             v-model="name"
-            placeholder="Enter your name"
+            placeholder="Votre Nom/Prénom"
             minlength="3"
             class="peer placeholder-transparent tracking-wide py-2 px-3 leading-relaxed appearance-none block w-full rounded
             bg-transparent border border-white 
             focus:bg-white/30 focus:outline-none"
           />
-          <label 
+          <label
             for="name" 
             class="
               absolute 
@@ -25,22 +25,22 @@
               peer-placeholder-shown:left-3
               peer-focus:-top-8
               peer-focus:left-0"
-            >Enter your name</label>
+            >Votre Nom/Prénom</label>
         </div>
       </div>
       <div class="flex flex-wrap">
         <div class="relative w-full appearance-none">
-          <input 
+          <input
             id="email" 
             name="email" 
             type="email" 
             v-model="email" 
-            placeholder="Enter your email address"
+            placeholder="Votre adresse email"
             class="peer placeholder-transparent tracking-wide py-2 px-3 leading-relaxed appearance-none block w-full rounded
             bg-transparent border border-white 
             focus:bg-white/30 focus:outline-none"
           />
-          <label 
+          <label
             for="email" 
             class="
               absolute 
@@ -50,16 +50,16 @@
               peer-placeholder-shown:left-3
               peer-focus:-top-8
               peer-focus:left-0"
-            >Enter your email address</label>
+            >Votre adresse email</label>
         </div>
       </div>
       <div class="flex flex-wrap">
         <div class="relative w-full appearance-none">
-          <textarea 
+          <textarea
             id="message"
             name="message" 
             v-model="message" 
-            placeholder="Enter your message"
+            placeholder="Votre message"
             minlength="10"            
             class="peer placeholder-transparent tracking-wide py-2 px-3 leading-relaxed appearance-none block w-full h-52 rounded
             bg-transparent border border-white 
@@ -73,12 +73,12 @@
             peer-placeholder-shown:left-3
             peer-focus:-top-8
             peer-focus:left-0"
-          >Enter your message</label>
+          >Votre message</label>
         </div>
       </div>
       <div class="w-full flex flex-col-reverse md:flex-row gap-3 justify-center items-center md:justify-between md:items-start">
         <div class="flex justify-center overflow-hidden">
-          <button type="button" @click="copyEmail()" class="hover-underline-animation">Click here to copy my mail address</button>
+          <button type="button" @click="copyEmail()" class="hover-underline-animation">Cliquez-ici pour copier mon email</button>
         </div>
         <div class="appearance-none w-full md:w-auto">
           <input

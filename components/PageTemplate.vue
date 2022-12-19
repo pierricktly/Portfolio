@@ -1,10 +1,10 @@
 <template>
-  <div class="min-h-screen">
+  <section class="min-h-screen">
     <div class="container mx-auto min-h-screen overflow-y-auto px-5">
-      <h2 class="bookman font-bold text-5xl text-center mt-10 md:mt-20">{{ titlePage }}</h2>
+      <h2 class="bookman font-bold text-5xl text-center mt-10 mb-10 md:mt-20">{{ titlePage }}</h2>
       <slot />
     </div>
-  </div>
+  </section>
 </template>
 
 <script>

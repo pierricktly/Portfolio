@@ -71,7 +71,7 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/toast',
   ],
-  
+
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
 
@@ -97,6 +97,12 @@ export default {
       scss: {
         implementation: require('sass'),
       },
+      extend(config, ctx) {
+        // Ajouter UglifyJS au pipeline de build de Nuxt.js
+        if (ctx.isProd) {
+          config.optimization.minimizer.push(new UglifyJSPlugin())
+        }
+      },
     },
   },
 
@@ -106,4 +112,5 @@ export default {
       screenview: true
     }
   },
+  
 }

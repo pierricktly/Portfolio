@@ -16,6 +16,17 @@
 </script>
 
 <style>
-  .page-enter-active, .page-leave-active { transition: opacity .5s; }
-  .page-enter, .page-leave-active { opacity: 0; }
+
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.7s;
+}
+.page-enter {
+  transform: translateY(100%);
+  opacity: 100;
+}
+.page-leave-to {
+  transform: translateY(-100%);
+  opacity: 0;
+}
 </style>

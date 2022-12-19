@@ -20,6 +20,7 @@
     "locomotive-scroll": "^4.1.4",
     "npm": "^8.12.2",
     "nuxt": "^2.15.3",
+    "uglify-js": "^3.17.4",
     "vue-gtag": "^1.16.1"
   },
   "devDependencies": {
