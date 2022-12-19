@@ -11,7 +11,7 @@
           <span 
             v-for="tag in tags" 
             :key="tag.name"
-            class="px-2 py-1 rounded-lg"
+            class="px-2 py-1 font-semibold rounded-lg"
             :class="tag.color"
           >
             {{ tag.name }}
@@ -20,10 +20,10 @@
       </div>
       <p> {{ description }} </p>
       <div v-if="githubLink || onlineLink" class="space-x-2">
-        <a v-if="githubLink" :href="githubLink" class="bg-primary hover:bg-primary/30 transition-all ease-in-out duration-500 text-white font-bold py-2 px-4 rounded">
+        <a v-if="githubLink" :href="githubLink" target="_blank" class="bg-primary hover:bg-primary/30 transition-all ease-in-out duration-500 text-white font-bold py-2 px-4 rounded">
           Github
         </a>
-        <a v-if="onlineLink" :href="onlineLink" class="bg-transparent border border-primary text-primary hover:text-white hover:border-transparent hover:bg-primary/30 transition-all ease-in-out duration-500 font-bold py-2 px-4 rounded">
+        <a v-if="onlineLink" :href="onlineLink" target="_blank" class="bg-transparent border border-primary text-primary hover:text-white hover:border-transparent hover:bg-primary/30 transition-all ease-in-out duration-500 font-bold py-2 px-4 rounded">
           En Ligne
         </a>
       </div>

@@ -7,15 +7,19 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Taïly Pierrick | Zokiasu | Développeur Front-end',
+    title: 'Zokiasu | Taïly Pierrick Portfolio',
     htmlAttrs: {
       lang: 'fr'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Bonjour, je m\'appelle Pierrick Taïly ou encore Zokiasu. Je suis développeur frontend freelance, spécialisé dans la création de site web. \nJ\'aide mes clients à créer leurs sites internet ou leurs applications web afin de développer leur entreprise ou leur projet sur le web.' },
-      { property: "og:site_name", content: "Taïly Pierrick | Zokiasu | Développeur Front-end" },
+      { 
+        hid: 'description', 
+        name: 'description', 
+        content: 'Bonjour, je m\'appelle Pierrick Taïly. Je suis développeur frontend freelance, spécialisé dans la création de site web. \nJ\'aide mes clients à créer leurs sites internet ou leurs applications web afin de développer leur entreprise ou leur projet sur le web.' 
+      },
+      { property: "og:site_name", content: "Zokiasu | Taïly Pierrick Portfolio" },
       { hid: "og:type", property: "og:type", content: "website" },
       {
         hid: "og:url",
@@ -25,12 +29,12 @@ export default {
       {
         hid: "og:title",
         property: "og:title",
-        content: "Taïly Pierrick | Zokiasu | Développeur Front-end",
+        content: "Zokiasu | Taïly Pierrick Portfolio",
       },
       {
         hid: "og:description",
         property: "og:description",
-        content: "Bonjour, je m\'appelle Pierrick Taïly ou encore Zokiasu. Je suis développeur frontend freelance, spécialisé dans la création de site web. \nJ\'aide mes clients à créer leurs sites internet ou leurs applications web afin de développer leur entreprise ou leur projet sur le web.",
+        content: "Bonjour, je m\'appelle Pierrick Taïly. Je suis développeur frontend freelance, spécialisé dans la création de site web. \nJ\'aide mes clients à créer leurs sites internet ou leurs applications web afin de développer leur entreprise ou leur projet sur le web.",
       },
       {
         hid: "og:image",

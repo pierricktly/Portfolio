@@ -1,8 +1,8 @@
 <template>
   <page-template titlePage="Projet">
-    <div class="mb-28 space-y-28 lg:space-y-0">
+    <div class="mb-28 space-y-28 px-5 lg:space-y-0">
       <section-project
-        v-for="(project, index) in $options.projects()"
+        v-for="project in $options.projects()"
         :key="project.name"
         :name="project.name"
         :description="project.description"
@@ -10,7 +10,6 @@
         :tags="project.tags"
         :github-link="project.githubLink"
         :online-link="project.onlineLink"
-        :right="index % 2 === 0"
       />
     </div>
   </page-template>
@@ -48,7 +47,7 @@ export default {
         description: "Ce projet vous permet de suivre et de ne pas manquer les sorties d'albums de vos artistes préférés en utilisant les informations partagées par les communautés de fans et en informant automatiquement des sorties d'albums grâce à l'ajout facile de nouveaux artistes.",
         image: "https://i.ibb.co/Sw4ZkC8/Comeback.png",
         githubLink: "https://github.com/Zokiasu/Comeback",
-        onlineLink: "https://come-back-v1.netlify.app/",
+        onlineLink: "https://come-back.netlify.app/",
         tags: [
           {
             name: 'VueJS',

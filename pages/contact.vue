@@ -1,7 +1,7 @@
 <template>
   <page-template titlePage="Contact">
     <p class="text-sm lg:text-lg my-5 text-center">Une idée ?  Un projet ?  N'hésitez pas contactez-moi !</p>
-    <form class="w-full mx-auto max-w-7xl min-w-max space-y-12 z-40 mt-10 lg:mt-20" @submit.prevent="sendEmail">
+    <form class="w-full mx-auto max-w-7xl min-w-max space-y-12 z-40 mt-10 px-5 lg:mt-20" @submit.prevent="sendEmail">
       <div class="flex flex-wrap">
         <div class="relative w-full appearance-none">
           <input
