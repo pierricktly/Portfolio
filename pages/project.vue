@@ -1,6 +1,6 @@
 <template>
   <page-template titlePage="Projet">
-    <div class="mb-28 space-y-20 lg:space-y-0">
+    <div class="mb-28 space-y-28 lg:space-y-0">
       <section-project
         v-for="(project, index) in $options.projects()"
         :key="project.name"
@@ -24,7 +24,7 @@ export default {
     return [
       {
         name:"Asia Exchange Finder",
-        description: "Asia Exchange Finder est une application web communautaire. C'est une application pour trouver tous les établissements offrant des échanges d'universités dans les pays asiatiques.",
+        description: "Application communautaire en ligne en utilisant Vue.js, permettant aux étudiants de trouver facilement les universités proposant des échanges universitaires vers l'Asie.",
         image: "https://i.ibb.co/vLGYkj6/AEF.png",
         githubLink: "https://github.com/Zokiasu/asia-exchange-finder",
         onlineLink: "https://asiaexchangefinder.asiastudeler.com/",
@@ -45,7 +45,7 @@ export default {
       },
       {
         name:"Comeback",
-        description: "Ce projet est une web app dédié à suivre les nouveaux albums, singles, EPs et annonces de nouveaux albums par les artistes. Backend par CozyCodeur.",
+        description: "Ce projet vous permet de suivre et de ne pas manquer les sorties d'albums de vos artistes préférés en utilisant les informations partagées par les communautés de fans et en informant automatiquement des sorties d'albums grâce à l'ajout facile de nouveaux artistes.",
         image: "https://i.ibb.co/Sw4ZkC8/Comeback.png",
         githubLink: "https://github.com/Zokiasu/Comeback",
         onlineLink: "https://come-back-v1.netlify.app/",
@@ -70,7 +70,7 @@ export default {
       },
       {
         name:"Portfolio",
-        description: "Mon portfolio regroupe les derniers projets que j'ai pu réaliser et les technologies que j'utilise.",
+        description: "Ce projet est mon portfolio, où vous pouvez découvrir les derniers projets que j'ai réalisés avec les technologies que j'utilise. En tant que développeur web spécialisé en Vue.js et Nuxt.js, je partage mes réalisations afin de mettre en avant mes compétences en matière de développement web moderne et performant.",
         image: "https://i.ibb.co/SyMwxZq/Portfolio.png",
         githubLink: "https://github.com/Zokiasu/Portfolio",
         onlineLink: "https://zokiasu.com/",
@@ -95,7 +95,7 @@ export default {
       },
       {
         name:"Know It",
-        description: "Projet réalisé en freelance pour BLUEPOPCORN PRODUCTION, il s'agit d'une application web dédiée aux appareils mobiles. C'est une application regroupant des mini-jeux avec pour objectif de pratiquer l'anglais.",
+        description: "Cette application web dédiée aux appareils mobiles, réalisée en freelance pour BLUEPOPCORN PRODUCTION, vous permet de pratiquer l'anglais grâce à une sélection de mini-jeux amusants et divertissants. Optimisée pour une utilisation sur mobile, cette application regroupe tous les jeux nécessaires pour améliorer votre niveau d'anglais tout en vous divertissant.",
         image: "https://i.ibb.co/WGPtYZd/31d337ec-d0d6-41d6-a0df-ea4030746ad5.webp",
         onlineLink: "https://www.know-it.bluepopcorn.fun/",
         tags: [

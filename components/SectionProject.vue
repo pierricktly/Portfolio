@@ -3,7 +3,7 @@
     class="flex flex-col space-y-5 w-full lg:py-28 lg:space-y-0 lg:space-x-8" 
     :class="right ? 'lg:space-x-reverse lg:flex-row-reverse lg:text-right lg:justify-end' : 'lg:flex-row'"
   >
-    <img v-fade-image :src="image" :alt="name" class="rounded object-cover aspect-video h-96 shadow-white/20 shadow-xl lg:h-72">
+    <img v-fade-image :src="image" :alt="name" class="rounded object-cover aspect-video shadow-white/20 shadow-xl lg:h-72">
     <div class="space-y-5 w-full">
       <div class="space-y-3">
         <h3 class="font-bold text-3xl bookman"> {{ name }} </h3>
