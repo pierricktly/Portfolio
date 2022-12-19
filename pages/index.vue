@@ -3,9 +3,9 @@
     <img v-fade-image class="absolute top-0 right-0 h-72 -z-40 hidden lg:block" src="@/assets/images/RedPanda.svg" alt="redpanda sleep on a branch">
     <div class="text-3xl md:text-6xl lg:text-7xl xl:text-8xl text-center mx-auto space-y-5">
       <p class="freestyle-script">bonjour, je m'appelle</p>
-      <p class="bookman font-bold">TAÏLY Pierrick</p>
+      <h2 class="bookman font-bold">TAÏLY Pierrick</h2>
       <p class="freestyle-script">je suis</p>
-      <p class="bookman font-bold">développeur frontend</p>
+      <h2 class="bookman font-bold">développeur frontend</h2>
     </div>
     <img v-fade-image
       alt="Profile picture"

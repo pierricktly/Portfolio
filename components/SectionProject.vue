@@ -6,7 +6,7 @@
     <img v-fade-image :src="image" :alt="name" class="rounded object-cover aspect-video shadow-white/20 shadow-xl lg:h-72">
     <div class="space-y-5 w-full">
       <div class="space-y-3">
-        <h3 class="font-bold text-3xl bookman"> {{ name }} </h3>
+        <h2 class="font-bold text-3xl bookman"> {{ name }} </h2>
         <div class="text-xs space-x-1">
           <span 
             v-for="tag in tags" 

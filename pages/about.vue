@@ -21,7 +21,7 @@
           </p>
           <div class="flex flex-col space-y-5 lg:flex-row lg:space-y-0 lg:space-x-5">
             <a
-              href="https://drive.google.com/u/1/uc?id=1BTEhnAQ9rySOLdV2jAl7h0Q0GhsmaJAu&export=download"
+              href="https://drive.google.com/u/1/uc?id=1Ef5K0RHW5Fx5XY6kYigVVjBM0je02c3x&export=download"
               target="_blank"
               class="bg-primary px-5 py-2 text-center hover:bg-primary/20 transition-all ease-in-out duration-500"
             >
@@ -37,7 +37,7 @@
         </div>
       </div>
       <div class="bg-[#17202C]/50 md:bg-transparent w-full p-10 space-y-20 rounded">
-        <h2 class="bookman font-semibold text-2xl lg:text-4xl text-center">Mes services</h2>
+        <p class="bookman font-semibold text-2xl lg:text-4xl text-center">Mes services</p>
         <div class="grid grid-cols-1 gap-10 lg:grid-cols-3">
           <article class="2xl:max-w-md space-y-5 p-5 2xl:-translate-y-10 rounded-xl bg-[#212F40]">
             <p class="text-center text-lg lg:text-xl bookman font-semibold">Développement web</p>
