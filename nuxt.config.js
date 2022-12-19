@@ -17,7 +17,7 @@ export default {
       { 
         hid: 'description', 
         name: 'description', 
-        content: 'Bonjour, je m\'appelle Pierrick Taïly. Je suis développeur frontend freelance, spécialisé dans la création de site web. \nJ\'aide mes clients à créer leurs sites internet ou leurs applications web afin de développer leur entreprise ou leur projet sur le web.' 
+        content: 'Bonjour, je m\'appelle Pierrick Taïly. Je suis développeur frontend freelance, spécialisé dans la création de site web et application web Vue.JS/Nuxt.JS. \nJ\'aide mes clients à créer leurs sites internet ou leurs applications web afin de développer leur entreprise, leur projet sur le web ainsi que leur présence web.' 
       },
       { property: "og:site_name", content: "Zokiasu | Taïly Pierrick Portfolio" },
       { hid: "og:type", property: "og:type", content: "website" },
@@ -34,7 +34,7 @@ export default {
       {
         hid: "og:description",
         property: "og:description",
-        content: "Bonjour, je m\'appelle Pierrick Taïly. Je suis développeur frontend freelance, spécialisé dans la création de site web. \nJ\'aide mes clients à créer leurs sites internet ou leurs applications web afin de développer leur entreprise ou leur projet sur le web.",
+        content: "Bonjour, je m\'appelle Pierrick Taïly. Je suis développeur frontend freelance, spécialisé dans la création de site web et application web Vue.JS/Nuxt.JS. \nJ\'aide mes clients à créer leurs sites internet ou leurs applications web afin de développer leur entreprise, leur projet sur le web ainsi que leur présence web.",
       },
       {
         hid: "og:image",
