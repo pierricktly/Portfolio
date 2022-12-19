@@ -74,7 +74,18 @@ export default {
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     '@nuxtjs/toast',
+    '@nuxtjs/sitemap',
   ],
+
+  sitemap: {
+    hostname: 'https://zokiasu.com/',
+    routes: [
+      '/',
+      '/about',
+      '/project',
+      '/contact',
+    ],
+  },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
