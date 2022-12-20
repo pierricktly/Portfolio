@@ -24,7 +24,7 @@ export default {
       {
         hid: "og:url",
         property: "og:url",
-        content: "https://zokiasu.netlify.app/",
+        content: "https://zokiasu.com/",
       },
       {
         hid: "og:title",
@@ -45,7 +45,12 @@ export default {
       { property: "og:image:height", content: "300" },
     ],
     link: [
-      { rel: 'favicon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'favicon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'canonical', href: 'https://zokiasu.com/' },
+      { rel: 'canonical', href: 'https://zokiasu.com/about' },
+      { rel: 'canonical', href: 'https://zokiasu.com/project' },
+      { rel: 'canonical', href: 'https://zokiasu.com/contact' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap' },
     ]
   },
 
