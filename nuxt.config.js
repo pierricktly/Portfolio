@@ -45,7 +45,7 @@ export default {
       { property: "og:image:height", content: "300" },
     ],
     link: [
-      { rel: 'favicon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'canonical', href: 'https://zokiasu.com/' },
       { rel: 'canonical', href: 'https://zokiasu.com/about' },
       { rel: 'canonical', href: 'https://zokiasu.com/project' },
