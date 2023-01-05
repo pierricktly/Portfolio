@@ -36,7 +36,7 @@
           </div>
         </div>
       </div>
-      <div class="bg-[#17202C]/50 md:bg-transparent w-full p-10 space-y-20 rounded">
+      <div class="w-full p-10 space-y-20 rounded">
         <p class="bookman font-semibold text-2xl lg:text-4xl text-center">Mes services</p>
         <div class="grid grid-cols-1 gap-10 lg:grid-cols-3">
           <article class="2xl:max-w-md space-y-5 p-5 2xl:-translate-y-10 rounded-xl bg-[#212F40]">
@@ -50,14 +50,14 @@
             <p class="text-center text-lg lg:text-xl bookman font-semibold">Intégration API</p>
             <icon-dev class="mx-auto w-32 h-32 lg:w-60 lg:h-60"/>
             <p class="whitespace-pre-line text-sm leading-loose lg:text-base">
-              Je suis spécialisé dans l'intégration de données dynamiques et je peux vous aider à créer une expérience utilisateur fluide et intuitive grâce à l'utilisation de technologies telles qu'Axios et RESTful APIs.
+              Spécialisé dans l'intégration de données dynamiques et je peux vous aider à créer une expérience utilisateur fluide et intuitive grâce à l'utilisation de technologies telles qu'Axios et RESTful APIs.
             </p>
           </article>
           <article class="2xl:max-w-md space-y-5 p-5 2xl:-translate-y-10 rounded-xl bg-[#212F40]">
             <p class="text-center text-lg lg:text-xl bookman font-semibold">Optimisation de site web</p>
             <icon-maintenance class="mx-auto w-32 h-32 lg:w-60 lg:h-60"/>
             <p class="whitespace-pre-line text-sm leading-loose lg:text-base">
-              Je m'appuie sur des techniques telles que le lazy loading et la minimisation du code pour optimiser la performance de mes applications web et garantir une expérience utilisateur rapide et agréable pour les utilisateurs.
+              En m'appuyant sur des techniques telles que le lazy loading et la minimisation du code pour optimiser la performance de mes applications web et garantir une expérience utilisateur rapide et agréable pour les utilisateurs.
             </p>
           </article>
         </div>
@@ -69,22 +69,5 @@
 <script>
 export default {
   name: 'About',
-  data() {
-    return {
-      // Data
-    }
-  },
-  methods: {
-    // Methods
-  },
-  computed: {
-    // Computed
-  },
-  watch: {
-    // Watch
-  },
-  mounted() {
-    // Mounted
-  }
 }
 </script>

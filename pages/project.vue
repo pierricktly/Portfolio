@@ -93,6 +93,27 @@ export default {
         ],
       },
       {
+        name:"Zordle",
+        description: "Basé sur le jeu Wordle, Zordle est une mini jeux sélectionnant au hasard un mot dans le dictionnaire et l'utilisateur doit avec plusieurs essaies retrouver le mot choisit au hasard.",
+        image: "https://i.ibb.co/ryyLLSf/zordle.jpg",
+        githubLink: "https://github.com/Zokiasu/zordle",
+        onlineLink: "https://zordle.netlify.app/",
+        tags: [
+          {
+            name: 'VueJS',
+            color: 'bg-green-500'
+          }, 
+          {
+            name: 'NuxtJS',
+            color: 'bg-green-700'
+          },
+          {
+            name: 'Tailwind',
+            color: 'bg-cyan-500'
+          },
+        ],
+      },
+      {
         name:"Know It",
         description: "Cette application web dédiée aux appareils mobiles, réalisée en freelance pour BLUEPOPCORN PRODUCTION, vous permet de pratiquer l'anglais grâce à une sélection de mini-jeux amusants et divertissants. Optimisée pour une utilisation sur mobile, cette application regroupe tous les jeux nécessaires pour améliorer votre niveau d'anglais tout en vous divertissant.",
         image: "https://i.ibb.co/WGPtYZd/31d337ec-d0d6-41d6-a0df-ea4030746ad5.webp",

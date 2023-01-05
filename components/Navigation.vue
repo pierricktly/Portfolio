@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="fixed top-0 w-full justify-between p-10 hidden bg-gradient-to-b from-secondary to-transparent md:flex z-50">
+    <div class="fixed top-0 w-full justify-between p-10 hidden bg-gradient-to-b from-secondary to-transparent lg:flex z-50">
       <nuxt-link to="/">
         <h1 class="text-2xl font-bold uppercase bookman hover:fill-text">Zokiasu</h1>
       </nuxt-link>
@@ -22,7 +22,7 @@
 				</li>
 			</ul>
     </div>
-    <div class="fixed font-bold pb-10 bottom-0 left-0 right-0 bg-gradient-to-t from-secondary to-transparent z-50">
+    <div class="fixed font-bold pb-5 xl:pb-10 bottom-0 left-0 right-0 bg-gradient-to-t from-secondary to-transparent z-50">
       <div 
         class="flex items-center justify-center space-x-0.5"
       >

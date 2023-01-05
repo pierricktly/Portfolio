@@ -1,7 +1,7 @@
 <template>
   <page-template titlePage="Contact">
     <p class="text-sm lg:text-lg my-5 text-center">Une idée ?  Un projet ?  N'hésitez pas contactez-moi !</p>
-    <form class="w-full mx-auto max-w-7xl min-w-max space-y-12 z-40 mt-10 px-5 lg:mt-20" @submit.prevent="sendEmail">
+    <form class="w-full mx-auto max-w-7xl min-w-max space-y-8 z-40 mt-10 px-5" @submit.prevent="sendEmail">
       <div class="flex flex-wrap">
         <div class="relative w-full appearance-none">
           <input
@@ -112,34 +112,36 @@
     methods: {
       sendEmail: function(e) {
           console.log(this.message, this.name, this.email)
-          if((this.message != "" && this.message != undefined && this.message != null) && 
-            (this.name != "" && this.name != undefined && this.name != null) && 
-            (this.email != "" && this.email != undefined && this.email != null)) 
-          {
-              emailjs.sendForm('service_98p270n', 'template_0sow3ga', e.target, 'user_LjdyAMDHMFXk6Or6Ffd5a')
-              .then((result) => {
-                this.message = ""
-                this.name = ""
-                this.email = ""
-                this.$toasted.show("Votre message a bien été envoyé !", {
-                  position: "bottom-center",
-                  duration: 5000,
-                });
-                console.log('SUCCESS!', result.status, result.text);
-              }, (error) => {
-                console.log('FAILED...', error);
-                this.$toasted.error("Oops...Quelque chose s'est mal passé !", {
-                  position: "top-center",
-                  duration: 5000,
-                });
+          const messageNotNull = this.message != "" && this.message != undefined && this.message != null
+          const nameNotNull = this.name != "" && this.name != undefined && this.name != null
+          const emailNotNull = this.email != "" && this.email != undefined && this.email != null
+
+          if(messageNotNull && nameNotNull && emailNotNull) {
+            emailjs.sendForm('service_98p270n', 'template_0sow3ga', e.target, 'user_LjdyAMDHMFXk6Or6Ffd5a')
+            .then((result) => {
+              this.message = ""
+              this.name = ""
+              this.email = ""
+              this.$toasted.show("Votre message a bien été envoyé !", {
+                position: "bottom-center",
+                duration: 5000,
               });
+              console.log('SUCCESS!', result.status, result.text);
+            }, (error) => {
+              console.log('FAILED...', error);
+              this.$toasted.error("Oops...Quelque chose s'est mal passé !", {
+                position: "top-center",
+                duration: 5000,
+              });
+            });
           } else {
-            this.$toasted.error("Tout les champs doivent être remplie !", {
+            this.$toasted.error("Oops...Vous devez remplir tous les champs !", {
               position: "top-center",
               duration: 5000,
             });
           }
       },
+      
       copyEmail() {
         navigator.clipboard.writeText("pierrick.tly@gmail.com");
         this.$toasted.show("Email copied!", {

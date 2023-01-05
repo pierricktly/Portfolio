@@ -7,7 +7,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Zokiasu | Taïly Pierrick - Portfolio Développeur Frontend Vue.JS Nuxt.JS',
+    title: 'Taïly Pierrick - Développeur Frontend Vue.JS Nuxt.JS',
     htmlAttrs: {
       lang: 'fr'
     },
@@ -19,7 +19,7 @@ export default {
         name: 'description', 
         content: 'Bonjour, je m\'appelle Pierrick Taïly. Je suis développeur frontend freelance, spécialisé dans la création de site web et application web Vue.JS/Nuxt.JS. \nJ\'aide mes clients à créer leurs sites internet ou leurs applications web afin de développer leur entreprise, leur projet sur le web ainsi que leur présence web.' 
       },
-      { property: "og:site_name", content: "Zokiasu | Taïly Pierrick - Portfolio Développeur Frontend Vue.JS Nuxt.JS" },
+      { property: "og:site_name", content: "Taïly Pierrick - Développeur Frontend Vue.JS Nuxt.JS" },
       { hid: "og:type", property: "og:type", content: "website" },
       {
         hid: "og:url",
@@ -29,7 +29,7 @@ export default {
       {
         hid: "og:title",
         property: "og:title",
-        content: "Zokiasu | Taïly Pierrick - Portfolio Développeur Frontend Vue.JS Nuxt.JS",
+        content: "Taïly Pierrick - Développeur Frontend Vue.JS Nuxt.JS",
       },
       {
         hid: "og:description",
@@ -110,6 +110,10 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    events: {
+      wheel: true,
+    },
+    
     loaders: {
       sass: {
         implementation: require('sass'),
