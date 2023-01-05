@@ -5,7 +5,7 @@
       <p class="freestyle-script">bonjour, je m'appelle</p>
       <h2 class="bookman font-bold">TAÏLY Pierrick</h2>
       <p class="freestyle-script">je suis</p>
-      <h2 class="bookman font-bold">développeur frontend</h2>
+      <h2 class="bookman font-bold">développeur frontend freelance</h2>
     </div>
     <img v-fade-image
       alt="Profile picture"
