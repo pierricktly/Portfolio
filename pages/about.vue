@@ -43,21 +43,22 @@
             <p class="text-center text-lg lg:text-xl bookman font-semibold">Développement web</p>
             <icon-webdesign class="mx-auto w-32 h-32 lg:w-60 lg:h-60"/>
             <p class="whitespace-pre-line text-sm leading-loose lg:text-base">
-              Je peux vous aider à concevoir et à développer une solution qui répond à vos besoins et à vos objectifs. Que cela soit un site vitrine, un site e-commerce ou une application web, je peux vous aider à créer une expérience utilisateur fluide et intuitive.
+              Je vous aide à concevoir et à développer une solution qui répond à vos besoins et à vos objectifs.
+              Site vitrine, site e-commerce ou application web, je saurai vous accompagner pour atteindre vos objectifs.
             </p>
           </article>
           <article class="2xl:max-w-md space-y-5 p-5 2xl:-translate-y-10 rounded-xl bg-[#212F40]">
             <p class="text-center text-lg lg:text-xl bookman font-semibold">Intégration API</p>
             <icon-dev class="mx-auto w-32 h-32 lg:w-60 lg:h-60"/>
             <p class="whitespace-pre-line text-sm leading-loose lg:text-base">
-              Spécialisé dans l'intégration de données dynamiques et je peux vous aider à créer une expérience utilisateur fluide et intuitive grâce à l'utilisation de technologies telles qu'Axios et RESTful APIs.
+              Spécialisé dans l'intégration de données dynamiques et je vous aiderai à créer une expérience utilisateur fluide et intuitive.
             </p>
           </article>
           <article class="2xl:max-w-md space-y-5 p-5 2xl:-translate-y-10 rounded-xl bg-[#212F40]">
             <p class="text-center text-lg lg:text-xl bookman font-semibold">Optimisation de site web</p>
             <icon-maintenance class="mx-auto w-32 h-32 lg:w-60 lg:h-60"/>
             <p class="whitespace-pre-line text-sm leading-loose lg:text-base">
-              En m'appuyant sur des techniques telles que le lazy loading et la minimisation du code pour optimiser la performance de mes applications web et garantir une expérience utilisateur rapide et agréable pour les utilisateurs.
+              En m'appuyant sur les techniques les plus récentes j'optimiserai la performance de vos applications web et garantirai une expérience utilisateur rapide et agréable pour les utilisateurs.
             </p>
           </article>
         </div>
