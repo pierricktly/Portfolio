@@ -46,7 +46,6 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'canonical', href: 'https://zokiasu.com/' },
       { rel: 'canonical', href: 'https://zokiasu.com/about' },
       { rel: 'canonical', href: 'https://zokiasu.com/project' },
       { rel: 'canonical', href: 'https://zokiasu.com/contact' },
