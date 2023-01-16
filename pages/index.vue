@@ -13,9 +13,10 @@
       class="bg-primary/20 shadow-inner mx-auto drop-shadow w-52 h-52 rounded-full aspect-square lg:hidden"
     />
     <div class="container mx-auto flex flex-col space-y-8">
-      <p class="text-center mx-auto text-sm md:text-base xl:text-lg">
-        Spécialisé dans la création de sites et d'applications Web modernes et attrayants sous vue.js/nuxt.js. 
-        Je travaille en étroite collaboration avec mes clients et les équipes de développement pour créer des solutions sur mesure qui répondent à leurs besoins et dépassent leurs attentes. Si vous cherchez un développeur front-end professionnel et fiable pour votre prochain projet, n'hésitez pas à me contacter.
+      <p class="whitespace-pre-line text-center mx-auto text-sm md:text-base xl:text-lg">
+        Spécialisé dans la création de sites et d'applications web modernes et attrayants sous vue.js/nuxt.js. 
+        Je travaille en étroite collaboration avec mes clients et les équipes de développement pour créer des solutions sur mesure qui répondent à leurs besoins et dépassent leurs attentes.
+        Si vous cherchez un développeur front-end professionnel et fiable pour votre prochain projet, n'hésitez pas à me contacter.
       </p>
       <nuxt-link aria-label="button to go contact form" class="bg-primary px-5 py-2 mx-auto text-sm transition-all ease-in-out duration-500 hover:bg-primary/20 lg:text-base" to="/contact">Contactez-moi</nuxt-link>
     </div>
