@@ -5,7 +5,7 @@
         <img
           v-fade-image
           alt="Profile picture"
-          src="@/assets/images/profile_picture.png"
+          src="@/assets/images/about_picture.jpg"
           class="bg-primary/20 shadow-inner mx-auto drop-shadow w-60 h-60 rounded-full aspect-square mt-10 md:mt-0
           lg:w-72 lg:h-72 xl:w-80 xl:h-80"
         />

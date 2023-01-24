@@ -39,7 +39,7 @@ export default {
       {
         hid: "og:image",
         property: "og:image",
-        content: "https://i.ibb.co/MD49pc3/Frame-72.png",
+        content: "https://i.ibb.co/k8MFC63/6njrc-Rl-400x400.jpg",
       },
       { property: "og:image:width", content: "740" },
       { property: "og:image:height", content: "300" },
