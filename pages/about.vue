@@ -11,13 +11,17 @@
         />
         <div class="px-5 space-y-8 h-full">
           <p class="whitespace-pre-line">
-            Je m'appelle Taïly Pierrick, développeur frontend freelance passionné par le développement web et l'expérience utilisateur. 
-            
-            J'ai acquis une solide expérience grâce à ma pratique et mon expérience en tant qu'alternant pendant mes études, et j'ai consacré de nombreuses heures à apprendre et à mettre en pratique mes connaissances en développement web.
+            Bonjour ! 🖐
 
-            Spécialisé dans l'utilisation de Vue.js et Nuxt.js pour créer des applications web performantes et évolutives, et je suis également compétent en HTML, CSS et JavaScript. 
-            
-            En tant que passionné, je suis toujours à la recherche de nouveaux challenges et de moyens d'améliorer mes compétences en développement frontend.
+            Je m'appelle Pierrick TAÏLY et je suis développeur web spécialisé dans le Front-end.
+
+            Je développe principalement en Nuxt.JS et Vue.JS, je possède également des connaissances solides sur le framework React.JS et je continue à me former en continu.
+
+            Suite à divers projets ambitieux sur lesquels j'ai eu la chance de travailler, je connais les bonnes pratiques à adopter pour construire un site scalable et robuste.
+
+            D'un naturel curieux, ambitieux et attentif, je saurais répondre à vos besoins en termes de développement et ainsi mener à bien les projets que vous me confierez.
+
+            Au plaisir de vous accompagner sur vos prochains projets 👊
           </p>
           <div class="flex flex-col space-y-5 lg:flex-row lg:space-y-0 lg:space-x-5">
             <a
@@ -42,22 +46,21 @@
           <article class="2xl:max-w-md space-y-5 p-5 2xl:-translate-y-10 rounded-xl bg-[#212F40]">
             <p class="text-center text-lg lg:text-xl bookman font-semibold">Développement web</p>
             <icon-webdesign class="mx-auto w-32 h-32 lg:w-60 lg:h-60"/>
-            <p class="whitespace-pre-line text-sm leading-loose lg:text-base">
+            <p class="whitespace-pre-line text-sm leading-loose lg:text-base lg:text-center">
               Je vous aide à concevoir et à développer une solution qui répond à vos besoins et à vos objectifs.
-              Site vitrine, site e-commerce ou application web, je saurai vous accompagner pour atteindre vos objectifs.
             </p>
           </article>
           <article class="2xl:max-w-md space-y-5 p-5 2xl:-translate-y-10 rounded-xl bg-[#212F40]">
             <p class="text-center text-lg lg:text-xl bookman font-semibold">Intégration API</p>
             <icon-dev class="mx-auto w-32 h-32 lg:w-60 lg:h-60"/>
-            <p class="whitespace-pre-line text-sm leading-loose lg:text-base">
+            <p class="whitespace-pre-line text-sm leading-loose lg:text-base lg:text-center">
               Spécialisé dans l'intégration de données dynamiques et je vous aiderai à créer une expérience utilisateur fluide et intuitive.
             </p>
           </article>
           <article class="2xl:max-w-md space-y-5 p-5 2xl:-translate-y-10 rounded-xl bg-[#212F40]">
             <p class="text-center text-lg lg:text-xl bookman font-semibold">Optimisation de site web</p>
             <icon-maintenance class="mx-auto w-32 h-32 lg:w-60 lg:h-60"/>
-            <p class="whitespace-pre-line text-sm leading-loose lg:text-base">
+            <p class="whitespace-pre-line text-sm leading-loose lg:text-base lg:text-center">
               En m'appuyant sur les techniques les plus récentes j'optimiserai la performance de vos applications web et garantirai une expérience utilisateur rapide et agréable pour les utilisateurs.
             </p>
           </article>
