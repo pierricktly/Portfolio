@@ -26,7 +26,7 @@ export default {
         description: "Application communautaire en ligne en utilisant Vue.js, permettant aux étudiants de trouver facilement les universités proposant des échanges universitaires vers l'Asie.",
         image: "https://i.ibb.co/vLGYkj6/AEF.png",
         githubLink: "https://github.com/Zokiasu/asia-exchange-finder",
-        onlineLink: "https://asiaexchangefinder.asiastudeler.com/",
+        onlineLink: "https://asiastudeler.netlify.app/",
         tags: [
           {
             name: 'VueJS',
