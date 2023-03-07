@@ -24,7 +24,7 @@ export default {
       {
         name:"Comeback",
         description: "Ce projet vous permet de suivre et de ne pas manquer les sorties d'albums de vos artistes préférés en utilisant les informations partagées par les communautés de fans et en informant automatiquement des sorties d'albums grâce à l'ajout facile de nouveaux artistes.",
-        image: "https://i.ibb.co/QJqH6Ky/Comeback.png",
+        image: "https://i.ibb.co/FW7P321/Comeback.png",
         githubLink: "https://github.com/Zokiasu/Comeback",
         onlineLink: "https://come-back.netlify.app/",
         tags: [
@@ -49,7 +49,7 @@ export default {
       {
         name:"Portfolio",
         description: "Ce projet est mon portfolio, où vous pouvez découvrir les derniers projets que j'ai réalisés avec les technologies que j'utilise. En tant que développeur web spécialisé en Vue.js et Nuxt.js, je partage mes réalisations afin de mettre en avant mes compétences en matière de développement web moderne et performant.",
-        image: "https://i.ibb.co/Dgx1Fgx/Portfolio.png",
+        image: "https://i.ibb.co/ZTt4TC4/Portfolio.png",
         githubLink: "https://github.com/Zokiasu/Portfolio",
         onlineLink: "https://zokiasu.com/",
         tags: [
