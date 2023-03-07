@@ -22,7 +22,7 @@
 				</li>
 			</ul>
     </div>
-    <div class="fixed font-bold pb-5 xl:pb-10 bottom-0 left-0 right-0 bg-gradient-to-t from-secondary to-transparent z-50">
+    <nav ref="navBar" class=" transition-all duration-500 ease-in-out fixed font-bold pb-5 xl:pb-10 bottom-0 left-0 right-0 bg-gradient-to-t from-secondary to-transparent z-50">
       <div 
         class="flex items-center justify-center space-x-0.5"
       >
@@ -53,6 +53,12 @@
           right
         />
       </div>
-    </div>
+    </nav>
   </div>
 </template>
+
+<script>
+export default {
+  name: 'Navigation',
+}
+</script>

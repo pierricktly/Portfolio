@@ -1,12 +1,12 @@
 <template>
   <page-template titlePage="A Propos">
-    <div class="mb-20 space-y-20 lg:space-y-52 lg:mb-32">
-      <div class="flex flex-col max-w-5xl mx-auto space-y-5 mb-24 px-5 md:mb-0 md:flex-row md:items-center md:mt-20 lg:space-y-0 lg:space-x-10">
+    <div class="pb-16 lg:pb-0 lg:pt-16 space-y-20 lg:space-y-52">
+      <div class="flex flex-col max-w-5xl mx-auto space-y-5 mb-24 px-5 lg:mb-0 lg:flex-row lg:items-center lg:space-y-0 lg:space-x-10">
         <img
           v-fade-image
           alt="Profile picture"
           src="@/assets/images/about_picture.jpg"
-          class="bg-primary/20 shadow-inner mx-auto drop-shadow w-60 h-60 rounded-full aspect-square mt-10 md:mt-0
+          class="bg-primary/20 shadow-inner mx-auto drop-shadow w-60 h-60 rounded-full aspect-square mt-10 lg:mt-0
           lg:w-72 lg:h-72 xl:w-80 xl:h-80"
         />
         <div class="px-5 space-y-8 h-full">
@@ -38,32 +38,6 @@
               Contactez-moi
             </nuxt-link>
           </div>
-        </div>
-      </div>
-      <div class="w-full p-10 space-y-20 rounded">
-        <p class="bookman font-semibold text-2xl lg:text-4xl text-center">Mes services</p>
-        <div class="grid grid-cols-1 gap-10 lg:grid-cols-3">
-          <article class="2xl:max-w-md space-y-5 p-5 2xl:-translate-y-10 rounded-xl bg-[#212F40]">
-            <p class="text-center text-lg lg:text-xl bookman font-semibold">Développement web</p>
-            <icon-webdesign class="mx-auto w-32 h-32 lg:w-60 lg:h-60"/>
-            <p class="whitespace-pre-line text-sm leading-loose lg:text-base lg:text-center">
-              Je vous aide à concevoir et à développer une solution qui répond à vos besoins et à vos objectifs.
-            </p>
-          </article>
-          <article class="2xl:max-w-md space-y-5 p-5 2xl:-translate-y-10 rounded-xl bg-[#212F40]">
-            <p class="text-center text-lg lg:text-xl bookman font-semibold">Intégration API</p>
-            <icon-dev class="mx-auto w-32 h-32 lg:w-60 lg:h-60"/>
-            <p class="whitespace-pre-line text-sm leading-loose lg:text-base lg:text-center">
-              Spécialisé dans l'intégration de données dynamiques et je vous aiderai à créer une expérience utilisateur fluide et intuitive.
-            </p>
-          </article>
-          <article class="2xl:max-w-md space-y-5 p-5 2xl:-translate-y-10 rounded-xl bg-[#212F40]">
-            <p class="text-center text-lg lg:text-xl bookman font-semibold">Optimisation de site web</p>
-            <icon-maintenance class="mx-auto w-32 h-32 lg:w-60 lg:h-60"/>
-            <p class="whitespace-pre-line text-sm leading-loose lg:text-base lg:text-center">
-              En m'appuyant sur les techniques les plus récentes j'optimiserai la performance de vos applications web et garantirai une expérience utilisateur rapide et agréable pour les utilisateurs.
-            </p>
-          </article>
         </div>
       </div>
     </div>
