@@ -143,7 +143,7 @@
       },
       
       copyEmail() {
-        navigator.clipboard.writeText("contact@zokiasu.com");
+        navigator.clipboard.writeText("pierrick.tly@gmail.com");
         this.$toasted.show("Email copied!", {
           position: "bottom-center",
           duration: 5000,

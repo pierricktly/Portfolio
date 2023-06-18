@@ -1,6 +1,6 @@
 <template>
   <section class="min-h-screen w-screen space-y-8 lg:space-y-16 px-5 flex flex-col items-center lg:justify-center lg:-mt-14">
-    <img v-fade-image class="absolute top-0 right-0 h-72 -z-40 hidden lg:block" src="@/assets/images/RedPanda.svg" alt="redpanda mascot of zokiasu">
+    <img v-fade-image class="absolute top-0 right-0 h-72 -z-40 hidden lg:block" src="@/assets/images/RedPanda.svg" alt="redpanda mascot">
     <div class="text-3xl lg:text-5xl xl:text-7xl 2xl:text-8xl text-center mx-auto space-y-5">
       <p class="freestyle-script">bonjour, je m'appelle</p>
       <h2 class="bookman font-bold">TAÏLY Pierrick</h2>

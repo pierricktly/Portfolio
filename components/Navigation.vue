@@ -2,7 +2,7 @@
   <div>
     <div class="fixed top-0 w-full justify-between p-10 hidden bg-gradient-to-b from-secondary to-transparent lg:flex z-50">
       <nuxt-link to="/">
-        <h1 class="text-2xl font-bold uppercase bookman hover:fill-text">Zokiasu</h1>
+        <h1 class="text-2xl font-bold uppercase bookman hover:fill-text">Pierrick Taïly</h1>
       </nuxt-link>
       <ul class="flex space-x-5">
 				<li>
@@ -11,12 +11,12 @@
 					</a>
 				</li>
 				<li>
-					<a href="https://github.com/Zokiasu" target="_blank">
+					<a href="https://github.com/pierricktly" target="_blank">
 						<icon-github class="w-6 h-6 transition-all ease-in-out duration-300 hover:text-primary"/>
 					</a>
 				</li>
 				<li>
-					<a href="https://www.malt.fr/profile/zokiasu" target="_blank">
+					<a href="https://www.malt.fr/profile/pierricktly" target="_blank">
 						<icon-malt class="w-6 h-6 transition-all ease-in-out duration-300 hover:text-primary"/>
 					</a>
 				</li>

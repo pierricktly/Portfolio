@@ -25,7 +25,7 @@ export default {
         name:"Comeback",
         description: "Ce projet vous permet de suivre et de ne pas manquer les sorties d'albums de vos artistes préférés en utilisant les informations partagées par les communautés de fans et en informant automatiquement des sorties d'albums grâce à l'ajout facile de nouveaux artistes.",
         image: "https://i.ibb.co/FW7P321/Comeback.png",
-        githubLink: "https://github.com/Zokiasu/Comeback",
+        githubLink: "https://github.com/pierricktly/Comeback",
         onlineLink: "https://come-back.netlify.app/",
         tags: [
           {
@@ -50,7 +50,7 @@ export default {
         name:"Portfolio",
         description: "Ce projet est mon portfolio, où vous pouvez découvrir les derniers projets que j'ai réalisés avec les technologies que j'utilise. En tant que développeur web spécialisé en Vue.js et Nuxt.js, je partage mes réalisations afin de mettre en avant mes compétences en matière de développement web moderne et performant.",
         image: "https://i.ibb.co/ZTt4TC4/Portfolio.png",
-        githubLink: "https://github.com/Zokiasu/Portfolio",
+        githubLink: "https://github.com/pierricktly/Portfolio",
         onlineLink: "https://zokiasu.com/",
         tags: [
           {
@@ -75,7 +75,7 @@ export default {
         name:"Asia Exchange Finder",
         description: "Application communautaire en ligne en utilisant Vue.js, permettant aux étudiants de trouver facilement les universités proposant des échanges universitaires vers l'Asie.",
         image: "https://i.ibb.co/vLGYkj6/AEF.png",
-        githubLink: "https://github.com/Zokiasu/asia-exchange-finder",
+        githubLink: "https://github.com/pierricktly/asia-exchange-finder",
         onlineLink: "https://asiastudeler.netlify.app/",
         tags: [
           {
@@ -96,7 +96,7 @@ export default {
         name:"Zordle",
         description: "Basé sur le jeu Wordle, Zordle est une mini jeux sélectionnant au hasard un mot dans le dictionnaire et l'utilisateur doit avec plusieurs essaies retrouver le mot choisit au hasard.",
         image: "https://i.ibb.co/ryyLLSf/zordle.jpg",
-        githubLink: "https://github.com/Zokiasu/zordle",
+        githubLink: "https://github.com/pierricktly/zordle",
         onlineLink: "https://zordle.netlify.app/",
         tags: [
           {
