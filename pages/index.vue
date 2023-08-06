@@ -1,29 +1,95 @@
-<template>
-  <section class="min-h-screen w-screen space-y-8 lg:space-y-16 px-5 flex flex-col items-center lg:justify-center lg:-mt-14">
-    <img v-fade-image class="absolute top-0 right-0 h-72 -z-40 hidden lg:block" src="@/assets/images/RedPanda.svg" alt="redpanda mascot">
-    <div class="text-3xl lg:text-5xl xl:text-7xl 2xl:text-8xl text-center mx-auto space-y-5">
-      <p class="freestyle-script">bonjour, je m'appelle</p>
-      <h2 class="bookman font-bold">TAÏLY Pierrick</h2>
-      <p class="freestyle-script">je suis</p>
-      <h2 class="bookman font-bold">développeur frontend</h2>
-    </div>
-    <img v-fade-image
-      alt="Profile picture"
-      src="@/assets/images/profile_picture.png"
-      class="bg-primary/20 shadow-inner mx-auto drop-shadow w-52 h-52 rounded-full aspect-square lg:hidden"
-    />
-    <div class="container mx-auto flex flex-col space-y-8 pb-16 md:pb-0">
-      <p class="whitespace-pre-line text-center mx-auto text-sm md:text-base xl:text-lg leading-6">
-        Spécialisé dans la création de sites et d'applications web modernes et attrayants sous vue.js/nuxt.js.
-        Si vous cherchez un développeur front-end professionnel et fiable pour votre prochain projet, n'hésitez pas à me contacter.
-      </p>
-      <nuxt-link aria-label="button to go contact form" class="bg-primary px-5 py-2 mx-auto text-sm transition-all ease-in-out duration-500 hover:bg-primary/20 lg:text-base" to="/contact">Contactez-moi</nuxt-link>
-    </div>
-  </section>
-</template>
+<script setup>
+const projects = ref([])
+projects.value = [
+  {
+    name: 'Comeback v2',
+    img: 'https://i.ibb.co/D79yDcX/Sans-titre.png',
+    github: 'https://github.com/pierricktly/comeback-nuxt3',
+    demo: 'https://come-back-nuxt3.netlify.app/',
+    tags: ['Nuxt 3', 'Vue 3', 'TailwindCSS', 'Firebase']
+  },
+  {
+    name: 'Comeback v1',
+    img: 'https://i.ibb.co/FW7P321/Comeback.png',
+    github: 'https://github.com/pierricktly/comeback-nuxt2',
+    demo: 'https://come-back.netlify.app/',
+    tags: ['Nuxt 2', 'Vue 2', 'TailwindCSS', 'Firebase']
+  },
+  {
+    name: 'Asia Exchange Finder',
+    img: 'https://i.ibb.co/vLGYkj6/AEF.png',
+    github: 'https://github.com/pierricktly/asia-exchange-finder',
+    demo: 'https://asiastudeler.netlify.app/',
+    tags: ['Nuxt 2', 'Vue 2', 'TailwindCSS']
+  },
+  {
+    name: 'Zordle',
+    img: 'https://i.ibb.co/ryyLLSf/zordle.jpg',
+    github: 'https://github.com/pierricktly/zordle',
+    demo: 'https://zordle.netlify.app/',
+    tags: ['Nuxt 2', 'Vue 2', 'TailwindCSS']
+  },
+]
 
-<script>
-export default {
-  name: 'Home',
+const copyEmail = () => {
+  const email = 'pierrick.tly@gmail.com'
+  navigator.clipboard.writeText(email)
+}
+
+const downloadCVFromFile = () => {
+  const link = document.createElement('a')
+  link.href = '../assets/docs/CV_FRONTEND_TAILY_PIERRICK.pdf'
+  link.download = 'CV_FRONTEND_TAILY_PIERRICK.pdf'
+  link.click()
 }
 </script>
+
+<template>
+  <div class="min-h-screen flex flex-col justify-center p-5">
+    <div class="container mx-auto space-y-5">
+      <section class="shadow shadow-secondary p-5 rounded space-y-3">
+        <h1 class="font-bold text-3xl">Hello, I'm Pierrick TAÏLY.</h1>
+        <p>I’m a Frontend developer, I mostly work with Vue & Nuxt</p>
+        <div class="space-x-2">
+          <button @click="downloadCVFromFile" class="bg-primary text-tertiary rounded py-2 px-3 transition-all duration-300 ease-in-out hover:bg-primary/80">Download CV</button>
+          <button @click="copyEmail" class="bg-primary text-tertiary rounded py-2 px-3 transition-all duration-300 ease-in-out hover:bg-primary/80">Copy Email</button>
+        </div>
+      </section>
+      <section class="grid grid-cols-1 md:grid-cols-2 gap-3">
+        <NuxtLink to="https://www.linkedin.com/in/pierrick-taily/" target="_blank" class="bg-primary text-tertiary hover:bg-primary/80 flex items-center justify-between rounded p-3 transition-all duration-300 ease-in-out">
+          <div class="flex items-center gap-3">
+            <icon-linkedin class="w-5 h-5" />
+            <p class="font-semibold uppercase">Linkedin</p>
+          </div>
+          <icon-arrowLeft class="w-5 h-5" />
+        </NuxtLink>
+        <NuxtLink to="https://github.com/pierricktly" target="_blank" class="bg-primary text-tertiary hover:bg-primary/80 flex items-center justify-between rounded p-3 transition-all duration-300 ease-in-out">
+          <div class="flex items-center gap-3">
+            <icon-github class="w-5 h-5" />
+            <p class="font-semibold uppercase">Github</p>
+          </div>
+          <icon-arrowLeft class="w-5 h-5" />
+        </NuxtLink>
+      </section>
+      <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-center gap-5">
+        <div v-for="project in projects" :key="project.name" class="shadow shadow-secondary p-2 space-y-2 rounded">
+          <nuxt-img
+            :src="project.img"
+            class="shadow shadow-secondary rounded aspect-video"
+          />
+          <h2 class="font-semibold text-xl">{{ project.name }}</h2>
+          <div class="flex flex-wrap gap-1">
+            <p v-for="tag in project.tags" :key="tag" class="rounded uppercase text-xs font-semibold border border-secondary px-2 py-1">{{ tag }}</p>
+          </div>
+          <div class="grid grid-cols-2 gap-1">
+            <NuxtLink :to="project.github" target="_blank" class="bg-primary text-tertiary text-center rounded uppercase text-sm font-semibold px-2 py-1 transition-all duration-300 ease-in-out hover:bg-primary/80">Github</NuxtLink>
+            <NuxtLink :to="project.demo" target="_blank" class="bg-primary text-tertiary text-center rounded uppercase text-sm font-semibold px-2 py-1 transition-all duration-300 ease-in-out hover:bg-primary/80">Live Demo</NuxtLink>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="p-5">
+      <p class="text-center">©{{ new Date().getFullYear() }} - Pierrick TAÏLY</p>
+    </div>
+  </div>
+</template>
