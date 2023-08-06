@@ -38,7 +38,7 @@ const copyEmail = () => {
 
 const downloadCVFromFile = () => {
   const link = document.createElement('a')
-  link.href = '../assets/docs/CV_FRONTEND_TAILY_PIERRICK.pdf'
+  link.href = '/CV_FRONTEND_TAILY_PIERRICK.pdf'
   link.download = 'CV_FRONTEND_TAILY_PIERRICK.pdf'
   link.click()
 }
