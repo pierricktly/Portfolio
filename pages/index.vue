@@ -56,14 +56,14 @@ const downloadCVFromFile = () => {
         </div>
       </section>
       <section class="grid grid-cols-1 md:grid-cols-2 gap-3">
-        <NuxtLink to="https://www.linkedin.com/in/pierrick-taily/" target="_blank" class="bg-primary text-tertiary hover:bg-primary/80 flex items-center justify-between rounded p-3 transition-all duration-300 ease-in-out">
+        <NuxtLink to="https://www.linkedin.com/in/pierrick-taily/" target="_blank" class="shadow shadow-secondary hover:bg-secondary/10 flex items-center justify-between rounded p-3 transition-all duration-300 ease-in-out">
           <div class="flex items-center gap-3">
             <icon-linkedin class="w-5 h-5" />
             <p class="font-semibold uppercase">Linkedin</p>
           </div>
           <icon-arrowLeft class="w-5 h-5" />
         </NuxtLink>
-        <NuxtLink to="https://github.com/pierricktly" target="_blank" class="bg-primary text-tertiary hover:bg-primary/80 flex items-center justify-between rounded p-3 transition-all duration-300 ease-in-out">
+        <NuxtLink to="https://github.com/pierricktly" target="_blank" class="shadow shadow-secondary hover:bg-secondary/10 flex items-center justify-between rounded p-3 transition-all duration-300 ease-in-out">
           <div class="flex items-center gap-3">
             <icon-github class="w-5 h-5" />
             <p class="font-semibold uppercase">Github</p>
@@ -89,7 +89,7 @@ const downloadCVFromFile = () => {
       </section>
     </div>
     <div class="p-5">
-      <p class="text-center">©{{ new Date().getFullYear() }} - Pierrick TAÏLY</p>
+      <p class="text-center font-semibold">©{{ new Date().getFullYear() }} - Pierrick TAÏLY</p>
     </div>
   </div>
 </template>
