@@ -49,7 +49,7 @@ const downloadCVFromFile = () => {
     <div class="container mx-auto space-y-5">
       <section class="shadow shadow-secondary p-5 rounded space-y-3">
         <h1 class="font-bold text-3xl">Hello, I'm Pierrick TAÏLY.</h1>
-        <p>I’m a Frontend developer, I mostly work with Vue & Nuxt</p>
+        <p>I'm a front-end developer, mostly working with Vue & Nuxt</p>
         <div class="space-x-2">
           <button @click="downloadCVFromFile" class="bg-primary text-tertiary rounded py-2 px-3 transition-all duration-300 ease-in-out hover:bg-primary/80">Download CV</button>
           <button @click="copyEmail" class="bg-primary text-tertiary rounded py-2 px-3 transition-all duration-300 ease-in-out hover:bg-primary/80">Copy Email</button>
@@ -71,7 +71,7 @@ const downloadCVFromFile = () => {
           <icon-arrowLeft class="w-5 h-5" />
         </NuxtLink>
       </section>
-      <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-center gap-5">
+      <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5">
         <div v-for="project in projects" :key="project.name" class="shadow shadow-secondary p-2 space-y-2 rounded">
           <nuxt-img
             :src="project.img"
