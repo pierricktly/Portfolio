@@ -72,7 +72,7 @@ const downloadCVFromFile = () => {
         </NuxtLink>
       </section>
       <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5">
-        <div v-for="project in projects" :key="project.name" class="shadow shadow-secondary p-2 space-y-2 rounded">
+        <div v-for="project in projects" :key="project.name" class="shadow shadow-secondary h-full p-2 space-y-2 rounded">
           <nuxt-img
             :src="project.img"
             class="shadow shadow-secondary rounded aspect-video"
