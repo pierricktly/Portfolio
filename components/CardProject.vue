@@ -19,7 +19,7 @@ const loadingDone = () => {
       <nuxt-img
         :src="image" :alt="name"
         quality="50" loading="lazy" @load="loadingDone"
-        class="aspect-video max-w-md hover:scale-105 transition-all ease-in-out duration-300"
+        class="aspect-video"
       />
     </div>
   </NuxtLink>

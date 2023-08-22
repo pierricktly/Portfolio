@@ -48,19 +48,19 @@ const downloadCVFromFile = () => {
 
 <template>
   <div class="container mx-auto p-5 min-h-screen space-y-10">
-      <div class="flex flex-col justify-center p-10 space-y-3 xl:col-span-2 bg-tertiary text-secondary">
+    <div class="flex flex-col justify-center p-10 space-y-3 xl:col-span-2 bg-tertiary text-secondary border border-secondary">
       <h1 class="font-bold text-3xl">Hello, I'm Pierrick TAÏLY.</h1>
       <p>I'm a front-end developer, mostly working with Vue & Nuxt</p>
       <div class="flex gap-3">
-        <button @click="copyEmail" class="max-w-fit uppercase font-semibold drop-shadow bg-tertiary px-2 py-1 rounded transition-all ease-in-out duration-300 hover:bg-primary hover:text-tertiary">
+        <button @click="copyEmail" class="uppercase font-semibold bg-prim-700 px-3 py-1 transition-all ease-in-out duration-300 hover:bg-prim-800">
           Copy Email
         </button>
-        <button @click="downloadCVFromFile" class="max-w-fit uppercase font-semibold drop-shadow bg-tertiary px-2 py-1 rounded transition-all ease-in-out duration-300 hover:bg-primary hover:text-tertiary">
+        <button @click="downloadCVFromFile" class="uppercase font-semibold bg-prim-700 px-3 py-1 transition-all ease-in-out duration-300 hover:bg-prim-800">
           Download CV
         </button>
       </div>
     </div>
-    <section aria-label="Section projets" class="flex flex-wrap gap-10 justify-between">
+    <section aria-label="Project's section" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5 justify-between">
       <div v-for="project in projects" :key="project.name" class="space-y-2">
         <CardProject
           :link="project.demo"
@@ -68,19 +68,21 @@ const downloadCVFromFile = () => {
           :name="project.name"
         />
         <div class="flex justify-between items-end">
-          <h2 class="uppercase text-lg font-semibold pr-2">
-            {{ project.name }}
-          </h2>
+          <a :href="project.github" target="_blank" class="hover:text-prim-700 transition-all duration-300 ease-in-out">
+            <h2 class="uppercase text-lg font-semibold pr-2">
+              {{ project.name }}
+            </h2>
+          </a>
           <a
             :href="project.github"
             target="_blank"
-            class="uppercase px-2 hover:text-primary transition-all duration-300 ease-in-out"
+            class="uppercase px-2 hover:text-prim-700 transition-all duration-300 ease-in-out"
           >
             <IconGithub aria-label="Github Link" class="w-6 h-6" />
           </a>
         </div>
-        <div class="flex divide-x-2 text-sm uppercase items-center -ml-2">
-          <p v-for="tag in project.tags" :key="tag" class="px-2">
+        <div class="flex gap-3 text-sm uppercase items-center">
+          <p v-for="tag in project.tags" :key="tag">
             {{ tag }}
           </p>
         </div>
