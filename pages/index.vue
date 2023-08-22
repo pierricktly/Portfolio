@@ -1,5 +1,6 @@
 <script setup>
 const projects = ref([])
+
 projects.value = [
   {
     name: 'Comeback v2',
@@ -34,6 +35,7 @@ projects.value = [
 const copyEmail = () => {
   const email = 'pierrick.tly@gmail.com'
   navigator.clipboard.writeText(email)
+  alert('Email copied to clipboard')
 }
 
 const downloadCVFromFile = () => {
@@ -45,51 +47,44 @@ const downloadCVFromFile = () => {
 </script>
 
 <template>
-  <div class="min-h-screen flex flex-col justify-center p-5">
-    <div class="container mx-auto space-y-5">
-      <section class="shadow shadow-secondary p-5 rounded space-y-3">
-        <h1 class="font-bold text-3xl">Hello, I'm Pierrick TAÏLY.</h1>
-        <p>I'm a front-end developer, mostly working with Vue & Nuxt</p>
-        <div class="space-x-2">
-          <button @click="downloadCVFromFile" class="bg-primary text-tertiary rounded py-2 px-3 transition-all duration-300 ease-in-out hover:bg-primary/80">Download CV</button>
-          <button @click="copyEmail" class="bg-primary text-tertiary rounded py-2 px-3 transition-all duration-300 ease-in-out hover:bg-primary/80">Copy Email</button>
-        </div>
-      </section>
-      <section class="grid grid-cols-1 md:grid-cols-2 gap-3">
-        <NuxtLink to="https://www.linkedin.com/in/pierrick-taily/" target="_blank" class="shadow shadow-secondary hover:bg-secondary/10 flex items-center justify-between rounded p-3 transition-all duration-300 ease-in-out">
-          <div class="flex items-center gap-3">
-            <icon-linkedin class="w-5 h-5" />
-            <p class="font-semibold uppercase">Linkedin</p>
-          </div>
-          <icon-arrowLeft class="w-5 h-5" />
-        </NuxtLink>
-        <NuxtLink to="https://github.com/pierricktly" target="_blank" class="shadow shadow-secondary hover:bg-secondary/10 flex items-center justify-between rounded p-3 transition-all duration-300 ease-in-out">
-          <div class="flex items-center gap-3">
-            <icon-github class="w-5 h-5" />
-            <p class="font-semibold uppercase">Github</p>
-          </div>
-          <icon-arrowLeft class="w-5 h-5" />
-        </NuxtLink>
-      </section>
-      <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5">
-        <div v-for="project in projects" :key="project.name" class="shadow shadow-secondary h-full p-2 space-y-2 rounded">
-          <nuxt-img
-            :src="project.img"
-            class="shadow shadow-secondary rounded aspect-video"
-          />
-          <h2 class="font-semibold text-xl">{{ project.name }}</h2>
-          <div class="flex flex-wrap gap-1">
-            <p v-for="tag in project.tags" :key="tag" class="rounded uppercase text-xs font-semibold border border-secondary px-2 py-1">{{ tag }}</p>
-          </div>
-          <div class="grid grid-cols-2 gap-1">
-            <NuxtLink :to="project.github" target="_blank" class="bg-primary text-tertiary text-center rounded uppercase text-sm font-semibold px-2 py-1 transition-all duration-300 ease-in-out hover:bg-primary/80">Github</NuxtLink>
-            <NuxtLink :to="project.demo" target="_blank" class="bg-primary text-tertiary text-center rounded uppercase text-sm font-semibold px-2 py-1 transition-all duration-300 ease-in-out hover:bg-primary/80">Live Demo</NuxtLink>
-          </div>
-        </div>
-      </section>
+  <div class="container mx-auto p-5 min-h-screen space-y-10">
+      <div class="flex flex-col justify-center p-10 space-y-3 xl:col-span-2 bg-tertiary text-secondary">
+      <h1 class="font-bold text-3xl">Hello, I'm Pierrick TAÏLY.</h1>
+      <p>I'm a front-end developer, mostly working with Vue & Nuxt</p>
+      <div class="flex gap-3">
+        <button @click="copyEmail" class="max-w-fit uppercase font-semibold drop-shadow bg-tertiary px-2 py-1 rounded transition-all ease-in-out duration-300 hover:bg-primary hover:text-tertiary">
+          Copy Email
+        </button>
+        <button @click="downloadCVFromFile" class="max-w-fit uppercase font-semibold drop-shadow bg-tertiary px-2 py-1 rounded transition-all ease-in-out duration-300 hover:bg-primary hover:text-tertiary">
+          Download CV
+        </button>
+      </div>
     </div>
-    <div class="p-5">
-      <p class="text-center font-semibold">©{{ new Date().getFullYear() }} - Pierrick TAÏLY</p>
-    </div>
+    <section aria-label="Section projets" class="flex flex-wrap gap-10 justify-between">
+      <div v-for="project in projects" :key="project.name" class="space-y-2">
+        <CardProject
+          :link="project.demo"
+          :image="project.img"
+          :name="project.name"
+        />
+        <div class="flex justify-between items-end">
+          <h2 class="uppercase text-lg font-semibold pr-2">
+            {{ project.name }}
+          </h2>
+          <a
+            :href="project.github"
+            target="_blank"
+            class="uppercase px-2 hover:text-primary transition-all duration-300 ease-in-out"
+          >
+            <IconGithub aria-label="Github Link" class="w-6 h-6" />
+          </a>
+        </div>
+        <div class="flex divide-x-2 text-sm uppercase items-center -ml-2">
+          <p v-for="tag in project.tags" :key="tag" class="px-2">
+            {{ tag }}
+          </p>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
