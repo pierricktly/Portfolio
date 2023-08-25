@@ -52,21 +52,21 @@ const downloadCVFromFile = () => {
       <h1 class="font-bold text-3xl">Hello, I'm Pierrick TAÏLY.</h1>
       <p>I'm a front-end developer, mostly working with Vue & Nuxt</p>
       <button @click="copyEmail" class="flex gap-2 pt-3 font-semibold transition-all ease-in-out duration-300 hover:text-prim-800">
-        <IconEmail aria-label="Linkedin Link" class="w-6 h-6" />
+        <IconEmail aria-label="Email Copy" class="w-6 h-6" />
         <p>Contact Me</p>
       </button>
     </section>
     <section aria-label="Link's section" class="grid grid-cols-1 gap-2 md:grid-cols-3">
-      <a href="https://www.linkedin.com/in/pierrick-taily/" target="_blank" class="bg-[#0E76A8] rounded-lg duration-300 transition-all ease-in-out flex gap-2 p-5 items-center justify-center md:p-8 md:flex-col md:gap-0 hover:bg-[#0c3045]">
-        <IconLinkedin aria-label="Linkedin Link" class="w-6 h-6" />
+      <a href="https://www.linkedin.com/in/pierrick-taily/" target="_blank" class="bg-[#0E76A8] rounded-lg duration-300 transition-all ease-in-out flex gap-2 p-5 items-center justify-center md:p-8 md:flex-col hover:bg-[#0c3045]">
+        <IconLinkedin aria-label="Linkedin Link" class="w-7 h-7" />
         <p>Linkedin</p>
       </a>
-      <a href="https://github.com/pierricktly/" target="_blank" class="bg-[#333333] rounded-lg duration-300 transition-all ease-in-out flex gap-2 p-5 items-center justify-center md:p-8 md:flex-col md:gap-0 hover:bg-[#262626]">
-        <IconGithub aria-label="Github Link" class="w-6 h-6" />
+      <a href="https://github.com/pierricktly/" target="_blank" class="bg-[#333333] rounded-lg duration-300 transition-all ease-in-out flex gap-2 p-5 items-center justify-center md:p-8 md:flex-col hover:bg-[#262626]">
+        <IconGithub aria-label="Github Link" class="w-7 h-7" />
         <p>Github</p>
       </a>
-      <button @click="downloadCVFromFile" class="bg-prim-700 rounded-lg duration-300 transition-all ease-in-out flex gap-2 p-5 items-center justify-center md:p-8 md:flex-col md:gap-0 hover:bg-prim-900">
-        <IconDownload aria-label="Download CV Button" class="w-6 h-6" />
+      <button @click="downloadCVFromFile" class="bg-prim-700 rounded-lg duration-300 transition-all ease-in-out flex gap-2 p-5 items-center justify-center md:p-8 md:flex-col hover:bg-prim-900">
+        <IconDownload aria-label="Download CV Button" class="w-7 h-7" />
         <p>Download CV</p>
       </button>
     </section>

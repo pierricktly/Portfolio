@@ -33,11 +33,11 @@ const loadingDone = () => {
 <template>
   <div class="bg-secondary text-tertiary rounded-lg p-1.5 xl:p-2.5 space-y-1">
     <div class="rounded-lg relative overflow-hidden">
-      <div ref="skeleton" class="absolute transition-all duration-1000 ease-in-out inset-0 bg-[#333333] h-full w-full min-h-[13rem] max-h-[13rem]"></div>
+      <div ref="skeleton" class="absolute transition-all duration-1000 ease-in-out inset-0 bg-[#333333] h-full w-full md:min-h-[13rem] md:max-h-[20rem]"></div>
       <nuxt-img
         :src="image" :alt="name"
         quality="50" loading="lazy" @load="loadingDone"
-        class="aspect-video rounded-lg min-h-[13rem] max-h-[13rem]"
+        class="aspect-video rounded-lg md:min-h-[13rem] md:max-h-[20rem]"
       />
     </div>
     <div class="flex w-full items-center justify-between px-1.5">
