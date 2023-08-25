@@ -47,46 +47,39 @@ const downloadCVFromFile = () => {
 </script>
 
 <template>
-  <div class="container mx-auto p-5 min-h-screen space-y-10">
-    <div class="flex flex-col justify-center p-10 space-y-3 xl:col-span-2 bg-tertiary text-secondary border border-secondary">
+  <div class="container mx-auto p-5 min-h-screen space-y-2">
+    <section aria-label="Presentation's section" class="bg-secondary text-tertiary flex flex-col items-center gap-2 p-8 rounded-lg">
       <h1 class="font-bold text-3xl">Hello, I'm Pierrick TAÏLY.</h1>
       <p>I'm a front-end developer, mostly working with Vue & Nuxt</p>
-      <div class="flex gap-3">
-        <button @click="copyEmail" class="uppercase font-semibold bg-prim-700 px-3 py-1 transition-all ease-in-out duration-300 hover:bg-prim-800">
-          Copy Email
-        </button>
-        <button @click="downloadCVFromFile" class="uppercase font-semibold bg-prim-700 px-3 py-1 transition-all ease-in-out duration-300 hover:bg-prim-800">
-          Download CV
-        </button>
-      </div>
-    </div>
-    <section aria-label="Project's section" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5 justify-between">
-      <div v-for="project in projects" :key="project.name" class="space-y-2">
+      <button @click="copyEmail" class="flex gap-2 pt-3 font-semibold transition-all ease-in-out duration-300 hover:text-prim-800">
+        <IconEmail aria-label="Linkedin Link" class="w-6 h-6" />
+        <p>Contact Me</p>
+      </button>
+    </section>
+    <section aria-label="Link's section" class="grid grid-cols-1 gap-2 md:grid-cols-3">
+      <a href="https://www.linkedin.com/in/pierrick-taily/" target="_blank" class="bg-[#0E76A8] rounded-lg duration-300 transition-all ease-in-out flex gap-2 p-5 items-center justify-center md:p-8 md:flex-col md:gap-0 hover:bg-[#0c3045]">
+        <IconLinkedin aria-label="Linkedin Link" class="w-6 h-6" />
+        <p>Linkedin</p>
+      </a>
+      <a href="https://github.com/pierricktly/" target="_blank" class="bg-[#333333] rounded-lg duration-300 transition-all ease-in-out flex gap-2 p-5 items-center justify-center md:p-8 md:flex-col md:gap-0 hover:bg-[#262626]">
+        <IconGithub aria-label="Github Link" class="w-6 h-6" />
+        <p>Github</p>
+      </a>
+      <button @click="downloadCVFromFile" class="bg-prim-700 rounded-lg duration-300 transition-all ease-in-out flex gap-2 p-5 items-center justify-center md:p-8 md:flex-col md:gap-0 hover:bg-prim-900">
+        <IconDownload aria-label="Download CV Button" class="w-6 h-6" />
+        <p>Download CV</p>
+      </button>
+    </section>
+    <section aria-label="Project's section" class="grid grid-cols-1 gap-2 md:grid-cols-2 xl:grid-cols-3">
         <CardProject
-          :link="project.demo"
-          :image="project.img"
+          v-for="project in projects"
+          :key="project.name"
           :name="project.name"
+          :image="project.img"
+          :githubLink="project.github"
+          :demoLink="project.demo"
+          :tags="project.tags"
         />
-        <div class="flex justify-between items-end">
-          <a :href="project.github" target="_blank" class="hover:text-prim-700 transition-all duration-300 ease-in-out">
-            <h2 class="uppercase text-lg font-semibold pr-2">
-              {{ project.name }}
-            </h2>
-          </a>
-          <a
-            :href="project.github"
-            target="_blank"
-            class="uppercase px-2 hover:text-prim-700 transition-all duration-300 ease-in-out"
-          >
-            <IconGithub aria-label="Github Link" class="w-6 h-6" />
-          </a>
-        </div>
-        <div class="flex gap-3 text-sm uppercase items-center">
-          <p v-for="tag in project.tags" :key="tag">
-            {{ tag }}
-          </p>
-        </div>
-      </div>
     </section>
   </div>
 </template>
