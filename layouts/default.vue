@@ -1,16 +1,25 @@
+<script setup>
+const { locale } = useI18n()
+const changeLocal = () => {
+  if (locale.value === 'en') {
+    locale.value = 'fr'
+  } else {
+    locale.value = 'en'
+  }
+}
+</script>
+
 <template>
-  <div class="bg-tertiary text-prim-50">
+  <div class="bg-tertiary min-h-screen flex flex-col justify-between text-prim-50">
     <header>
       <nav>
         <div class="container mx-auto flex items-center justify-between p-5">
           <NuxtLink to="/" class="font-bold uppercase text-xl">Pierrick TAÏLY</NuxtLink>
           <div class="flex items-center gap-5">
-            <NuxtLink to="https://www.linkedin.com/in/pierrick-taily/" target="_blank" class="hover:text-prim-700 transition-all duration-300 ease-in-out">
-              <IconLinkedin aria-label="Linkedin Link" class="w-5 h-5" />
-            </NuxtLink>
-            <NuxtLink to="https://github.com/pierricktly/" target="_blank" class="hover:text-prim-700 transition-all duration-300 ease-in-out">
-              <IconGithub aria-label="Github Link" class="w-5 h-5" />
-            </NuxtLink>
+            <div class="font-semibold">
+              <button @click="changeLocal" class="px-2 rounded-l focus:outline-none" :class="locale === 'en' ? 'bg-white text-tertiary':'bg-transparent'">EN</button>
+              <button @click="changeLocal" class="px-2 rounded-r focus:outline-none" :class="locale === 'fr' ? 'bg-white text-tertiary' : 'bg-transparent'">FR</button>
+            </div>
           </div>
         </div>
       </nav>

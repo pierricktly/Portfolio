@@ -6,7 +6,7 @@ export default defineNuxtConfig({
     head: {
       title: 'Pierrick TAÏLY - Portfolio - Développeur Frontend Vue.js Nuxt.js',
       htmlAttrs: {
-        lang: 'en',
+        lang: 'fr',
       },
       meta: [
         { hid: 'description', name: 'description', content: 'Retrouver mes derniers projets personnel' },
@@ -37,7 +37,12 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/tailwindcss',
     '@nuxt/image',
+    '@nuxtjs/i18n',
   ],
+
+  i18n: {
+    vueI18n: './i18n.config.ts'
+  },
 
   tailwindcss:{
     cssPath: '~/assets/css/tailwind.css',

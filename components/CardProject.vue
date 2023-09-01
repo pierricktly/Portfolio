@@ -1,6 +1,10 @@
 <script setup lang="ts">
-const { name, image, githubLink, demoLink, tags } = defineProps({
+const { name, image, description, githubLink, demoLink, tags } = defineProps({
   name: {
+    type: String,
+    required: true,
+  },
+  description: {
     type: String,
     required: true,
   },
@@ -31,30 +35,29 @@ const loadingDone = () => {
 </script>
 
 <template>
-  <div class="bg-secondary text-tertiary rounded-lg p-1.5 xl:p-2.5 space-y-1">
-    <div class="rounded-lg relative overflow-hidden">
-      <div ref="skeleton" class="absolute transition-all duration-1000 ease-in-out inset-0 bg-[#333333] h-full w-full md:min-h-[13rem] md:max-h-[20rem]"></div>
-      <nuxt-img
-        :src="image" :alt="name"
-        quality="50" loading="lazy" @load="loadingDone"
-        class="aspect-video rounded-lg md:min-h-[13rem] md:max-h-[20rem]"
-      />
-    </div>
-    <div class="flex w-full items-center justify-between px-1.5">
-      <div>
-        <a :href="demoLink" target="_blank" class="text-lg font-semibold hover:text-primary">{{ name }}</a>
-        <div class="flex gap-1.5 text-xs uppercase items-center">
-          <p 
-            v-for="(tag, index) in tags"
-            :key="tag+'_'+index"
-          >
-            {{ tag }}
-          </p>
-        </div>
+  <div class="border border-secondary rounded-lg p-3 space-y-1.5 flex flex-col justify-between gap-2">
+    <div class="space-y-1">
+      <div class="flex w-full items-center justify-between">
+        <a :href="demoLink" target="_blank" class="flex items-center gap-1 text-lg font-semibold hover:text-primary">
+          <p>{{ name }}</p>
+          <IconLinkexternal aria-label="Github Link" class="w-5 h-5" />
+        </a>
+        <a :href="githubLink" target="_blank" class="hover:text-primary">
+          <IconGithub aria-label="Github Link" class="w-6 h-6" />
+        </a>
       </div>
-      <a :href="githubLink" target="_blank" class="hover:text-primary">
-        <IconGithub aria-label="Github Link" class="w-6 h-6" />
-      </a>
+      <p class="pr-8">
+        {{ description }}
+      </p>
+    </div>
+    <div class="flex gap-1.5 text-xs uppercase items-center">
+      <p 
+        v-for="(tag, index) in tags"
+        :key="tag+'_'+index"
+        class="border border-secondary font-semibold rounded px-1.5"
+      >
+        {{ tag }}
+      </p>
     </div>
   </div>
 </template>
