@@ -19,7 +19,7 @@ projects.value = [
     img: 'https://i.ibb.co/vLGYkj6/AEF.png',
     github: 'https://github.com/pierricktly/asia-exchange-finder',
     demo: 'https://asiastudeler.netlify.app/',
-    tags: ['Nuxt 2', 'Vue 2', 'TailwindCSS']
+    tags: ['Vue 2', 'TailwindCSS', 'Firebase']
   },
   {
     name: 'Zordle',
