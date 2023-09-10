@@ -75,7 +75,7 @@ const downloadCVFromFile = () => {
       :githubLink="project.github"
       :demoLink="project.demo"
       :tags="project.tags"
-      class="bg-tertiary text-secondary shadow shadow-tertiary dark"
+      class="bg-tertiary text-secondary shadow shadow-tertiary"
     />
     <section aria-label="Contact's section" class="bg-secondary shadow shadow-tertiary col-span-full flex flex-col items-center gap-3 p-9 rounded-lg">
       <p class="font-semibold text-xl text-center text-tertiary">
