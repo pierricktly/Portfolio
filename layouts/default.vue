@@ -10,15 +10,15 @@ const changeLocal = () => {
 </script>
 
 <template>
-  <div class="bg-tertiary min-h-screen flex flex-col justify-between text-prim-50">
+  <div class="bg-secondary dark:bg-tertiary text-tertiary dark:text-secondary min-h-screen flex flex-col justify-between space-y-3 md:space-y-5">
     <header>
       <nav>
         <div class="container mx-auto flex items-center justify-between p-5">
           <NuxtLink to="/" class="font-bold uppercase text-xl">Pierrick TAÏLY</NuxtLink>
           <div class="flex items-center gap-5">
             <div class="font-semibold">
-              <button @click="changeLocal" class="px-2 rounded-l focus:outline-none" :class="locale === 'en' ? 'bg-white text-tertiary':'bg-transparent'">EN</button>
-              <button @click="changeLocal" class="px-2 rounded-r focus:outline-none" :class="locale === 'fr' ? 'bg-white text-tertiary' : 'bg-transparent'">FR</button>
+              <button @click="changeLocal" class="px-2 rounded-l text-primary focus:outline-none" :class="locale === 'en' ? 'bg-primary text-secondary':'bg-transparent'">EN</button>
+              <button @click="changeLocal" class="px-2 rounded-r text-primary focus:outline-none" :class="locale === 'fr' ? 'bg-primary text-secondary' : 'bg-transparent'">FR</button>
             </div>
           </div>
         </div>
@@ -27,7 +27,7 @@ const changeLocal = () => {
     <main>
       <slot />
     </main>
-    <footer class="p-5">
+    <footer class="bg-tertiary text-secondary p-5">
       <p class="text-center font-semibold">©{{ new Date().getFullYear() }} - Pierrick TAÏLY</p>
     </footer>
   </div>

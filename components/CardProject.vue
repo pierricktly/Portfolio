@@ -35,10 +35,10 @@ const loadingDone = () => {
 </script>
 
 <template>
-  <div class="border border-secondary rounded-lg p-3 space-y-1.5 flex flex-col justify-between gap-2">
+  <a :href="demoLink" target="_blank" class="rounded-lg p-3 space-y-1.5 flex flex-col justify-between gap-2 group">
     <div class="space-y-1">
       <div class="flex w-full items-center justify-between">
-        <a :href="demoLink" target="_blank" class="flex items-center gap-1 text-lg font-semibold hover:text-primary">
+        <a :href="demoLink" target="_blank" class="flex items-center gap-1 text-lg font-semibold hover:text-primary group-hover:text-primary">
           <p>{{ name }}</p>
           <IconLinkexternal aria-label="Github Link" class="w-5 h-5" />
         </a>
@@ -54,10 +54,10 @@ const loadingDone = () => {
       <p 
         v-for="(tag, index) in tags"
         :key="tag+'_'+index"
-        class="border border-secondary font-semibold rounded px-1.5"
+        class="font-semibold rounded px-1.5"
       >
         {{ tag }}
       </p>
     </div>
-  </div>
+  </a>
 </template>

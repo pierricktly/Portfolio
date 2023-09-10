@@ -47,45 +47,41 @@ const downloadCVFromFile = () => {
 </script>
 
 <template>
-  <div class="container mx-auto p-5 space-y-2">
-    <section aria-label="Presentation's section" class="bg-secondary text-tertiary flex flex-col items-center gap-3 p-9 rounded-lg">
+  <div class="container mx-auto p-5 lg:py-0 lg:px-5 grid grid-cols-1 lg:grid-cols-3 gap-5">
+    <section aria-label="Presentation's section" class="bg-secondary shadow shadow-tertiary col-span-full flex flex-col items-center gap-3 p-9 rounded-lg">
       <div class="text-center space-y-2">
-        <p class="font-semibold text-xl text-primary">{{ $t('hello') }}</p>
-        <h1 class="font-bold text-4xl text-tertiary">Pierrick TAÏLY.</h1>
+        <p class="font-semibold text-lg lg:text-xl text-primary">{{ $t('hello') }}</p>
+        <h1 class="font-bold text-2xl lg:text-4xl">Pierrick TAÏLY.</h1>
       </div>
-      <p class="max-w-xl font-semibold text-center text-lg">{{ $t('description') }}</p>
+      <p class="max-w-2xl font-semibold text-center lg:text-lg">{{ $t('description') }}</p>
     </section>
-    <section aria-label="Link's section" class="font-semibold grid grid-cols-1 gap-2 md:grid-cols-3">
-      <a href="https://www.linkedin.com/in/pierrick-taily/" target="_blank" class="bg-[#0E76A8] rounded-lg duration-300 transition-all ease-in-out flex gap-2 p-5 items-center justify-center md:p-8 md:flex-col hover:bg-[#0c3045]">
-        <IconLinkedin aria-label="Linkedin Link" class="w-7 h-7 md:w-8 md:h-8" />
-        <p>Linkedin</p>
+    <section class="col-span-full grid grid-cols-3 gap-5">
+      <a href="https://www.linkedin.com/in/pierrick-taily/" target="_blank" class="bg-primary shadow shadow-tertiary text-secondary p-5 rounded-lg transition-all duration-300 ease-in-out focus:no-underline hover:text-tertiary">
+        <IconLinkedin aria-label="Linkedin Link" class="mx-auto w-7 h-7 lg:w-8 lg:h-8" />
       </a>
-      <a href="https://github.com/pierricktly/" target="_blank" class="bg-[#333333] rounded-lg duration-300 transition-all ease-in-out flex gap-2 p-5 items-center justify-center md:p-8 md:flex-col hover:bg-[#262626]">
-        <IconGithub aria-label="Github Link" class="w-7 h-7 md:w-8 md:h-8" />
-        <p>Github</p>
+      <a href="https://github.com/pierricktly/" target="_blank" class="bg-primary shadow shadow-tertiary text-secondary p-5 rounded-lg transition-all duration-300 ease-in-out focus:no-underline hover:text-tertiary">
+        <IconGithub aria-label="Github Link" class="mx-auto w-7 h-7 lg:w-8 lg:h-8" />
       </a>
-      <button @click="downloadCVFromFile" class="bg-prim-700 rounded-lg duration-300 transition-all ease-in-out flex gap-2 p-5 items-center justify-center md:p-8 md:flex-col hover:bg-prim-900">
-        <IconDownload aria-label="Download CV Button" class="w-7 h-7 md:w-8 md:h-8" />
-        <p>{{ $t('downloadCV') }}</p>
+      <button @click="downloadCVFromFile" class="bg-primary shadow shadow-tertiary text-secondary p-5 rounded-lg transition-all duration-300 ease-in-out focus:no-underline hover:text-tertiary">
+        <IconDownload aria-label="Download CV Button" class="mx-auto w-7 h-7 lg:w-8 lg:h-8" />
       </button>
     </section>
-    <section aria-label="Project's section" class="grid grid-cols-1 gap-2 md:grid-cols-2 xl:grid-cols-3">
-        <CardProject
-          v-for="project in projects"
-          :key="project.name"
-          :name="project.name"
-          :description="locale === 'en' ? project.description_en : project.description_fr"
-          :image="project.img"
-          :githubLink="project.github"
-          :demoLink="project.demo"
-          :tags="project.tags"
-        />
-    </section>
-    <section aria-label="Contact's section" class="bg-secondary text-tertiary flex flex-col items-center gap-5 p-9 rounded-lg">
-      <p class="font-semibold text-2xl text-tertiary">
+    <CardProject
+      v-for="project in projects"
+      :key="project.name"
+      :name="project.name"
+      :description="locale === 'en' ? project.description_en : project.description_fr"
+      :image="project.img"
+      :githubLink="project.github"
+      :demoLink="project.demo"
+      :tags="project.tags"
+      class="bg-tertiary text-secondary shadow shadow-tertiary dark"
+    />
+    <section aria-label="Contact's section" class="bg-secondary shadow shadow-tertiary col-span-full flex flex-col items-center gap-3 p-9 rounded-lg">
+      <p class="font-semibold text-xl text-center text-tertiary">
         {{ $t('contactMessage') }}
       </p>
-      <button @click="copyEmail" class="flex gap-2 px-2 py-1 font-semibold transition-all ease-in-out duration-1000 text-primary hover:bg-primary hover:text-secondary">
+      <button @click="copyEmail" class="flex gap-5 px-2 py-1 font-semibold transition-all ease-in-out duration-1000 text-primary hover:bg-primary hover:text-secondary">
         <IconEmail aria-label="Email Copy" class="w-6 h-6" />
         <p>{{ $t('contact') }}</p>
       </button>
