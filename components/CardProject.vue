@@ -50,11 +50,11 @@ const loadingDone = () => {
         {{ description }}
       </p>
     </div>
-    <div class="flex gap-1.5 text-xs uppercase items-center">
+    <div class="flex flex-wrap gap-2.5 text-xs uppercase items-center">
       <p 
         v-for="(tag, index) in tags"
         :key="tag+'_'+index"
-        class="font-semibold rounded px-1.5"
+        class="font-semibold"
       >
         {{ tag }}
       </p>
