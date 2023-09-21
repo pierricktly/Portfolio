@@ -9,7 +9,7 @@ projects.value = [
     description_fr: 'Application web communautaire de suivis de sortie musicale. Cette application permet aux utilisateurs de reporter les prochaines sorties de leurs artistes favoris et de suivre les prochaines partager par la communauté.',
     img: 'https://i.ibb.co/D79yDcX/Sans-titre.png',
     github: 'https://github.com/pierricktly/comeback-nuxt3',
-    demo: 'https://come-back-nuxt3.netlify.app/',
+    demo: 'https://come-back.netlify.app/',
     tags: ['Nuxt 3', 'Vue 3', 'TailwindCSS', 'Firebase']
   },
   {
@@ -47,7 +47,7 @@ const downloadCVFromFile = () => {
 </script>
 
 <template>
-  <div class="container mx-auto p-5 lg:py-0 lg:px-5 grid grid-cols-1 lg:grid-cols-3 gap-5">
+  <div class="container max-w-7xl mx-auto p-5 lg:py-0 lg:px-5 grid grid-cols-1 lg:grid-cols-3 gap-5">
     <section aria-label="Presentation's section" class="bg-secondary shadow shadow-tertiary col-span-full flex flex-col items-center gap-3 p-9 rounded-lg">
       <div class="text-center space-y-2">
         <p class="font-semibold text-lg lg:text-xl text-primary">{{ $t('hello') }}</p>

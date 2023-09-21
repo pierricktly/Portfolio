@@ -13,7 +13,7 @@ const changeLocal = () => {
   <div class="bg-secondary dark:bg-tertiary text-tertiary dark:text-secondary min-h-screen flex flex-col justify-between space-y-3 md:space-y-5">
     <header>
       <nav>
-        <div class="container mx-auto flex items-center justify-between p-5">
+        <div class="container max-w-7xl mx-auto flex items-center justify-between p-5">
           <NuxtLink to="/" class="font-bold uppercase text-xl">Pierrick TAÏLY</NuxtLink>
           <div class="flex items-center gap-5">
             <div class="font-semibold">
