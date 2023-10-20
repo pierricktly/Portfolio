@@ -1,15 +1,14 @@
 <script setup>
-const projects = ref([]);
 const { locale } = useI18n();
 
-projects.value = [
+const projects = ref([
   {
     name: "Comeback",
     description_en:
       "Community web app for music release tracking. This app allows users to report on upcoming releases by their favorite artists, and to track upcoming releases shared by the community.",
     description_fr:
       "Application web communautaire de suivis de sortie musicale. Cette application permet aux utilisateurs de reporter les prochaines sorties de leurs artistes favoris et de suivre les prochaines partager par la communauté.",
-    img: "https://i.ibb.co/zm7gJ29/comeback.webp",
+    img: `/images/comeback.webp`,
     github: "https://github.com/pierricktly/comeback-nuxt3",
     demo: "https://come-back.netlify.app/",
     tags: ["Nuxt 3", "Vue 3", "TailwindCSS", "Firebase"],
@@ -19,7 +18,7 @@ projects.value = [
     description_en: "Community web app, enabling students to find and easily reference universities or schools offering university exchanges to Asia.",
     description_fr:
       "Application communautaire, permettant aux étudiants de trouver et référencer simplement les universités ou écoles proposant des échanges universitaires vers l'Asie.",
-    img: "https://i.ibb.co/yFsY88h/asian-Exchange-Finder.webp",
+    img: `/images/asianExchangeFinder.webp`,
     github: "https://github.com/pierricktly/asia-exchange-finder",
     demo: "https://asiastudeler.netlify.app/",
     tags: ["Vue 2", "TailwindCSS", "Firebase"],
@@ -28,12 +27,12 @@ projects.value = [
     name: "Zordle",
     description_en: "Simplified copy of the famous wordle game.",
     description_fr: "Copie simplifié du célèbre jeu wordle.",
-    img: "https://i.ibb.co/Dpjdtwg/zordle.webp",
+    img: `/images/zordle.webp`,
     github: "https://github.com/pierricktly/zordle",
     demo: "https://zordle.netlify.app/",
     tags: ["Nuxt 2", "Vue 2", "TailwindCSS"],
   },
-];
+]);
 
 const copyEmail = () => {
   const email = "pierrick.tly@gmail.com";
@@ -50,7 +49,7 @@ const downloadCVFromFile = () => {
 </script>
 
 <template>
-  <div class="container max-w-7xl mx-auto p-5 lg:pt-0 lg:px-5 grid grid-cols-1 lg:grid-cols-3 gap-5 lg:pb-5">
+  <div class="container max-w-7xl mx-auto p-5 lg:pt-0 lg:px-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:pb-5">
     <section
       aria-label="Presentation's section"
       class="relative bg-secondary shadow shadow-tertiary col-span-full flex flex-col items-center gap-3 p-9 rounded-lg">

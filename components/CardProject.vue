@@ -39,11 +39,10 @@ const loadingDone = () => {
   <div class="rounded-lg p-3 space-y-1 flex flex-col justify-between gap-2">
     <div class="space-y-1">
       <div class="relative">
-        <div ref="skeleton" class="absolute inset-0 z-10 bg-primary rounded h-full w-full aspect-video transition-all duration-150 ease-in-out"></div>
         <img
           :src="image"
           alt="Project's image"
-          class="rounded shadow shadow-tertiary aspect-video transition-all duration-150 ease-in-out"
+          class="w-full rounded shadow shadow-tertiary aspect-video transition-all duration-150 ease-in-out"
           @load="loadingDone" />
       </div>
       <div class="flex w-full items-center justify-between">
