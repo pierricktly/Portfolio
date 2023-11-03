@@ -89,4 +89,11 @@ export default defineNuxtConfig({
     injectPosition: 0,
     viewer: true,
   },
+
+  image: {
+    provider: 'netlify',
+    netlify: {
+      baseURl: process.env.IMAGES_URL,
+    },
+  },
 })

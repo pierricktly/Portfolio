@@ -3,7 +3,9 @@
     <div id="name" class="space-y-5 font-bold lg:w-3/4 lg:space-y-8 2xl:space-y-12">
       <p class="text-primary md:text-xl xl:text-[1.4vw]">{{ $t('hello') }}</p>
       <h1 class="text-4xl font-bold xl:text-[4vw]">Pierrick Taïly</h1>
-      <p class="text-lg font-semibold leading-10 md:text-xl lg:w-3/4 xl:text-[1.3vw]">
+      <p
+        class="text-lg font-semibold leading-10 md:text-xl lg:w-3/4 lg:leading-10 xl:text-[1.3vw]"
+      >
         {{ $t('description') }}
       </p>
 
