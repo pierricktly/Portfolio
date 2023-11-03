@@ -11,7 +11,7 @@ const changeLocal = () => {
 </script>
 
 <template>
-  <div class="min-h-screen bg-secondary p-5 text-tertiary md:p-0">
+  <div class="min-h-screen overflow-y-hidden bg-secondary p-5 text-tertiary md:p-0">
     <header
       class="slide-in-top container mx-auto flex items-center justify-between sm:px-5 md:py-5"
     >
@@ -47,12 +47,12 @@ const changeLocal = () => {
     </main>
     <footer>
       <nav
-        class="fixed bottom-5 left-3 sm:left-5 flex gap-0.5 overflow-hidden rounded-full text-lg font-semibold text-secondary md:hidden"
+        class="fixed bottom-5 left-3 flex gap-0.5 overflow-hidden rounded-full text-lg font-semibold text-secondary sm:left-5 md:hidden"
       >
         <NuxtLink
           to="/"
           :class="route.name == 'index' ? 'bg-primary' : 'bg-tertiary'"
-          class="px-5 py-2 text-sm sm:px-5 sm:text-base"
+          class="px-5 py-2 text-sm sm:px-5 sm:py-1 sm:text-base"
         >
           <IconHome class="h-4 w-4 sm:hidden" />
           <p class="hidden sm:block">{{ $t('nav.home') }}</p>
@@ -60,7 +60,7 @@ const changeLocal = () => {
         <NuxtLink
           to="/about"
           :class="route.name == 'about' ? 'bg-primary' : 'bg-tertiary'"
-          class="px-5 py-2 text-sm sm:px-5 sm:text-base"
+          class="px-5 py-2 text-sm sm:px-5 sm:py-1 sm:text-base"
         >
           <IconAboutMe class="h-4 w-4 sm:hidden" />
           <p class="hidden sm:block">{{ $t('nav.about') }}</p>
@@ -68,7 +68,7 @@ const changeLocal = () => {
         <NuxtLink
           to="/project"
           :class="route.name == 'project' ? 'bg-primary' : 'bg-tertiary'"
-          class="px-5 py-2 text-sm sm:px-5 sm:text-base"
+          class="px-5 py-2 text-sm sm:px-5 sm:py-1 sm:text-base"
         >
           <IconProject class="h-4 w-4 sm:hidden" />
           <p class="hidden sm:block">{{ $t('nav.projects') }}</p>
@@ -76,7 +76,7 @@ const changeLocal = () => {
         <NuxtLink
           to="/contact"
           :class="route.name == 'contact' ? 'bg-primary' : 'bg-tertiary'"
-          class="px-5 py-2 text-sm sm:px-5 sm:text-base"
+          class="px-5 py-2 text-sm sm:px-5 sm:py-1 sm:text-base"
         >
           <IconContact class="h-4 w-4 sm:hidden" />
           <p class="hidden sm:block">{{ $t('nav.contact') }}</p>
