@@ -1,103 +1,99 @@
-<script setup>
-const { locale } = useI18n();
-
-const projects = ref([
-  {
-    name: "Comeback",
-    description_en:
-      "Community web app for music release tracking. This app allows users to report on upcoming releases by their favorite artists, and to track upcoming releases shared by the community.",
-    description_fr:
-      "Application web communautaire de suivis de sortie musicale. Cette application permet aux utilisateurs de reporter les prochaines sorties de leurs artistes favoris et de suivre les prochaines partager par la communauté.",
-    img: `/images/comeback.webp`,
-    github: "https://github.com/pierricktly/comeback-nuxt3",
-    demo: "https://come-back.netlify.app/",
-    tags: ["Nuxt 3", "Vue 3", "TailwindCSS", "Firebase"],
-  },
-  {
-    name: "Asia Exchange Finder",
-    description_en: "Community web app, enabling students to find and easily reference universities or schools offering university exchanges to Asia.",
-    description_fr:
-      "Application communautaire, permettant aux étudiants de trouver et référencer simplement les universités ou écoles proposant des échanges universitaires vers l'Asie.",
-    img: `/images/asianExchangeFinder.webp`,
-    github: "https://github.com/pierricktly/asia-exchange-finder",
-    demo: "https://asiastudeler.netlify.app/",
-    tags: ["Vue 2", "TailwindCSS", "Firebase"],
-  },
-  {
-    name: "Zordle",
-    description_en: "Simplified copy of the famous wordle game.",
-    description_fr: "Copie simplifié du célèbre jeu wordle.",
-    img: `/images/zordle.webp`,
-    github: "https://github.com/pierricktly/zordle",
-    demo: "https://zordle.netlify.app/",
-    tags: ["Nuxt 2", "Vue 2", "TailwindCSS"],
-  },
-]);
-
-const copyEmail = () => {
-  const email = "pierrick.tly@gmail.com";
-  navigator.clipboard.writeText(email);
-  alert("Email copied to clipboard");
-};
-
-const downloadCVFromFile = () => {
-  const link = document.createElement("a");
-  link.href = "/CV_FRONTEND_TAILY_PIERRICK.pdf";
-  link.download = "CV_FRONTEND_TAILY_PIERRICK.pdf";
-  link.click();
-};
-</script>
-
 <template>
-  <div class="container max-w-7xl mx-auto p-5 lg:pt-0 lg:px-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:pb-5">
-    <section
-      aria-label="Presentation's section"
-      class="relative bg-secondary shadow shadow-tertiary col-span-full flex flex-col items-center gap-3 p-9 rounded-lg">
-      <div class="text-center space-y-2">
-        <p class="font-semibold text-lg lg:text-xl text-primary">{{ $t("hello") }}</p>
-        <h1 class="font-bold text-2xl lg:text-4xl">Pierrick TAÏLY.</h1>
-      </div>
-      <p class="max-w-2xl font-semibold text-center lg:text-lg">{{ $t("description") }}</p>
-    </section>
-    <section class="col-span-full grid grid-cols-3 gap-3">
-      <a
-        href="https://www.linkedin.com/in/pierrick-taily/"
-        target="_blank"
-        class="bg-primary shadow shadow-tertiary text-secondary p-5 rounded-lg transition-all duration-300 ease-in-out focus:no-underline hover:text-tertiary">
-        <IconLinkedin aria-label="Linkedin Link" class="mx-auto w-7 h-7" />
-      </a>
-      <a
-        href="https://github.com/pierricktly/"
-        target="_blank"
-        class="bg-primary shadow shadow-tertiary text-secondary p-5 rounded-lg transition-all duration-300 ease-in-out focus:no-underline hover:text-tertiary">
-        <IconGithub aria-label="Github Link" class="mx-auto w-7 h-7" />
-      </a>
-      <button
-        @click="downloadCVFromFile"
-        class="bg-primary shadow shadow-tertiary text-secondary p-5 rounded-lg transition-all duration-300 ease-in-out focus:no-underline hover:text-tertiary">
-        <IconDownload aria-label="Download CV Button" class="mx-auto w-7 h-7" />
-      </button>
-    </section>
-    <CardProject
-      v-for="project in projects"
-      :key="project.name"
-      :name="project.name"
-      :description="locale === 'en' ? project.description_en : project.description_fr"
-      :image="project.img"
-      :githubLink="project.github"
-      :demoLink="project.demo"
-      :tags="project.tags"
-      class="bg-tertiary text-secondary shadow shadow-tertiary" />
-    <section aria-label="Contact's section" class="bg-secondary shadow shadow-tertiary col-span-full flex flex-col items-center gap-3 p-9 rounded-lg">
-      <p class="font-semibold text-xl text-center text-tertiary">
-        {{ $t("contactMessage") }}
+  <div class="flex min-h-[calc(100vh-150px)] flex-col justify-center">
+    <div class="space-y-5 font-bold lg:w-3/4 lg:space-y-8 2xl:space-y-12">
+      
+      <p class="text-primary lg:text-[1.4vw]">{{ $t('hello') }}</p>
+
+      <h1 id="name" class="text-4xl font-bold lg:text-[4vw]">
+        Pierrick TAÏLY
+      </h1>
+
+      <p class="text-lg font-semibold leading-10 lg:w-3/4 lg:text-[1.3vw]">
+        {{ $t('description') }}
       </p>
-      <button
-        @click="copyEmail"
-        class="flex gap-1 px-2 py-1 font-semibold transition-all ease-in-out duration-300 text-primary hover:bg-primary hover:text-secondary">
-        <IconEmail aria-label="Email Copy" class="w-6 h-6" />
-        <p>{{ $t("contact") }}</p>
-      </button>
-    </section>
+
+      <div class="flex gap-5 font-semibold lg:text-[1vw]">
+        <button class="bg-primary px-5 py-2 text-secondary hover:bg-primary/90">
+          <p>{{ $t('contact') }}</p>
+        </button>
+        <button
+          class="border border-primary px-5 py-2 text-primary hover:bg-primary hover:text-secondary"
+        >
+          <p>{{ $t('downloadCV') }}</p>
+        </button>
+      </div>
+
+      <div class="flex gap-5">
+        <NuxtLink
+          to="/"
+          class="transition-all duration-300 ease-in-out hover:text-primary"
+        >
+          <IconGithub class="h-6 w-6" />
+        </NuxtLink>
+        <NuxtLink
+          to="/"
+          class="transition-all duration-300 ease-in-out hover:text-primary"
+        >
+          <IconLinkedin class="h-6 w-6" />
+        </NuxtLink>
+      </div>
+    </div>
   </div>
 </template>
+
+<script setup lang="ts">
+import gsap from 'gsap'
+import { TextPlugin } from 'gsap/TextPlugin'
+gsap.registerPlugin(TextPlugin)
+
+gsap.to('.name', {
+  text: 'Pierrick TAÏLY',
+  duration: 1,
+  ease: 'none',
+  delay: 1,
+})
+</script>
+
+<style scoped>
+.slide-in-bottom {
+  -webkit-animation: slide-in-bottom 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-bottom 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2023-11-3 14:8:57
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation slide-in-bottom
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(1000px);
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(1000px);
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+</style>
