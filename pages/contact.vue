@@ -9,9 +9,10 @@
     ></p>
     <button
       @click="copyEmail()"
-      class="bg-primary px-5 py-2 font-semibold text-secondary"
+      class="flex items-center gap-2 bg-primary px-5 py-2 font-semibold text-secondary"
     >
-      {{ $t('contact') }}
+      <IconEmail class="h-4 w-4" />
+      <p>{{ $t('contact') }}</p>
     </button>
     <div class="flex gap-8">
       <NuxtLink
