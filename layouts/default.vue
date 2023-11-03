@@ -11,14 +11,14 @@ const changeLocal = () => {
 </script>
 
 <template>
-  <div class="min-h-screen overflow-y-hidden bg-secondary p-5 text-tertiary md:p-0">
+  <div class="min-h-screen overflow-y-hidden p-5 text-tertiary md:p-0">
     <header
-      class="slide-in-top container mx-auto flex items-center justify-between sm:px-5 md:py-5"
+      class="slide-in-top container mx-auto flex items-center justify-between sm:px-5 md:py-5 xl:text-lg"
     >
-      <NuxtLink to="/" class="text-xl font-bold uppercase">T.Pierrick</NuxtLink>
+      <NuxtLink to="/" class="font-bold uppercase">T.Pierrick</NuxtLink>
 
       <div class="flex items-center gap-8">
-        <nav class="hidden gap-5 text-lg font-semibold md:flex">
+        <nav class="hidden gap-5 font-semibold md:flex">
           <NuxtLink to="/">{{ $t('nav.home') }}</NuxtLink>
           <NuxtLink to="/about">{{ $t('nav.about') }}</NuxtLink>
           <NuxtLink to="/project">{{ $t('nav.projects') }}</NuxtLink>
@@ -47,12 +47,12 @@ const changeLocal = () => {
     </main>
     <footer>
       <nav
-        class="fixed bottom-5 left-3 flex gap-0.5 overflow-hidden rounded-full text-lg font-semibold text-secondary sm:left-5 md:hidden"
+        class="fixed bottom-3 left-3 flex gap-0.5 overflow-hidden rounded-full text-lg font-semibold text-secondary sm:bottom-5 sm:left-5 md:hidden"
       >
         <NuxtLink
           to="/"
           :class="route.name == 'index' ? 'bg-primary' : 'bg-tertiary'"
-          class="px-5 py-2 text-sm sm:px-5 sm:py-1 sm:text-base"
+          class="px-3 py-1 text-sm sm:px-5 sm:py-1 sm:text-base md:px-5 md:py-2"
         >
           <IconHome class="h-4 w-4 sm:hidden" />
           <p class="hidden sm:block">{{ $t('nav.home') }}</p>
@@ -60,7 +60,7 @@ const changeLocal = () => {
         <NuxtLink
           to="/about"
           :class="route.name == 'about' ? 'bg-primary' : 'bg-tertiary'"
-          class="px-5 py-2 text-sm sm:px-5 sm:py-1 sm:text-base"
+          class="px-3 py-1 text-sm sm:px-5 sm:py-1 sm:text-base md:px-5 md:py-2"
         >
           <IconAboutMe class="h-4 w-4 sm:hidden" />
           <p class="hidden sm:block">{{ $t('nav.about') }}</p>
@@ -68,7 +68,7 @@ const changeLocal = () => {
         <NuxtLink
           to="/project"
           :class="route.name == 'project' ? 'bg-primary' : 'bg-tertiary'"
-          class="px-5 py-2 text-sm sm:px-5 sm:py-1 sm:text-base"
+          class="px-3 py-1 text-sm sm:px-5 sm:py-1 sm:text-base md:px-5 md:py-2"
         >
           <IconProject class="h-4 w-4 sm:hidden" />
           <p class="hidden sm:block">{{ $t('nav.projects') }}</p>
@@ -76,18 +76,18 @@ const changeLocal = () => {
         <NuxtLink
           to="/contact"
           :class="route.name == 'contact' ? 'bg-primary' : 'bg-tertiary'"
-          class="px-5 py-2 text-sm sm:px-5 sm:py-1 sm:text-base"
+          class="px-3 py-1 text-sm sm:px-5 sm:py-1 sm:text-base md:px-5 md:py-2"
         >
           <IconContact class="h-4 w-4 sm:hidden" />
           <p class="hidden sm:block">{{ $t('nav.contact') }}</p>
         </NuxtLink>
       </nav>
       <NuxtImg
-      format="webp"
-      preload
+        format="webp"
+        preload
         src="/redpanda.png"
         alt="Nuxt Logo"
-        class="fade-in fixed bottom-0 right-0 aspect-square w-32 md:w-40 lg:w-52 xl:w-60 2xl:w-72"
+        class="fade-in fixed bottom-0 right-0 -z-10 aspect-square w-32 md:w-40 lg:w-52 xl:w-60 2xl:w-72"
       />
     </footer>
   </div>
