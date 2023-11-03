@@ -1,10 +1,11 @@
 export function useGeneralFunction() {
   const { locale } = useI18n()
-  
+
   const copyEmail = () => {
     const email = 'pierrick.tly+portfolio@gmail.com'
     navigator.clipboard.writeText(email)
-    alert('Email copied to clipboard')
+    if (locale.value === 'en') alert('Email copied to clipboard')
+    else alert('Email copié dans le presse-papier')
   }
 
   const downloadCVFromFile = () => {
