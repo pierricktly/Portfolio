@@ -4,7 +4,7 @@
       {{ $t('projectTitle') }}
     </p>
     <div
-      class="remove-scrollbar flex gap-5 overflow-hidden overflow-x-scroll scroll-smooth sm:px-5 py-5 sm:p-10 md:px-0 lg:justify-between lg:gap-10"
+      class="remove-scrollbar flex gap-5 overflow-hidden overflow-x-scroll scroll-smooth py-5 sm:p-10 sm:px-5 md:px-0 lg:justify-between lg:gap-10"
     >
       <CardProject
         v-for="i in projects"
