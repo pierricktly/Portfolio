@@ -1,16 +1,16 @@
 <template>
   <div class="flex min-h-[calc(100vh-150px)] flex-col justify-center">
-    <div id="name" class="space-y-3 md:space-y-5 lg:w-3/4 xl:space-y-8 2xl:space-y-12">
+    <div id="name" class="space-y-5 lg:w-3/4 xl:space-y-8 2xl:space-y-12">
       <p
         class="text-sm font-semibold text-primary md:text-base lg:text-lg xl:text-[1.2vw] 2xl:text-[1.5vw]"
       >
         {{ $t('hello') }}
       </p>
 
-      <h1 class="text-2xl font-bold md:text-4xl xl:text-[3vw]">Pierrick Taïly</h1>
+      <h1 class="text-3xl font-bold md:text-4xl xl:text-[3vw]">Pierrick Taïly</h1>
 
       <p
-        class="text-sm font-semibold leading-10 md:text-base lg:text-lg lg:leading-10 xl:text-[1.2vw] xl:leading-[2.75rem] 2xl:text-[1.5vw]"
+        class="text-sm font-semibold leading-6 md:text-base lg:text-lg lg:leading-10 xl:text-[1.2vw] xl:leading-[2.75rem] 2xl:text-[1.5vw]"
       >
         {{ $t('description') }}
       </p>
