@@ -6,8 +6,8 @@
       <NuxtImg
         format="webp"
         preload
-        alt="Lorem Picsum"
-        src="/images/about_picture.jpg"
+        alt="Redpanda"
+        src="/about_picture.jpg"
         class="aspect-video w-full object-cover lg:aspect-square lg:min-w-[30rem]"
       />
       <div
