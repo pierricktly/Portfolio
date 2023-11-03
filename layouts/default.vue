@@ -83,7 +83,9 @@ const changeLocal = () => {
         </NuxtLink>
       </nav>
       <NuxtImg
-        src="~/redpanda.png"
+      format="webp"
+      preload
+        src="/redpanda.png"
         alt="Nuxt Logo"
         class="fade-in fixed bottom-0 right-0 aspect-square w-32 md:w-40 lg:w-52 xl:w-60 2xl:w-72"
       />
