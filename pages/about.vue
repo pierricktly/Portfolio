@@ -7,7 +7,7 @@
         format="webp"
         preload
         alt="Redpanda"
-        src="/about_picture.jpg"
+        src="~/about_picture.jpg"
         class="aspect-video w-full object-cover lg:aspect-square lg:min-w-[30rem]"
       />
       <div
