@@ -19,6 +19,6 @@
     "prettier-plugin-tailwindcss": "^0.5.6"
   },
   "dependencies": {
-    "gsap": "^3.12.2"
+    "gsap": "latest"
   }
 }

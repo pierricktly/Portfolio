@@ -1,16 +1,32 @@
 <template>
   <div class="flex min-h-[calc(100vh-150px)] flex-col justify-center">
-    <p class="text-center text-4xl font-bold">Projects</p>
+    <p class="text-center text-4xl font-bold">
+      {{ $t('projectTitle') }}
+    </p>
     <div
       class="remove-scrollbar flex gap-5 overflow-hidden overflow-x-scroll scroll-smooth p-10 px-5 md:px-0 lg:justify-between lg:gap-10"
     >
-      <CardProject v-for="i in 3" :key="i" />
+      <CardProject
+        v-for="i in projects"
+        :key="i.name"
+        :titleProject="i.name"
+        :stacks="i.tags"
+        :description="locale === 'en' ? i.description_en : i.description_fr"
+        :githubLink="i.github"
+        :demoLink="i.demo"
+        :pictureLink="i.img"
+        class="fade-in"
+      />
     </div>
-    <p class="text-end lg:hidden">Horizontal Scroll -></p>
+    <div class="flex items-end justify-end gap-2 sm:hidden">
+      <IconArrowLeft class="h-5 w-5 rotate-180" />
+      <p class="text-center font-semibold">Scroll to the left</p>
+    </div>
   </div>
 </template>
 
 <script setup>
+const { locale } = useI18n()
 const projects = ref([
   {
     name: 'Comeback',

@@ -1,9 +1,6 @@
 <script setup>
-import gsap from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import { ScrollToPlugin } from 'gsap/ScrollToPlugin'
-
 const { locale } = useI18n()
+const route = useRoute()
 const changeLocal = () => {
   if (locale.value === 'en') {
     locale.value = 'fr'
@@ -15,15 +12,18 @@ const changeLocal = () => {
 
 <template>
   <div class="min-h-screen bg-secondary p-5 text-tertiary md:p-0">
-    <header class="slide-in-top container mx-auto flex items-center justify-between md:py-5">
-      <NuxtLink to="/" class="text-xl font-bold uppercase">Pierrick TLY</NuxtLink>
-      <nav class="flex gap-8 text-lg font-semibold">
-        <NuxtLink to="/">Home</NuxtLink>
-        <NuxtLink to="/about">About</NuxtLink>
-        <NuxtLink to="/project">Project</NuxtLink>
-        <NuxtLink to="/contact">Contact</NuxtLink>
-      </nav>
-      <div class="flex items-center gap-5">
+    <header
+      class="slide-in-top container mx-auto flex items-center justify-between sm:px-5 md:py-5"
+    >
+      <NuxtLink to="/" class="text-xl font-bold uppercase">T.Pierrick</NuxtLink>
+
+      <div class="flex items-center gap-8">
+        <nav class="hidden gap-5 text-lg font-semibold md:flex">
+          <NuxtLink to="/">{{ $t('nav.home') }}</NuxtLink>
+          <NuxtLink to="/about">{{ $t('nav.about') }}</NuxtLink>
+          <NuxtLink to="/project">{{ $t('nav.projects') }}</NuxtLink>
+          <NuxtLink to="/contact">{{ $t('nav.contact') }}</NuxtLink>
+        </nav>
         <div class="font-semibold">
           <button
             @click="changeLocal"
@@ -42,77 +42,51 @@ const changeLocal = () => {
         </div>
       </div>
     </header>
-    <main class="container mx-auto min-h-[calc(100vh-70px)]">
+    <main class="container mx-auto min-h-[calc(100vh-70px)] sm:px-5">
       <slot />
     </main>
     <footer>
+      <nav
+        class="fixed bottom-5 left-3 sm:left-5 flex gap-0.5 overflow-hidden rounded-full text-lg font-semibold text-secondary md:hidden"
+      >
+        <NuxtLink
+          to="/"
+          :class="route.name == 'index' ? 'bg-primary' : 'bg-tertiary'"
+          class="px-5 py-2 text-sm sm:px-5 sm:text-base"
+        >
+          <IconHome class="h-4 w-4 sm:hidden" />
+          <p class="hidden sm:block">{{ $t('nav.home') }}</p>
+        </NuxtLink>
+        <NuxtLink
+          to="/about"
+          :class="route.name == 'about' ? 'bg-primary' : 'bg-tertiary'"
+          class="px-5 py-2 text-sm sm:px-5 sm:text-base"
+        >
+          <IconAboutMe class="h-4 w-4 sm:hidden" />
+          <p class="hidden sm:block">{{ $t('nav.about') }}</p>
+        </NuxtLink>
+        <NuxtLink
+          to="/project"
+          :class="route.name == 'project' ? 'bg-primary' : 'bg-tertiary'"
+          class="px-5 py-2 text-sm sm:px-5 sm:text-base"
+        >
+          <IconProject class="h-4 w-4 sm:hidden" />
+          <p class="hidden sm:block">{{ $t('nav.projects') }}</p>
+        </NuxtLink>
+        <NuxtLink
+          to="/contact"
+          :class="route.name == 'contact' ? 'bg-primary' : 'bg-tertiary'"
+          class="px-5 py-2 text-sm sm:px-5 sm:text-base"
+        >
+          <IconContact class="h-4 w-4 sm:hidden" />
+          <p class="hidden sm:block">{{ $t('nav.contact') }}</p>
+        </NuxtLink>
+      </nav>
       <NuxtImg
         src="/images/redpanda.png"
         alt="Nuxt Logo"
-        class="redpanda absolute bottom-0 right-0 aspect-square w-32 md:w-40 lg:w-52 xl:w-60 2xl:w-72"
+        class="fade-in fixed bottom-0 right-0 aspect-square w-32 md:w-40 lg:w-52 xl:w-60 2xl:w-72"
       />
     </footer>
   </div>
 </template>
-
-<style scoped>
-.redpanda {
-  -webkit-animation: redpanda 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
-  animation: redpanda 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
-}
-
-.slide-in-top {
-	-webkit-animation: slide-in-top 1s ease-in-out both;
-	        animation: slide-in-top 1s ease-in-out both;
-}
-
-@-webkit-keyframes redpanda {
-  0% {
-    -webkit-filter: blur(12px);
-    filter: blur(12px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-filter: blur(0px);
-    filter: blur(0px);
-    opacity: 1;
-  }
-}
-@keyframes redpanda {
-  0% {
-    -webkit-filter: blur(12px);
-    filter: blur(12px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-filter: blur(0px);
-    filter: blur(0px);
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes slide-in-top {
-  0% {
-    -webkit-transform: translateY(-1000px);
-            transform: translateY(-1000px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    opacity: 1;
-  }
-}
-@keyframes slide-in-top {
-  0% {
-    -webkit-transform: translateY(-1000px);
-            transform: translateY(-1000px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    opacity: 1;
-  }
-}
-</style>
