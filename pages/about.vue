@@ -5,13 +5,22 @@
     <div
       class="z-50 mx-20 flex w-full max-w-[60rem] flex-col overflow-hidden rounded-lg shadow shadow-tertiary lg:flex-row"
     >
-      <NuxtImg
-        format="webp"
-        preload
-        alt="Redpanda"
-        src="/about_picture.jpg"
-        class="aspect-video w-full object-cover lg:aspect-square lg:min-w-[30rem]"
-      />
+      <div
+        class="relative aspect-video w-full bg-green-500 lg:aspect-square lg:min-w-[30rem]"
+      >
+        <div
+          :class="displayPicture ? 'opacity-0' : 'opacity-100'"
+          class="absolute inset-0 aspect-video h-full w-full bg-primary transition-all duration-700 ease-in-out lg:aspect-square lg:min-w-[30rem]"
+        />
+        <NuxtImg
+          format="webp"
+          preload
+          alt="Redpanda"
+          src="/about_picture.jpg"
+          @load="displayPicture = true"
+          class="aspect-video h-full w-full object-cover lg:aspect-square lg:min-w-[30rem]"
+        />
+      </div>
       <div
         class="flex h-full flex-col space-y-5 bg-primary/50 p-5 sm:p-10 md:space-y-10 lg:aspect-square lg:h-fit"
       >
@@ -42,6 +51,7 @@
 
 <script lang="ts" setup>
 const { downloadCVFromFile } = useGeneralFunction()
+const displayPicture = ref(false)
 </script>
 
 <style scoped>

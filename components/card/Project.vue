@@ -1,14 +1,21 @@
 <template>
   <div
-    class="sm:mx-5 flex flex-1 min-w-[19rem] max-w-[25rem] flex-col overflow-hidden rounded-lg shadow shadow-tertiary"
+    class="flex min-w-[19rem] max-w-[25rem] flex-1 flex-col overflow-hidden rounded-lg shadow shadow-tertiary sm:mx-5"
   >
-    <NuxtImg
-      format="webp"
-      preload
-      :alt="titleProject"
-      :src="pictureLink"
-      class="aspect-video w-full object-cover"
-    />
+    <div class="relative aspect-video w-full object-cover">
+      <div
+        :class="displayPicture ? 'opacity-0' : 'opacity-100'"
+        class="absolute inset-0 aspect-video w-full bg-primary transition-all duration-700 ease-in-out"
+      ></div>
+      <NuxtImg
+        format="webp"
+        preload
+        :alt="titleProject"
+        :src="pictureLink"
+        @load="displayPicture = true"
+        class="aspect-video w-full object-cover"
+      />
+    </div>
     <div
       id="data"
       class="flex flex-grow flex-col justify-between space-y-8 bg-primary/50 p-5"
@@ -62,4 +69,5 @@ const { titleProject, stacks, description, githubLink, demoLink, pictureLink } =
     demoLink: string
     pictureLink: string
   }>()
+const displayPicture = ref(false)
 </script>
