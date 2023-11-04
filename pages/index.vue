@@ -1,6 +1,6 @@
 <template>
   <div class="flex min-h-[calc(100vh-150px)] flex-col justify-center">
-    <div id="name" class="space-y-5 lg:w-3/4 xl:space-y-8 2xl:space-y-12">
+    <div ref="name" id="name" class="test space-y-5 lg:w-3/4 xl:space-y-8 2xl:space-y-12">
       <p
         class="text-sm font-semibold text-primary md:text-base lg:text-lg xl:text-[1.2vw] 2xl:text-[1.5vw]"
       >
@@ -57,13 +57,23 @@
 import gsap from 'gsap'
 import { githubUrl, linkedinUrl } from '~/constant/data'
 const { copyEmail } = useGeneralFunction()
+const name = ref(null)
 
 onMounted(() => {
-  gsap.from('#name', {
-    duration: 2,
-    y: 100,
-    opacity: 0,
-    ease: 'power4.out',
+  nextTick(() => {
+    name.value.style.opacity = 1
+    gsap.from('#name', {
+      duration: 2,
+      y: 100,
+      opacity: 0,
+      ease: 'power4.out',
+    })
   })
 })
 </script>
+
+<style>
+.test {
+  opacity: 0;
+}
+</style>
