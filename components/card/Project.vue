@@ -1,6 +1,6 @@
 <template>
   <div
-    class="sm:mx-5 flex min-w-[19rem] max-w-[25rem] flex-col overflow-hidden rounded-lg shadow shadow-tertiary"
+    class="sm:mx-5 flex flex-1 min-w-[19rem] max-w-[25rem] flex-col overflow-hidden rounded-lg shadow shadow-tertiary"
   >
     <NuxtImg
       format="webp"
