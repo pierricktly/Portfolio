@@ -7,6 +7,7 @@ export default defineI18nConfig(() => ({
       description:
         "I'm a front-end developer, helping companies turn their ideas into working applications so they can help their customers.",
       contact: "Let's Talk!",
+      workTogether: 'Let’s work together!',
       downloadCV: 'Take a look on my resume!',
       seeMyProjects: 'Take a look on my projects',
       githubButton: 'See my projects',
@@ -21,39 +22,40 @@ export default defineI18nConfig(() => ({
         'With a particular interest in UX/UI, I place the user at the center of all my thoughts and creations, aiming to develop interfaces that are both intuitive and aesthetically pleasing.',
       aboutMe_3:
         'Currently looking for new professional adventures, I am excited to discuss how I can contribute to your next project. Feel free to check out my resume or take a look at my achievements.',
-      nav:{
+      nav: {
         home: 'Home',
         about: 'About',
         projects: 'Projects',
         contact: 'Contact',
-      }
+      },
     },
     fr: {
-      hello: "Bonjour, je m'appelle",
+      hello: 'Bonjour, je me présente,',
       description:
-        "Je suis développeur frontend, j'aide les entreprises à transformer leurs idées en application fonctionnel afin qu'ils puissent venir en aide à leurs clients.",
+        'En tant que développeur front-end, je donne vie aux idées des entreprises en créant des applications fonctionnelles au service de leurs clients',
       contact: 'Discutons-en !',
-      downloadCV: 'Jetez un oeil à mon CV !',
-      seeMyProjects: 'Jetez un oeil à mes projets',
+      workTogether: 'Unissons nos talents !',
+      downloadCV: 'Découvrez mon CV !',
+      seeMyProjects: 'Explorez mes projets !',
       githubButton: 'Voir mes projets',
       githubProjectButton: 'Voir le code',
       liveButton: 'Voir la démo',
       contactMessage:
-        'Dites-moi comment je peux vous aider<br>à rendre le monde un peu<br>meilleur',
+        'Dites-moi comment ensemble, nous pouvons rendre le monde un peu meilleur.',
       projectTitle: 'Projets',
       aboutMeTitle: 'À propos de moi',
       aboutMe_1:
         "Développeur Frontend Junior passionné, mon voyage dans le monde numérique m'a naturellement conduit vers une prédilection pour le framework Vue.js, que j'ai utilisé dans la majorité de mes projets.",
       aboutMe_2:
-        "Avec un intérêt particulier pour l'UX/UI, je place l`'utilisateur au centre de toutes mes réflexions et créations, visant à développer des interfaces à la fois intuitives et esthétiquement plaisantes.",
+        "Passionné par l'expérience et l'interface utilisateur, je mets l'utilisateur au cœur de chaque projet pour créer des interfaces qui allient intuition et beauté.",
       aboutMe_3:
-        "Actuellement en quête de nouvelles aventures professionnelles, je suis enthousiaste à l'idée de discuter de la manière dont je peux apporter ma contribution à votre prochain projet. N'hésitez pas à consuler mon CV ou jeter un oeil à mes réalisations.",
-      nav:{
+        "À la recherche de nouveaux défis professionnels, j'ai hâte d'échanger sur la façon dont je pourrais contribuer à votre projet. Consultez mon CV ou découvrez mes travaux.",
+      nav: {
         home: 'Accueil',
         about: 'À propos',
         projects: 'Projets',
         contact: 'Contact',
-      }
+      },
     },
   },
 }))

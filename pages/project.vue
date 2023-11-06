@@ -27,9 +27,9 @@ const projects = ref([
   {
     name: 'Comeback',
     description_en:
-      'Community web app for music release tracking. This app allows users to report on upcoming releases by their favorite artists, and to track upcoming releases shared by the community.',
+      'A web application that provides a platform for users to keep track of and report on music releases, integrating community contributions for a curated feed of musical updates.',
     description_fr:
-      'Application web communautaire de suivis de sortie musicale. Cette application permet aux utilisateurs de reporter les prochaines sorties de leurs artistes favoris et de suivre les prochaines partager par la communauté.',
+      "Une application web qui offre une plateforme aux utilisateurs pour suivre et signaler les sorties musicales, intégrant les contributions communautaires pour un fil d'actualités musicales organisé.",
     img: `/comeback.webp`,
     github: 'https://github.com/pierricktly/comeback-nuxt3',
     demo: 'https://come-back.netlify.app/',
@@ -38,9 +38,9 @@ const projects = ref([
   {
     name: 'Asia Exchange Finder',
     description_en:
-      'Community web app, enabling students to find and easily reference universities or schools offering university exchanges to Asia.',
+      'A web application designed to help students find university exchange programs to Asia, providing a platform for easy access to and sharing of program information.',
     description_fr:
-      "Application communautaire, permettant aux étudiants de trouver et référencer simplement les universités ou écoles proposant des échanges universitaires vers l'Asie.",
+      "Application web destinée à aider les étudiants à trouver des programmes d'échange universitaire vers l'Asie, offrant une plateforme pour un accès et partage facile des informations de programme.",
     img: `/asianExchangeFinder.webp`,
     github: 'https://github.com/pierricktly/asia-exchange-finder',
     demo: 'https://asiastudeler.netlify.app/',
@@ -48,8 +48,10 @@ const projects = ref([
   },
   {
     name: 'Zordle',
-    description_en: 'Simplified copy of the famous wordle game.',
-    description_fr: 'Copie simplifié du célèbre jeu wordle.',
+    description_en:
+      'A web-based word game inspired by Wordle, simplified for ease of use, providing daily word puzzles for language practice and entertainment.',
+    description_fr:
+      'Un jeu de mots basé sur le web, inspiré par Wordle et simplifié pour une utilisation facile, offrant des énigmes aléatoire en anglais pour la pratique linguistique et le divertissement.',
     img: `/zordle.webp`,
     github: 'https://github.com/pierricktly/zordle',
     demo: 'https://zordle.netlify.app/',
