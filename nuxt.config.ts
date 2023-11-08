@@ -9,7 +9,7 @@ export default defineNuxtConfig({
     head: {
       title: 'Pierrick TAÏLY - Portfolio - Développeur Frontend Vue.js Nuxt.js',
       htmlAttrs: {
-        lang: 'fr',
+        lang: 'en',
       },
       meta: [
         {
