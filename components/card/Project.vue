@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex min-w-[19rem] max-w-[25rem] flex-1 flex-col overflow-hidden rounded-lg shadow shadow-tertiary sm:mx-5"
+    class="flex min-w-[19rem] max-w-[25rem] flex-1 flex-col overflow-hidden rounded-lg shadow shadow-tertiary sm:mx-5 2xl:min-w-[23rem]"
   >
     <div class="relative aspect-video w-full object-cover">
       <div

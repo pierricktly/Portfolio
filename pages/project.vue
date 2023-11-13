@@ -36,6 +36,17 @@ const projects = ref([
     tags: ['Nuxt 3', 'Vue 3', 'TailwindCSS', 'Firebase'],
   },
   {
+    name: 'YG Corporate Website',
+    description_en:
+      'Fictional redesign of the YG Entertainment website: modernized, simplified homepage with a clear interface and user-friendly menu.',
+    description_fr:
+      "Refonte fictive du site YG Entertainment : une page d'accueil modernisée et simplifiée, offrant une interface claire et un menu facilitant la navigation.",
+    img: `/ygCorporate.png`,
+    github: 'https://github.com/pierricktly/yg-corporate-website',
+    demo: 'https://yg-corporate.netlify.app/',
+    tags: ['Nuxt 3', 'Vue 3', 'TailwindCSS'],
+  },
+  {
     name: 'Asia Exchange Finder',
     description_en:
       'A web application designed to help students find university exchange programs to Asia, providing a platform for easy access to and sharing of program information.',
