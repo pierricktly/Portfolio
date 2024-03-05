@@ -17,7 +17,7 @@ export default defineI18nConfig(() => ({
       projectTitle: 'Projects',
       aboutMeTitle: 'About me',
       aboutMe_1:
-        'Passionate Junior Frontend Developer, my journey in the digital world naturally led me to a predilection for the Vue.js framework, which I used in the majority of my projects.',
+        'Passionate Frontend Developer, my journey in the digital world naturally led me to a predilection for the Vue.js framework, which I used in the majority of my projects.',
       aboutMe_2:
         'With a particular interest in UX/UI, I place the user at the center of all my thoughts and creations, aiming to develop interfaces that are both intuitive and aesthetically pleasing.',
       aboutMe_3:
@@ -45,7 +45,7 @@ export default defineI18nConfig(() => ({
       projectTitle: 'Projets',
       aboutMeTitle: 'À propos de moi',
       aboutMe_1:
-        "Développeur Frontend Junior passionné, mon voyage dans le monde numérique m'a naturellement conduit vers une prédilection pour le framework Vue.js, que j'ai utilisé dans la majorité de mes projets.",
+        "Développeur Frontend passionné, mon voyage dans le monde numérique m'a naturellement conduit vers une prédilection pour le framework Vue.js, que j'ai utilisé dans la majorité de mes projets.",
       aboutMe_2:
         "Passionné par l'expérience et l'interface utilisateur, je mets l'utilisateur au cœur de chaque projet pour créer des interfaces qui allient intuition et beauté.",
       aboutMe_3:
