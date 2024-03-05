@@ -39,7 +39,7 @@
         <div class="flex flex-col items-center justify-center gap-2 text-xs lg:flex-row">
           <button
             @click="copyEmail()"
-            class="flex items-center gap-2 bg-primary px-3 py-1 text-secondary hover:bg-primary/90 md:px-5 md:py-2"
+            class="flex items-center gap-2 bg-primary text-secondary px-3 py-1 text-sm font-semibold hover:bg-primary/90 md:py-2 lg:text-base"
           >
             {{ $t('contact') }}
           </button>
