@@ -11,27 +11,39 @@ const listPages = ref([
 
 // let currentPageIndex = ref(0);
 const currentPageIndex = useCurrentPageIndex();
+let startY;
 
-const handleScroll = (e) => {
+const handleTouchStart = (e) => {
+  startY = e.touches[0].clientY;
+};
+
+const handleTouchEnd = (e) => {
+  const endY = e.changedTouches[0].clientY;
+  const deltaY = endY - startY;
+
   const threshold = 100; // Set the threshold to any value you like
-  if (Math.abs(e.deltaY) < threshold) {
-      return; // Ignore small scroll movements
+  if (Math.abs(deltaY) < threshold) {
+    return; // Ignore small scroll movements
   }
 
-  if (e.deltaY > 0) {
-      currentPageIndex.value = (currentPageIndex.value + 1) % listPages.value.length;
-  } else if (e.deltaY < 0) {
-      currentPageIndex.value = (currentPageIndex.value - 1 + listPages.value.length) % listPages.value.length;
+  if (deltaY < 0) {
+    currentPageIndex.value = (currentPageIndex.value + 1) % listPages.value.length;
+  } else if (deltaY > 0) {
+    currentPageIndex.value = (currentPageIndex.value - 1 + listPages.value.length) % listPages.value.length;
   }
   router.push(listPages.value[currentPageIndex.value].path);
-}
+};
 
 onMounted(() => {
   window.addEventListener('wheel', handleScroll);
+  window.addEventListener('touchstart', handleTouchStart);
+  window.addEventListener('touchend', handleTouchEnd);
 });
 
 onUnmounted(() => {
   window.removeEventListener('wheel', handleScroll);
+  window.removeEventListener('touchstart', handleTouchStart);
+  window.removeEventListener('touchend', handleTouchEnd);
 });
 
 const changeLocal = () => {
