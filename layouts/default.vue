@@ -34,6 +34,20 @@ const handleTouchEnd = (e) => {
   router.push(listPages.value[currentPageIndex.value].path);
 };
 
+const handleScroll = (e) => {
+  const threshold = 100; // Set the threshold to any value you like
+  if (Math.abs(e.deltaY) < threshold) {
+      return; // Ignore small scroll movements
+  }
+
+  if (e.deltaY > 0) {
+      currentPageIndex.value = (currentPageIndex.value + 1) % listPages.value.length;
+  } else if (e.deltaY < 0) {
+      currentPageIndex.value = (currentPageIndex.value - 1 + listPages.value.length) % listPages.value.length;
+  }
+  router.push(listPages.value[currentPageIndex.value].path);
+}
+
 onMounted(() => {
   window.addEventListener('wheel', handleScroll);
   window.addEventListener('touchstart', handleTouchStart);
