@@ -1,6 +1,39 @@
 <script setup>
-const { locale } = useI18n()
-const route = useRoute()
+const { locale } = useI18n();
+const router = useRouter();
+const route = useRoute();
+const listPages = ref([
+  { name: 'Home', path: '/' },
+  { name: 'About', path: '/about' },
+  { name: 'Projects', path: '/project' },
+  { name: 'Contact', path: '/contact' },
+]);
+
+// let currentPageIndex = ref(0);
+const currentPageIndex = useCurrentPageIndex();
+
+const handleScroll = (e) => {
+  const threshold = 100; // Set the threshold to any value you like
+  if (Math.abs(e.deltaY) < threshold) {
+      return; // Ignore small scroll movements
+  }
+
+  if (e.deltaY > 0) {
+      currentPageIndex.value = (currentPageIndex.value + 1) % listPages.value.length;
+  } else if (e.deltaY < 0) {
+      currentPageIndex.value = (currentPageIndex.value - 1 + listPages.value.length) % listPages.value.length;
+  }
+  router.push(listPages.value[currentPageIndex.value].path);
+}
+
+onMounted(() => {
+  window.addEventListener('wheel', handleScroll);
+});
+
+onUnmounted(() => {
+  window.removeEventListener('wheel', handleScroll);
+});
+
 const changeLocal = () => {
   if (locale.value === 'en') {
     locale.value = 'fr'
@@ -13,16 +46,16 @@ const changeLocal = () => {
 <template>
   <div class="min-h-screen overflow-y-hidden p-5 text-tertiary md:p-0">
     <header
-      class="slide-in-top container mx-auto flex items-center justify-between sm:px-5 md:py-5 xl:text-lg"
+      class="slide-in-top container mx-auto flex items-center justify-between sm:px-5 md:py-5"
     >
       <NuxtLink to="/" class="font-bold uppercase">T.Pierrick</NuxtLink>
 
       <div class="flex items-center gap-8">
         <nav class="hidden gap-5 font-semibold md:flex">
-          <NuxtLink to="/">{{ $t('nav.home') }}</NuxtLink>
-          <NuxtLink to="/about">{{ $t('nav.about') }}</NuxtLink>
-          <NuxtLink to="/project">{{ $t('nav.projects') }}</NuxtLink>
-          <NuxtLink to="/contact">{{ $t('nav.contact') }}</NuxtLink>
+          <NuxtLink to="/" :class="route.name == 'index' ? 'text-primary':''">{{ $t('nav.home') }}</NuxtLink>
+          <NuxtLink to="/about" :class="route.name == 'about' ? 'text-primary':''">{{ $t('nav.about') }}</NuxtLink>
+          <NuxtLink to="/project" :class="route.name == 'project' ? 'text-primary':''">{{ $t('nav.projects') }}</NuxtLink>
+          <NuxtLink to="/contact" :class="route.name == 'contact' ? 'text-primary':''">{{ $t('nav.contact') }}</NuxtLink>
         </nav>
         <div class="font-semibold">
           <button
@@ -46,7 +79,7 @@ const changeLocal = () => {
       <slot />
     </main>
     <footer>
-      <nav
+      <!-- <nav
         class="fixed bottom-3 left-3 flex gap-0.5 overflow-hidden rounded-full text-lg font-semibold text-secondary sm:bottom-5 sm:left-5 md:hidden"
       >
         <NuxtLink
@@ -81,7 +114,13 @@ const changeLocal = () => {
           <IconContact class="h-4 w-4 sm:hidden" />
           <p class="hidden sm:block">{{ $t('nav.contact') }}</p>
         </NuxtLink>
-      </nav>
+      </nav> -->
+      <div class="fixed bottom-5 md:bottom-3 md:p-5 w-full">
+        <div class="flex flex-row md:flex-col font-semibold items-center gap-2 md:justify-center">
+          <p>Scroll to continue</p>
+          <IconArrowDown class="w-5 h-5" />
+        </div>
+      </div>
       <NuxtImg
         format="webp"
         preload

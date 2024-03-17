@@ -3,9 +3,8 @@ export default defineI18nConfig(() => ({
   locale: 'en',
   messages: {
     en: {
-      hello: 'Hi, my name is',
-      description:
-        "I'm a front-end developer, helping companies turn their ideas into working applications so they can help their customers.",
+      hello: 'Hello, I’m Pierrick, Frontend Developer.',
+      description: "I help you to turn your ideas into working applications to help your customers.",
       contact: "Let's Talk!",
       workTogether: 'Let’s work together!',
       downloadCV: 'Take a look on my resume!',
@@ -28,11 +27,12 @@ export default defineI18nConfig(() => ({
         projects: 'Projects',
         contact: 'Contact',
       },
+      copy: 'Copy',
+      emailCopied: 'Email copied!',
     },
     fr: {
-      hello: 'Bonjour, je me présente,',
-      description:
-        'En tant que développeur front-end, je donne vie aux idées des entreprises en créant des applications fonctionnelles au service de leurs clients',
+      hello: 'Bonjour, je suis Pierrick, Développeur Frontend.',
+      description: 'Je transforme vos idées en applications pour aider vos clients.',
       contact: 'Discutons-en !',
       workTogether: 'Unissons nos talents !',
       downloadCV: 'Découvrez mon CV !',
@@ -56,6 +56,8 @@ export default defineI18nConfig(() => ({
         projects: 'Projets',
         contact: 'Contact',
       },
+      copy: 'Copier',
+      emailCopied: 'Email copié !',
     },
   },
 }))

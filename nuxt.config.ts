@@ -1,6 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
+
   build: {
     transpile: ['gsap'],
   },
@@ -76,24 +77,31 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ['@nuxtjs/tailwindcss', '@nuxt/image', '@nuxtjs/i18n'],
+  modules: ['@nuxtjs/tailwindcss', '@nuxt/image', '@nuxtjs/i18n', '@hypernym/nuxt-gsap'],
 
   i18n: {
     vueI18n: './i18n.config.ts',
+  },
+
+  gsap: {
+    provide: true,
+    extraPlugins: {
+      scrollTo: true,
+      scrollTrigger: true
+    }
   },
 
   tailwindcss: {
     cssPath: '~/assets/css/tailwind.css',
     configPath: 'tailwind.config.js',
     exposeConfig: false,
-    injectPosition: 0,
     viewer: true,
   },
 
   image: {
-    provider: 'netlify',
+    provider: process.env.NODE_ENV !== 'development' ? 'netlify' : '',
     netlify: {
-      baseURl: process.env.IMAGES_URL,
+      baseURL: process.env.NODE_ENV !== 'development' ? process.env.IMAGES_URL : '',
     },
   },
 })

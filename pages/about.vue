@@ -36,16 +36,11 @@
             {{ $t('aboutMe_3') }}
           </p>
         </div>
-        <div class="flex flex-col items-center justify-center gap-2 text-xs lg:flex-row">
-          <button
-            @click="copyEmail()"
-            class="flex items-center gap-2 bg-primary text-secondary px-3 py-1 text-sm font-semibold hover:bg-primary/90 md:py-2 lg:text-base"
-          >
-            {{ $t('contact') }}
-          </button>
+        <div class="grid grid-cols-1 items-center justify-center text-xs font-semibold">
+
           <button
             @click="downloadCVFromFile()"
-            class="border border-primary px-3 py-1 text-sm font-semibold text-primary hover:bg-primary hover:text-secondary md:py-2 lg:text-base"
+            class="border border-primary px-3 py-1 text-primary hover:bg-primary hover:text-secondary md:py-2"
           >
             {{ $t('downloadCV') }}
           </button>

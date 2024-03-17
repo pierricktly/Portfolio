@@ -4,16 +4,24 @@
     class="flex min-h-[calc(100vh-150px)] flex-col items-center justify-center space-y-8 text-center"
   >
     <p
-      class="max-w-7xl text-[5vw] font-bold 2xl:text-[3vw]"
+      class="max-w-7xl text-[7vw] font-bold md:text-[5vw] lg:text-[3vw]"
       v-html="$t('contactMessage')"
     ></p>
-    <button
-      @click="copyEmail()"
-      class="flex items-center gap-2 bg-primary px-5 py-2 font-semibold text-secondary"
-    >
-      <IconEmail class="h-4 w-4" />
-      <p>{{ $t('workTogether') }}</p>
-    </button>
+    <div class="flex font-semibold">
+      <NuxtLink
+        to="mailto:pierrick.tly+portfolio@gmail.com"
+        class="flex items-center gap-2 border border-primary w-full px-3 py-1 text-primary hover:bg-primary hover:text-secondary md:px-5 md:py-2"
+      >
+        <IconEmail class="h-5 w-5" />
+        <p>{{ $t('workTogether') }}</p>
+      </NuxtLink>
+      <button
+        @click="copyEmail()"
+        class="border border-primary bg-primary px-3 py-1 text-secondary hover:bg-primary/90 md:px-5 md:py-2 active:border-primary"
+      >
+        <p>{{ $t('copy') }}</p>
+      </button>
+    </div>
     <div class="flex gap-8">
       <NuxtLink
         :to="githubUrl"

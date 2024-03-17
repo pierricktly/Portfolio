@@ -4,8 +4,8 @@ export function useGeneralFunction() {
   const copyEmail = () => {
     const email = 'pierrick.tly+portfolio@gmail.com'
     navigator.clipboard.writeText(email)
-    if (locale.value === 'en') alert('Email copied to clipboard')
-    else alert('Email copié dans le presse-papier')
+    if (locale.value === 'en') alert('Email copied!')
+    else alert('Email copié !')
   }
 
   const downloadCVFromFile = () => {
