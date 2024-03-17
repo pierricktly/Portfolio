@@ -8,7 +8,7 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      title: 'Pierrick TAÏLY - Portfolio - Développeur Frontend Vue.js Nuxt.js',
+      title: 'Pierrick TAÏLY - Frontend Developer Vue.js Nuxt.js',
       htmlAttrs: {
         lang: 'en',
       },
@@ -16,13 +16,13 @@ export default defineNuxtConfig({
         {
           hid: 'description',
           name: 'description',
-          content: 'Retrouver mes derniers projets personnel',
+          content: 'Retrouver mes derniers projets',
         },
         // ogDescription, ogTitle, ogImage, ogUrl, ogSiteName
         {
           hid: 'og:description',
           name: 'og:description',
-          content: 'Retrouver mes derniers projets personnel',
+          content: 'Retrouver mes derniers projets',
         },
         {
           hid: 'og:title',
@@ -70,7 +70,7 @@ export default defineNuxtConfig({
         {
           hid: 'twitter:description',
           name: 'twitter:description',
-          content: 'Retrouver mes derniers projets personnel',
+          content: 'Retrouver mes derniers projets',
         },
       ],
       link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
