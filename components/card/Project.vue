@@ -22,7 +22,7 @@
     >
       <div class="space-y-3 xl:space-y-5">
         <div class="space-y-1.5">
-          <h2 class="text-2xl font-semibold">{{ titleProject }}</h2>
+          <h2 class="text-xl font-semibold">{{ titleProject }}</h2>
           <div class="flex flex-wrap gap-2 text-xs font-semibold uppercase">
             <p
               v-for="stack in stacks"
@@ -41,7 +41,7 @@
         <NuxtLink
           :to="githubLink"
           target="_blank"
-          class="flex items-center gap-2 bg-primary px-3 py-2 text-secondary hover:bg-primary/90"
+          class="flex items-center gap-2 bg-primary p-2 text-secondary hover:bg-primary/90"
         >
           <IconGithub class="h-4 w-4" />
           <p>{{ $t('githubProjectButton') }}</p>
@@ -49,7 +49,7 @@
         <NuxtLink
           :to="demoLink"
           target="_blank"
-          class="flex items-center gap-2 border border-primary px-3 py-2 text-primary hover:bg-primary hover:text-secondary"
+          class="flex items-center gap-2 border border-primary p-2 text-primary hover:bg-primary hover:text-secondary"
         >
           <IconLinkexternal class="h-4 w-4" />
           <p>{{ $t('liveButton') }}</p>
