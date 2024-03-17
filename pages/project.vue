@@ -1,5 +1,5 @@
 <template>
-  <div class="flex min-h-[calc(100vh-150px)] flex-col justify-center">
+  <div class="flex min-h-[calc(100dvh-150px)] flex-col justify-center">
     <p class="text-center text-2xl font-bold lg:text-4xl">
       {{ $t('projectTitle') }}
     </p>

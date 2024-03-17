@@ -101,7 +101,7 @@ const changeLocal = () => {
         </div>
       </div>
     </header>
-    <main class="container mx-auto min-h-[calc(100vh-70px)] sm:px-5">
+    <main class="container mx-auto min-h-[calc(100dvh-70px)] sm:px-5">
       <slot />
     </main>
     <footer>

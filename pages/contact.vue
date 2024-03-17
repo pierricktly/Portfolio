@@ -1,7 +1,7 @@
 <template>
   <div
     id="contact"
-    class="flex min-h-[calc(100vh-150px)] flex-col items-center justify-center space-y-8 text-center"
+    class="flex min-h-[calc(100dvh-150px)] flex-col items-center justify-center space-y-8 text-center"
   >
     <p
       class="max-w-7xl text-[7vw] font-bold md:text-[5vw] lg:text-[3vw]"

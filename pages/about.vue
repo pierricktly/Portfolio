@@ -1,6 +1,6 @@
 <template>
   <div
-    class="fade-in flex min-h-[calc(100vh-70px)] flex-col items-center justify-center px-3 py-10 sm:px-5"
+    class="fade-in flex min-h-[calc(100dvh-70px)] flex-col items-center justify-center px-3 py-10 sm:px-5"
   >
     <div
       class="z-50 mx-20 flex w-full max-w-[60rem] flex-col overflow-hidden rounded-lg shadow shadow-tertiary lg:flex-row"
