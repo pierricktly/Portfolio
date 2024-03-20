@@ -9,9 +9,10 @@ const listPages = ref([
   { name: 'Contact', path: '/contact' },
 ]);
 
-// let currentPageIndex = ref(0);
-const currentPageIndex = useCurrentPageIndex();
+const currentPageIndex = ref(0);
 let startY;
+let accumulatedScroll = 0; // Nouveau: Accumulation du scroll
+const scrollThreshold = 750; // Nouveau: Seuil d'accumulation pour changer de page
 
 const handleTouchStart = (e) => {
   startY = e.touches[0].clientY;
@@ -21,31 +22,29 @@ const handleTouchEnd = (e) => {
   const endY = e.changedTouches[0].clientY;
   const deltaY = endY - startY;
 
-  const threshold = 100; // Set the threshold to any value you like
-  if (Math.abs(deltaY) < threshold) {
-    return; // Ignore small scroll movements
+  if (Math.abs(deltaY) >= scrollThreshold) {
+    if (deltaY < 0) {
+      currentPageIndex.value = (currentPageIndex.value + 1) % listPages.value.length;
+    } else {
+      currentPageIndex.value = (currentPageIndex.value - 1 + listPages.value.length) % listPages.value.length;
+    }
+    router.push(listPages.value[currentPageIndex.value].path);
+    accumulatedScroll = 0; // Réinitialiser l'accumulation après un changement de page
   }
-
-  if (deltaY < 0) {
-    currentPageIndex.value = (currentPageIndex.value + 1) % listPages.value.length;
-  } else if (deltaY > 0) {
-    currentPageIndex.value = (currentPageIndex.value - 1 + listPages.value.length) % listPages.value.length;
-  }
-  router.push(listPages.value[currentPageIndex.value].path);
 };
 
 const handleScroll = (e) => {
-  const threshold = 100; // Set the threshold to any value you like
-  if (Math.abs(e.deltaY) < threshold) {
-      return; // Ignore small scroll movements
-  }
+  accumulatedScroll += e.deltaY; // Accumuler le scroll
 
-  if (e.deltaY > 0) {
+  if (Math.abs(accumulatedScroll) >= scrollThreshold) {
+    if (accumulatedScroll > 0) {
       currentPageIndex.value = (currentPageIndex.value + 1) % listPages.value.length;
-  } else if (e.deltaY < 0) {
+    } else {
       currentPageIndex.value = (currentPageIndex.value - 1 + listPages.value.length) % listPages.value.length;
+    }
+    router.push(listPages.value[currentPageIndex.value].path);
+    accumulatedScroll = 0; // Réinitialiser après le changement de page
   }
-  router.push(listPages.value[currentPageIndex.value].path);
 }
 
 onMounted(() => {
