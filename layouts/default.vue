@@ -143,7 +143,7 @@ const changeLocal = () => {
       </nav> -->
       <div class="fixed bottom-5 md:bottom-3 md:p-5 w-full">
         <div class="flex flex-row md:flex-col font-semibold items-center gap-2 md:gap-0 md:justify-center">
-          <p>Scroll to continue</p>
+          <p class="text-xs lg:text-base">Scroll to continue</p>
           <IconArrowDown class="w-3 h-3" />
         </div>
       </div>
