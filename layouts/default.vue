@@ -12,7 +12,7 @@ const listPages = ref([
 const currentPageIndex = ref(0);
 let startY;
 let accumulatedScroll = 0; // Nouveau: Accumulation du scroll
-const scrollThreshold = 500; // Nouveau: Seuil d'accumulation pour changer de page
+const scrollThreshold = 300; // Nouveau: Seuil d'accumulation pour changer de page
 
 const handleTouchStart = (e) => {
   startY = e.touches[0].clientY;
