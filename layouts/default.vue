@@ -22,15 +22,17 @@ const handleTouchEnd = (e) => {
   const endY = e.changedTouches[0].clientY;
   const deltaY = endY - startY;
 
-  if (Math.abs(deltaY) >= scrollThreshold) {
-    if (deltaY < 0) {
-      currentPageIndex.value = (currentPageIndex.value + 1) % listPages.value.length;
-    } else {
-      currentPageIndex.value = (currentPageIndex.value - 1 + listPages.value.length) % listPages.value.length;
-    }
-    router.push(listPages.value[currentPageIndex.value].path);
-    accumulatedScroll = 0; // Réinitialiser l'accumulation après un changement de page
+  const threshold = 100; // Set the threshold to any value you like
+  if (Math.abs(deltaY) < threshold) {
+    return; // Ignore small scroll movements
   }
+
+  if (deltaY < 0) {
+    currentPageIndex.value = (currentPageIndex.value + 1) % listPages.value.length;
+  } else if (deltaY > 0) {
+    currentPageIndex.value = (currentPageIndex.value - 1 + listPages.value.length) % listPages.value.length;
+  }
+  router.push(listPages.value[currentPageIndex.value].path);
 };
 
 const handleScroll = (e) => {
